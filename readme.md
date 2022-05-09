@@ -9,15 +9,14 @@
 - Custom HTML5 and CSS3 code to create at least 3 pages, or 3 separate page areas.
 - Deploy final version to a hosting platform (GitHub Pages).
 
+The site is written in HTML and CSS, using some of the pre-styled Bootstrap features and responsive elements to assist in creating a mobile-first web application. Future releases will introduce additional features and functionality to enhance the user experience further.
+
 ---
 
-## Introduction, Inception & Purpose
+## Introduction
 
 ### __*The Bar*__
-An all-inclusive community-oriented gaming bar in Cardiff, where people can play video games while enjoying drinks & food. Events are hosted regularly where customers are invited to participate in competitive video games, along regular events such as hosting meet-ups, brand parties, product launches, etc.
-
-### __*The Website*__
-For The Hexen Hut, I wanted to create something that does not necessarily conform to the more mainstream layouts and styles used, while staying true to the principles of UXD in keeping the website intuitive, simple and enjoyable to use.
+An all-inclusive community-oriented gaming bar in Cardiff, where people can use onsite equipment to play video games for free while enjoying drinks & food. Events are hosted regularly where customers are invited to participate in competitive video games events, along regular events such as hosting meet-ups, brand parties, product launches, etc.
 
 ---
 
@@ -53,58 +52,58 @@ For The Hexen Hut, I wanted to create something that does not necessarily confor
 ## 2. User Experience
 [`Back To Top`](#table-of-contents)
 
-
-### User Stories
-
-- As a new customer I would like to learn about The Hexen Hut and what it is.
-- As a new customer I would like to know where the bar is located.
-- As a new customer I would like to read about what other people's experience visiting the bar is.
-- As a new/returning customer I would like to see what food & drinks the bar offers.
-- As a new/returning customer I would like to find out more about the events held at the bar.
-- As a new/returning customer I would like to sign-up for an upcoming event.
-- As a new/returning customer I would like a one-stop-shop for all my questions.
-
 ---
 
 ### **Strategy**
 
-1. Is the content culturaly appropriate?
-    - The content is primarily targeted towards gamers of any background or preference.
+### Business Goals:
+The goal of the web application is to provide as much detail as possible about the bar to customers in order to promote it and it's events, increase sales, and grow the customer base further. 
+-   The content is primarily targeted towards gamers of any background or preference.
+-   Easy to understand sections with no walls of text.
+-   Content is appropriate for non-tech savvy customers as well.
+-   Links & buttons invite the customer to explore further.
+-   The website should elicit a positive response and make the customer excited to visit in person.
 
-2. Is the content relevant?
-    -   Easy to understand articles with no walls of text.
-    -   Content is appropriate for non-tech savvy customers as well.
-    -   Links & buttons invite the customer to explore further.
+### User Stories:
 
-3. Is the technology appropriate?
-    -   The site is written in HTML and CSS, and some Bootstrap elements which assist in creating a mobile-first layout. The site will be developed as minimum viable product. Future releases will introduce additional features and functionality to enhance the user experience further.
+Below are the user stories the completion of which will mark a success from the customer's perspective: 
+
+- As a new customer I would like to learn about The Hexen Hut and what it is.
+- As a new customer I would like to know where the bar is located.
+- As a new/returning customer I would like to read about what other people's experience visiting the bar is.
+- As a new/returning customer I would like to see what food & drinks the bar offers.
+- As a new/returning customer I would like to find out more about the events held at the bar.
+- As a new/returning customer I would like to sign-up for an upcoming event.
+- As a new/returning customer I am looking to submit an idea, suggestion, question or feedback.
 
 ---
 
 ### **Scope**
 
-#### Identified Content Requirements:
-- Relevant dynamic images across site;
-- Fonts to match site theme;
+#### Identified Content Requirements for MVP:
+- Relevant, high resolution dynamic, images across site;
+- Fonts to match site style;
 - Complementing color scheme;
 - Information about the bar;
-- Menu listing for Food & Drinks;
-- FAQ contents;
+- Menu list for Food & Drinks;
+- FAQ list;
+- Events list;
+- About Us content;
 
-#### Identified Feature Requirements:
-- Responsive website;
+#### Identified Feature Requirements for MVP:
 - Dropdown navigation for tablets and mobile phones;
 - Links to Social Media;
 - Google Maps API;
 - Sign-up Modal for Events;
 - Feedback Form
 - Accordeon for cocktails list due to text quantity;
+- Carrousel for Events page;
 
 ---
 
 ### **Structure**
 
-![Website Architecture](/assets/imgs/Website%20Architecture1.png)
+![Website Architecture](assets\imgs\website-architecture.png)
 
 ---
 
@@ -122,17 +121,15 @@ For The Hexen Hut, I wanted to create something that does not necessarily confor
 ### **Surface**
 
 #### Color Palette:
--   Picked initially:
-![The Hexen Hut - Color Palet (Initial)](/assets/imgs/The%20Hexen%20Hut%20-%20Color%20Palette.png)
+-   Picked prior to any styling on the website:
+![The Hexen Hut - Color Palet (Initial)](assets\imgs\the-hexen-hut--color-palette.png)
 -   Evolved to (if applicable): N/A
 
 #### Initial Design Ideas:
--   Full screen landing page emulating start screen of a video game.
--   Header & Footer shared (except landing page)
--   Simulate 3D feeling by using shadows and section layering
--   Information is presented on medium-opacity light & dark card-style containers.
-
-#### Final Design:
+-   Full screen landing page with title & menu.
+-   Header & Footer shared across pages (except landing page)
+-   Simulate depth feeling by using shadows and section layering
+-   Information is presented on medium-opacity light card-style containers with dark font on a dark (body) background.
 
 ---
 
@@ -172,7 +169,7 @@ For The Hexen Hut, I wanted to create something that does not necessarily confor
 
 ## 7. Credits
 [`Back To Top`](#table-of-contents)
-1. Meltdown bar - London UK - text content used in [About Us]() & [Events]() pages) https://www.meltdown.bar
+1. [Meltdown](https://www.meltdown.bar) bar - London, UK - text content used in [About Us]() & [Events]() pages .
 
 
 ---
@@ -180,6 +177,6 @@ For The Hexen Hut, I wanted to create something that does not necessarily confor
 ## 8. Issues & Change Log
 | ID |Description |Status |
 |---|---|---|
-|0 | Writing this README is much bigger of a challenge than initially perceived. | Panicked - Ongoing|
+|0 | Writing this README is bigger of a challenge than initially perceived. | Panicked - Ongoing|
 |1 | README file - Website Architecture image top whitespace. | Fixed |
 |2 | After scouring the internet for potential content (text) to include I came to the conclusion that my initial idea of a coders + gaming bar is a bit too specific as they generally have different goal. As I am not much of a content author (for now) I have done a quick pivot towards having the bar be gaming only. |N/A|
