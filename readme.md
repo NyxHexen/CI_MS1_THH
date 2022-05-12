@@ -103,7 +103,7 @@ Below are the user stories the completion of which will mark a success from the 
 
 ### **Structure**
 
-![Website Architecture](assets\imgs\website-architecture.png)
+![Website Architecture](./assets/imgs/website-architecture.png)
 
 ---
 
@@ -122,7 +122,7 @@ Below are the user stories the completion of which will mark a success from the 
 
 #### Color Palette:
 -   Picked prior to any styling on the website:
-![The Hexen Hut - Color Palet (Initial)](assets\imgs\the-hexen-hut--color-palette.png)
+![The Hexen Hut - Color Palet (Initial)](./assets/imgs/the-hexen-hut--color-palette.png)
 -   Evolved to (if applicable): N/A
 
 #### Initial Design Ideas:
