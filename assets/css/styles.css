@@ -1,63 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
 }
 
 header {
   height: 90vh;
-  flex-wrap: wrap;
-
-  background-color: whitesmoke;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
   max-height: fit-content;
-  
   font-family: 'Press Start 2P', sans-serif;
 }
 
+/* --------------------------------------------------------- HEADER > LOGO */
+
 .logo-container {
   height: fit-content;
-  position: absolute;
   text-align: center;
   top: 0;
   left: 0;
   width: 100vw;
-  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
-  z-index: 2;
-
 }
 
 .logo {
   height: fit-content;
-  line-height: 5rem;
-  font-size: 3rem;
+  line-height: 6rem;
+  font-size: clamp(4.5rem, 10vw, 7rem);
   margin-top: 3rem;
   color: #fff;
 }
 
 .slogan-container {
   text-align: center;
-  z-index: 2;
 }
 
 .opaque-radial-overlay {
-  background: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
+  background: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)),
+  linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);;
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  transition: 20s ease;
+  pointer-events: none;
+  z-index: -1;
 }
 
 /* --------------------------------------------------------- HEADER > NAV */
@@ -65,11 +57,16 @@ header {
 #nav {
   position: relative;
   display: block;
-  z-index: 2;
+  z-index: 1;
 }
 
 #nav li {
   list-style: none;
+}
+
+#nav ul {
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-button {
@@ -97,7 +94,7 @@ footer {
   position: fixed;
   bottom: 0;
   right: 0;
-  height: 10vh
+  height: 20vh
 }
 
 /* ----------------------------------------------- MEDIA QUERIES */
@@ -109,7 +106,7 @@ footer {
 
 @media (min-width: 768px) {
   .logo {
-    font-size: 7rem;
     margin-top: 10rem;
+    line-height: 7rem;
   }
 }
