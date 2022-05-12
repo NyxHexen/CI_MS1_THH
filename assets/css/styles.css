@@ -6,15 +6,10 @@
 }
 
 header {
-  overflow: hidden;
-  max-height: fit-content;
-  font-family: 'Press Start 2P', sans-serif;
-}
+  height: 90vh;
+  flex-wrap: wrap;
 
-.header-container {
-  height: 95vh;
-
-  background-color: black;
+  background-color: whitesmoke;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -24,19 +19,21 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  max-height: fit-content;
+  
+  font-family: 'Press Start 2P', sans-serif;
 }
 
 .logo-container {
-  height: 20vh;
-  display: flex;
+  height: fit-content;
   position: absolute;
-  justify-content: center;
+  text-align: center;
   top: 0;
   left: 0;
-  height: 5rem;
   width: 100vw;
   background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
-  z-index: 5;
+  z-index: 2;
 
 }
 
@@ -44,10 +41,13 @@ header {
   height: fit-content;
   line-height: 5rem;
   font-size: 3rem;
-  top: 0;
-  left: 50%;
   margin-top: 3rem;
   color: #fff;
+}
+
+.slogan-container {
+  text-align: center;
+  z-index: 2;
 }
 
 .opaque-radial-overlay {
@@ -62,12 +62,13 @@ header {
 
 /* --------------------------------------------------------- HEADER > NAV */
 
-.nav-container {
+#nav {
   position: relative;
   display: block;
+  z-index: 2;
 }
 
-.nav-container li {
+#nav li {
   list-style: none;
 }
 
@@ -83,16 +84,6 @@ header {
   box-shadow: inset 0.4rem 0.4rem 0.4rem rgba(255, 255, 255, .4), inset -0.4rem -0.4rem 0.4rem rgba(0, 0, 0, .4);
 }
 
-.nav-button:hover a,
-a:focus {
-  animation: floating-text 1500ms ease alternate infinite;
-}
-
-.coven-button:hover a,
-a:focus {
-  animation: special-floating-text 1500ms ease alternate infinite;
-}
-
 .nav-link {
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -106,7 +97,7 @@ footer {
   position: fixed;
   bottom: 0;
   right: 0;
-  height: 5vh
+  height: 10vh
 }
 
 /* ----------------------------------------------- MEDIA QUERIES */
@@ -120,9 +111,5 @@ footer {
   .logo {
     font-size: 7rem;
     margin-top: 10rem;
-  }
-
-  .logo-container {
-    height: 22.5rem;
   }
 }
