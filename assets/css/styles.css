@@ -9,40 +9,38 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: #bbb;
+  width: 100%;
+  height: 100%;
 }
 
 header {
-  height: 90vh;
-  max-height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100vh;
   font-family: 'Press Start 2P', sans-serif;
 }
 
 /* --------------------------------------------------------- HEADER > LOGO */
 
-.logo-container {
-  height: fit-content;
-  text-align: center;
-  top: 0;
-  left: 0;
-  width: 100vw;
-}
-
 .logo {
-  height: fit-content;
-  line-height: 6rem;
-  font-size: clamp(4.5rem, 10vw, 7rem);
-  margin-top: 3rem;
+  height: 30%;
   color: #fff;
+  padding-top: min(10%, 8rem);
 }
 
-.slogan-container {
+.logo h1 {
+  line-height: 100%;
+  font-size: min(18vw, 8rem);
   text-align: center;
+  text-shadow: 0 0 0.2em rgb(0 0 0 / 40%), 0 0.2em 0.1em rgb(0 0 0 / 40%);
 }
 
-.opaque-radial-overlay {
-  background: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)),
-  linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);;
+.overlay {
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
   position: absolute;
   top: 0;
   left: 0;
@@ -50,6 +48,20 @@ header {
   width: 100%;
   pointer-events: none;
   z-index: -1;
+}
+
+
+
+/* --------------------------------------------------------- HEADER > SLOGAN */
+
+.slogan {
+  text-align: center;
+  margin-top: 6vw;
+}
+
+.slogan h2 {
+  font-size: min(6vw, 3rem);
+  text-shadow: 0 0 0.2em rgb(0 0 0 / 40%), 0 0.2em 0.1em rgb(0 0 0 / 40%);
 }
 
 /* --------------------------------------------------------- HEADER > NAV */
@@ -60,53 +72,119 @@ header {
   z-index: 1;
 }
 
-#nav li {
-  list-style: none;
-}
-
 #nav ul {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
-.nav-button {
-  display: flex;
-  background: #3b3b3b7a;
-  border: 1px solid #000000;
-  justify-content: center;
-  margin-bottom: 1rem;
-
-  -moz-box-shadow: inset 0.4rem 0.4rem 0.4rem rgba(255, 255, 255, .4), inset -0.4rem -0.4rem 0.4rem rgba(0, 0, 0, .4);
-  -webkit-box-shadow: inset 0.4rem 0.4rem 0.4rem rgba(255, 255, 255, .4), inset -0.4rem -0.4rem 0.4rem rgba(0, 0, 0, .4);
-  box-shadow: inset 0.4rem 0.4rem 0.4rem rgba(255, 255, 255, .4), inset -0.4rem -0.4rem 0.4rem rgba(0, 0, 0, .4);
+#nav li {
+  list-style: none;
+  text-align: center;
+  padding: 0.8rem 1.5rem;
 }
 
-.nav-link {
+#nav a {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  font-size: 2rem;
-  padding: 0.9rem 2rem 0.75rem;
+  font-size: min(7vw, 3rem);
   text-shadow: 0 0 0.2em rgb(0 0 0 / 40%), 0 0.2em 0.1em rgb(0 0 0 / 40%);
+}
+
+/* Button style from https://getcssscan.com/css-buttons-examples "Button-85" */
+.nav-button {
+  margin-bottom: 1em;
+  padding: 0.6em 2em;
+  
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+/* Gradient generated via https://learnui.design/tools/gradient-generator.html */
+.nav-button::before {
+  content: "";
+  background: linear-gradient(45deg,
+    #9dff00,
+    #35ffe1,
+    #9a6bff,
+    #9a6bff,
+    #35ffe1,
+    #9dff00
+    );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button 40s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.nav-button::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.nav-button:hover .nav-button--anchor {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: bouncing-links;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+
+  transform-origin: bottom;
 }
 
 /* ------------------------------------------------------ FOOTER */
 footer {
-  position: fixed;
   bottom: 0;
-  right: 0;
-  height: 20vh
+  height: 10%;
 }
 
-/* ----------------------------------------------- MEDIA QUERIES */
-@media (max-width: 400px) {
-  .opaque-radial-overlay {
-    background: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3));
+/* ------------------------------------------------------ ANIMATIONS */
+@keyframes glowing-button {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
   }
 }
 
-@media (min-width: 768px) {
-  .logo {
-    margin-top: 10rem;
-    line-height: 7rem;
-  }
+@keyframes bouncing-links {
+  0%   { transform: scale(1,1)      translateY(0); }
+  10%  { transform: scale(1.1,.9)   translateY(0); }
+  30%  { transform: scale(.9,1.1)   translateY(-1.1rem); }
+  50%  { transform: scale(1.05,.95) translateY(0); }
+  57%  { transform: scale(1,1)      translateY(-0.2rem); }
+  64%  { transform: scale(1,1)      translateY(0); }
+  100% { transform: scale(1,1)      translateY(0); }
 }
+
+/* ------------------------------------------------------ MEDIA QUERIES */
