@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #bbb;
+  background-color: rgb(172, 172, 172);
   width: 100%;
   height: 100%;
 }
@@ -36,7 +36,20 @@ header {
   line-height: 100%;
   font-size: min(18vw, 8rem);
   text-align: center;
-  text-shadow: 0 0 0.2em rgb(0 0 0 / 40%), 0 0.2em 0.1em rgb(0 0 0 / 40%);
+
+  /* 3D text-shadow effect from MarkDotto.com */
+  text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0, 0, 0, .1),
+    0 0 5px rgba(0, 0, 0, .1),
+    0 1px 3px rgba(0, 0, 0, .3),
+    0 3px 5px rgba(0, 0, 0, .2),
+    0 5px 10px rgba(0, 0, 0, .25),
+    0 10px 10px rgba(0, 0, 0, .2),
+    0 20px 20px rgba(0, 0, 0, .15);
 }
 
 .overlay {
@@ -61,7 +74,15 @@ header {
 
 .slogan h2 {
   font-size: min(6vw, 3rem);
-  text-shadow: 0 0 0.2em rgb(0 0 0 / 40%), 0 0.2em 0.1em rgb(0 0 0 / 40%);
+
+  text-shadow: 0px 3px 0px #36256e,
+  0 6px 1px rgba(0, 0, 0, .1),
+  0 0 5px rgba(0, 0, 0, .1),
+  0 1px 3px rgba(0, 0, 0, .3),
+  0 3px 5px rgba(0, 0, 0, .2),
+  0 5px 10px rgba(0, 0, 0, .25),
+  0 10px 10px rgba(0, 0, 0, .2),
+  0 20px 20px rgba(0, 0, 0, .15);
 }
 
 /* --------------------------------------------------------- HEADER > NAV */
@@ -89,14 +110,22 @@ header {
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: min(7vw, 3rem);
-  text-shadow: 0 0 0.2em rgb(0 0 0 / 40%), 0 0.2em 0.1em rgb(0 0 0 / 40%);
+
+  text-shadow: 0px 3px 0px #858585,
+  0 6px 1px rgba(0, 0, 0, .1),
+  0 0 5px rgba(0, 0, 0, .1),
+  0 1px 3px rgba(0, 0, 0, .3),
+  0 3px 5px rgba(0, 0, 0, .2),
+  0 5px 10px rgba(0, 0, 0, .25),
+  0 10px 10px rgba(0, 0, 0, .2),
+  0 20px 20px rgba(0, 0, 0, .15);;
 }
 
 /* Button style from https://getcssscan.com/css-buttons-examples "Button-85" */
 .nav-button {
   margin-bottom: 1em;
   padding: 0.6em 2em;
-  
+
   border: none;
   outline: none;
   color: rgb(255, 255, 255);
@@ -114,13 +143,12 @@ header {
 .nav-button::before {
   content: "";
   background: linear-gradient(45deg,
-    #9dff00,
-    #35ffe1,
-    #9a6bff,
-    #9a6bff,
-    #35ffe1,
-    #9dff00
-    );
+      #9dff00,
+      #35ffe1,
+      #9a6bff,
+      #9a6bff,
+      #35ffe1,
+      #9dff00);
   position: absolute;
   top: -2px;
   left: -2px;
@@ -177,14 +205,36 @@ footer {
   }
 }
 
+
+/* Animation from https://css-tricks.com/making-css-animations-feel-natural/ customised to fit */
 @keyframes bouncing-links {
-  0%   { transform: scale(1,1)      translateY(0); }
-  10%  { transform: scale(1.1,.9)   translateY(0); }
-  30%  { transform: scale(.9,1.1)   translateY(-1.1rem); }
-  50%  { transform: scale(1.05,.95) translateY(0); }
-  57%  { transform: scale(1,1)      translateY(-0.2rem); }
-  64%  { transform: scale(1,1)      translateY(0); }
-  100% { transform: scale(1,1)      translateY(0); }
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+
+  10% {
+    transform: scale(1.1, .9) translateY(0);
+  }
+
+  30% {
+    transform: scale(.9, 1.1) translateY(-1.1rem);
+  }
+
+  50% {
+    transform: scale(1.05, .95) translateY(0);
+  }
+
+  57% {
+    transform: scale(1, 1) translateY(-0.2rem);
+  }
+
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
 }
 
 /* ------------------------------------------------------ MEDIA QUERIES */
