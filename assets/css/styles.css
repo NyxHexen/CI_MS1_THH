@@ -9,27 +9,30 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Press Start 2P', sans-serif;
 }
 
 body {
-  margin: 0 1em;
   line-height: 1.5;
   font-family: 'Kalam', sans-serif;
   font-weight: 400;
   background-color: rgba(34, 34, 34, 0.9);
 }
 
-.body--background {
-  background-color: #fff;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
+/* ------------------------------------------------------------------------------------------------------  HEADER */
+
+header {
+  position: relative;
+  height: 100vh;
+  font-family: 'Press Start 2P', sans-serif;
   overflow: hidden;
-  z-index: -1;
+
+  display: grid;
+  align-content: space-evenly;
 
   box-shadow:
     0 11px 1px rgb(0 0 0 / 10%),
@@ -41,7 +44,17 @@ body {
     0 25px 20px rgb(0 0 0 / 15%);
 }
 
-.body--background::before {
+.header__background {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.header__background::before {
   content: "";
   position: absolute;
   width: 300%;
@@ -51,7 +64,7 @@ body {
   animation: bg-scrolling 120s alternate infinite;
 }
 
-.body--background::after {
+.header__background::after {
   content: "";
   background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
   position: absolute;
@@ -61,18 +74,6 @@ body {
   width: 110%;
   pointer-events: none;
   z-index: 1;
-}
-
-
-/* --------------------------------------------------------- HEADER */
-
-header {
-  height: 100vh;
-  font-family: 'Press Start 2P', sans-serif;
-  overflow: hidden;
-
-  display: grid;
-  align-content: space-evenly;
 }
 
 /* --------------------------------------------------------- HEADER > LOGO */
@@ -111,6 +112,7 @@ header {
   text-align: center;
   width: 100%;
   margin-bottom: 0.5rem;
+  z-index: 1;
 }
 
 .slogan h2 {
@@ -228,17 +230,17 @@ header {
   transform-origin: bottom;
 }
 
-/* ------------------------------------------------------ FOOTER */
+/* ---------------------------------------------------------------------------------------------------  FOOTER */
 footer {
-  bottom: 0;
+  position: relative;
   height: 100%;
-  margin: 3rem 1rem 2rem;
+  width: 100%;
 
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  align-content: space-evenly;
-  justify-items: center;
+  justify-items: stretch;
+  align-items: center;
 }
 
 footer * {
@@ -246,36 +248,71 @@ footer * {
 }
 
 footer>* {
-  margin-bottom: 1.5rem;
-  padding: 1rem 0;
+  margin: 1.5rem 1rem;
 
-  background-color: rgba(204,204,204, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  height: 80%;
 
+  /* From https://css.glass */
+  background: rgba(190, 190, 190, 0.6);
+  border-radius: 16px;
   box-shadow: 
-  0 1px 2px rgba(204, 204, 204, 0.5),
-  0 2px 3px rgba(201, 201, 201, 0.5),
-  0 3px 4px rgba(187, 187, 187, 0.5),
-  0 4px 5px rgba(185, 185, 185, 0.5),
-  0 5px 6px rgba(170, 170, 170, 0.5);
+  0 6px 1px rgba(100, 100, 100, .1),
+  0 0 5px rgba(100, 100, 100, .1),
+  0 1px 3px rgba(100, 100, 100, .3),
+  0 3px 5px rgba(100, 100, 100, .2),
+  0 5px 10px rgba(100, 100, 100, .25),
+  0 10px 10px rgba(100, 100, 100, .2),
+  0 20px 20px rgba(100, 100, 100, .15);;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  justify-content: space-evenly;
+}
+
+footer>*>* {
+  margin: 0.3rem 0;
 }
 
 footer h3 {
   color: rgb(255, 255, 255);
-  font-size: 1.5rem;
+  font-size: 2rem;
 
-  text-shadow: 
-  0 1px 0 rgb(170, 170, 170),
-  0 2px 0 rgb(190, 190, 190),
-  0 3px 0 rgb(170, 170, 170),
-  0 6px 1px rgba(0, 0, 0, .1),
-  0 0 5px rgba(0, 0, 0, .1),
-  0 1px 3px rgba(0, 0, 0, .3),
-  0 3px 5px rgba(0, 0, 0, .2),
-  0 5px 10px rgba(0, 0, 0, .25),
-  0 10px 10px rgba(0, 0, 0, .2),
-  0 20px 20px rgba(0, 0, 0, .15);
+  text-shadow:
+    0 1px 0 rgb(170, 170, 170),
+    0 2px 0 rgb(190, 190, 190),
+    0 3px 0 rgb(170, 170, 170),
+    0 6px 1px rgba(0, 0, 0, .1),
+    0 0 5px rgba(0, 0, 0, .1),
+    0 1px 3px rgba(0, 0, 0, .3),
+    0 3px 5px rgba(0, 0, 0, .2),
+    0 5px 10px rgba(0, 0, 0, .25),
+    0 10px 10px rgba(0, 0, 0, .2),
+    0 20px 20px rgba(0, 0, 0, .15);
 }
+
+.footer__background {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  backdrop-filter: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+
+  overflow: hidden;
+
+  background-color: #fff;
+  position: absolute;
+  z-index: -1;
+
+  background-image: url(../images/pixel-gradient-footer.png);
+  background-position: center;
+  background-size: cover;
+}
+
+/* ------------------------------------------------------- FOOTER > JOIN US */
 
 .join-us {
   display: flex;
@@ -283,25 +320,46 @@ footer h3 {
   align-items: stretch;
 }
 
-.join-us * {
-  margin-bottom: 0.6rem;
-}
-
-.footer--img {
-  width: 80%;
-  position: absolute;
-}
-
 .join-us h4 {
   font-size: 1.1rem;
   font-weight: 400;
+}
+
+.join-us p {
+  margin: 0 1rem;
 }
 
 .join-us table {
   font-size: 1.1rem;
 }
 
-/* ------------------------------------------------------ ANIMATIONS */
+/* ------------------------------------------------------- FOOTER > CONTACT US */
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.contact-us ul {
+  list-style: none;
+}
+
+/* ------------------------------------------------------- FOOTER > GOOGLE MAP */
+
+.iframe__container {
+  display: flex;
+  padding: 0;
+  overflow: hidden;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/* ---------------------------------------------------------------------------------------------------  ANIMATIONS */
 
 @keyframes floating-text {
   100% {
@@ -392,6 +450,34 @@ footer h3 {
   #nav {
     grid-column: 5/7;
     grid-row: 3;
+  }
+
+  footer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+  }
+
+  footer>* {
+    margin: 2rem 2rem 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .join-us {
+    grid-column: 1;
+  }
+
+  .iframe__container {
+    grid-column: 2;
+  }
+
+  .contact-us {
+    grid-column: 3;
+  }
+
+  .footer__background {
+    background-repeat: repeat-x;
+    background-size: contain;
   }
 }
 
