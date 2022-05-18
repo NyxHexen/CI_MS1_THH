@@ -144,7 +144,6 @@ header {
 #nav li {
   list-style: none;
   text-align: center;
-  /* padding: 0.8rem 1.5rem; */
 }
 
 #nav a {
@@ -488,6 +487,11 @@ iframe {
     padding: 1rem 0;
   }
 
+  .footer__background {
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
+
   .join-us {
     grid-column: 1;
   }
@@ -498,11 +502,6 @@ iframe {
 
   .contact-us {
     grid-column: 3;
-  }
-
-  .footer__background {
-    background-repeat: repeat-x;
-    background-size: contain;
   }
 }
 
