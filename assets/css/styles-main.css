@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 *,
 *::before,
@@ -18,7 +18,7 @@ h4 {
 
 body {
   line-height: 1.5;
-  font-family: 'Kalam', sans-serif;
+  font-family: 'Play', sans-serif;
   font-weight: 400;
   background-color: rgba(34, 34, 34, 0.9);
 }
@@ -60,8 +60,8 @@ header {
   width: 300%;
   height: 300%;
 
-  background: url(../images/1.png) repeat;
-  animation: bg-scrolling 120s alternate infinite;
+  background: url(../images/pattern-hexagrams.png) repeat;
+  animation: bg-scrolling 240s alternate infinite;
 }
 
 .header__background::after {
@@ -86,7 +86,7 @@ header {
 .logo h1 {
   color: #fff;
   line-height: 5rem;
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
   text-transform: uppercase;
   animation: floating-text 1500ms alternate infinite;
@@ -116,15 +116,14 @@ header {
 }
 
 .slogan h2 {
-  font-size: 1.250rem;
-  text-shadow: 0px 3px 0px #6b4ad9,
-    0 6px 1px rgba(0, 0, 0, .1),
-    0 0 5px rgba(0, 0, 0, .1),
-    0 1px 3px rgba(0, 0, 0, .3),
-    0 3px 5px rgba(0, 0, 0, .2),
-    0 5px 10px rgba(0, 0, 0, .25),
-    0 10px 10px rgba(0, 0, 0, .2),
-    0 20px 20px rgba(0, 0, 0, .15);
+  font-size: 1.4rem;
+  text-shadow: 2px 2px #9a6bff,
+  3px 3px #000000;
+}
+
+.slogan span {
+  text-shadow: 2px 2px #9dff00,
+  3px 3px #000000;
 }
 
 /* --------------------------------------------------------- HEADER > NAV */
@@ -153,9 +152,7 @@ header {
   text-decoration: none;
   font-size: 1.75rem;
 
-  text-shadow: 0 1px 0 #bbbaba,
-    0 2px 0 #c9c9c9,
-    0 3px 0 #bbb,
+  text-shadow: 
     0 6px 1px rgba(0, 0, 0, .1),
     0 0 5px rgba(0, 0, 0, .1),
     0 1px 3px rgba(0, 0, 0, .3),
@@ -276,7 +273,7 @@ footer>*>* {
 
 footer h3 {
   color: rgb(255, 255, 255);
-  font-size: 2rem;
+  font-size: 2.1rem;
 
   text-shadow:
     0 1px 0 rgb(170, 170, 170),
@@ -307,6 +304,7 @@ footer h3 {
   position: absolute;
   z-index: -1;
 
+  /* BG image from https://pixel-gradient-maker.glitch.me/ */
   background-image: url(../images/pixel-gradient-footer.png);
   background-position: center;
   background-size: cover;
@@ -321,15 +319,17 @@ footer h3 {
 }
 
 .join-us h3 {
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 .join-us p {
-  margin: 0 1rem;
+  margin: 0.3rem 1rem;
+  font-size: 0.9rem;
 }
 
 .join-us table {
   font-size: 1.1rem;
+  margin: 0.5rem 1rem 1rem;
 }
 
 /* ------------------------------------------------------- FOOTER > CONTACT US */
@@ -342,6 +342,32 @@ footer h3 {
 
 .contact-us ul {
   list-style: none;
+}
+
+.contact-us li {
+  display: inline-block;
+  font-size: 1.3rem;
+}
+
+.contact-us span {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+
+/* a:visited first then a:active, otherwise the color gets set by active and then unset by visited */
+.contact-us a:visited {
+  color: unset;
+}
+
+.contact-us a:active {
+  color: #9dff00;
+  text-shadow: 0 0 12px black;
+}
+
+.contact-us i {
+  font-size: 2.5rem;
+  margin: 0 0.5rem;
 }
 
 /* ------------------------------------------------------- FOOTER > GOOGLE MAP */
@@ -447,7 +473,7 @@ iframe {
   }
 
   #nav {
-    grid-column: 5/7;
+    grid-column: 4/7;
     grid-row: 3;
   }
 
@@ -480,6 +506,41 @@ iframe {
   }
 }
 
+/* Shorter phones such as iPhone SE */
+@media (max-height: 625px) {
+  .slogan h2 {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  #nav a {
+    font-size: 1.5rem;
+  }
+}
+
+/* Specifically for Galaxy Fold */
+@media (max-width: 350px) {
+  .logo h1 {
+    font-size: 3.2rem;
+  }
+
+  #nav a {
+    font-size: 1.5rem;
+  }
+
+  .slogan h2 {
+    font-size: 1.2rem;
+  }
+
+  .join-us h3 {
+    font-size: 1.5rem;
+  }
+
+  .join-us table {
+    font-size: 1rem;
+  }
+}
+
 @media (min-width: 390px) {
   .logo h1 {
     font-size: 4.5rem;
@@ -496,8 +557,8 @@ iframe {
 
 @media (min-width: 768px) {
   .logo h1 {
-    font-size: 6rem;
-    line-height: 6rem;
+    font-size: 7rem;
+    line-height: 8rem;
   }
 
   .slogan h2 {
@@ -505,7 +566,7 @@ iframe {
   }
 
   #nav a {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -516,13 +577,3 @@ iframe {
   }
 }
 
-@media (max-height: 625px) {
-  .slogan h2 {
-    font-size: 1rem;
-    padding-bottom: 0.5rem;
-  }
-
-  #nav a {
-    font-size: 1.5rem;
-  }
-}
