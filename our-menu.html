@@ -12,11 +12,12 @@
 <body>
     <header>
         <a href="main.html" class="back-button" aria-label="Return to Main Page">
-            <i class="fa-solid fa-arrow-left"></i> Return to Main Page</a>
-        <div id="logo">
+            <i class="fa-solid fa-arrow-left"></i><span>Return to Main Page</span></a>
+        <div class="logo">
             <h1>The Hexen Hut</h1>
         </div>
         <nav id="nav" aria-label="Navigation links">
+            <i class="fa-solid fa-burger"></i>
             <ul>
                 <li>
                     <a href="our-menu.html" active>Our Menu</a>
@@ -35,6 +36,7 @@
     </header>
     <h2>Food and Drinks</h2>
     <section id="drinks-menu">
+        <div class="sm-container">
         <section class="cold-drinks">
             <h3>Cold Drinks</h3>
             <table>
@@ -109,12 +111,13 @@
                 </tr>
             </table>
         </section>
+    </div>
         <section class="cocktail-drinks">
             <h3>Cocktails</h3>
             <!-- SASS accordion from https://codepen.io/raubaca/pen/PZzpVe translated into pure CSS and customized -->
-            <div class="cocktail-accordion">
+            <div class="cocktail-drinks--accordion">
                 <div class="tab">
-                    <input type="radio" name="rd" id="rd1">
+                    <input type="radio" name="rd" id="rd1" checked aria-checked="true">
                     <label class="tab-label" for="rd1">Rainbow Road <span>£X.XX</span></label>
                     <div class="tab-content">
                         (blue curacao, orange juice, vodka, gin, grenadine, rum)
@@ -154,10 +157,6 @@
                     <div class="tab-content">
                         (blue curacao, orange juice, vodka, gin, grenadine, rum)
                     </div>
-                </div>
-                <div class="tab">
-                    <input type="radio" id="rd" name="rd7">
-                    <label for="rd3" class="tab-close">Close others &times;</label>
                 </div>
             </div>
             <div class="cocktail-drinks--table">
@@ -199,7 +198,7 @@
     </section>
     <section id="food-menu">
         <section class="food-menu-peckish">
-            <caption>Peckish?...</caption>
+            <caption><h3>Peckish?...</h3></caption>
             <table>
                 <tr>
                     <td>Crisps</td>
@@ -214,11 +213,11 @@
                     <td>£X.XX</td>
                 </tr>
                 <tr>
-                    <td>Pizza Slice</td>
+                    <td>Pizza Slices</td>
                     <td>£X.XX</td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td>Sandwiches</td>
                     <td>£X.XX</td>
                 </tr>
             </table>
@@ -227,18 +226,18 @@
             <h3>- OR -</h3>
         </div>
         <section class="food-menu-hungry">
-            <caption>...Hungry?</caption>
+            <caption><h3>...Hungry?</h3></caption>
             <table>
                 <tr>
-                    <td></td>
+                    <td>Hamburger</td>
                     <td>£X.XX</td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td>Cheeseburger</td>
                     <td>£X.XX</td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td>12" Pizza</td>
                     <td>£X.XX</td>
                 </tr>
                 <tr>

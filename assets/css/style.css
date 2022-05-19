@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 :root {
-    --bg-clr: #222;
+    --bg-clr-a: #222;
+    --bg-clr-b: #2a1b44;
     --prm-clr: #9a6bff;
     --accnt-clr: #9dff00;
 }
@@ -21,56 +22,157 @@ h3,
 h4 {
     font-family: 'Press Start 2P', sans-serif;
     text-align: center;
+    color: white;
 }
 
 body {
     line-height: 1.5;
     font-family: 'Play', sans-serif;
     font-weight: 400;
-    background-color: var(--bg-clr);
+    background-color: var(--bg-clr-b);
 
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 1fr;
 }
 
-header {
-    background-color: white;
+/* General Styles */
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    /* Position w/in parent */
-    grid-column: 1/13;
-    grid-row: 1;
+section {
+    padding: 1rem;
 }
 
 h2 {
+    font-size: 2rem;
+
     /* Spacing */
     margin-top: 2rem;
 
     /* Position w/in parent */
-    grid-column: 1/13;
+    /* grid-column: 1/13; */
     grid-row: 2;
+
+    text-shadow:
+    0 6px 1px rgba(0, 0, 0, .1),
+    0 0 5px rgba(0, 0, 0, .1),
+    0 1px 3px rgba(0, 0, 0, .3),
+    0 3px 5px rgba(0, 0, 0, .2),
+    0 5px 10px rgba(0, 0, 0, .25),
+    0 10px 10px rgba(0, 0, 0, .2),
+    0 20px 20px rgba(0, 0, 0, .15);
 }
+
+h3 {
+    font-size: 1.5rem;
+
+    text-shadow:
+    0 6px 1px rgba(0, 0, 0, .1),
+    0 0 5px rgba(0, 0, 0, .1),
+    0 1px 3px rgba(0, 0, 0, .3),
+    0 3px 5px rgba(0, 0, 0, .2),
+    0 5px 10px rgba(0, 0, 0, .25),
+    0 10px 10px rgba(0, 0, 0, .2),
+    0 20px 20px rgba(0, 0, 0, .15);
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+/* Header & Navbar */
+
+header {
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
+    min-height: 10vh;
+
+    display: inline-block;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    /* always on top */
+
+    /* Position w/in parent */
+    grid-row: 1;
+    /* grid-column: 1/13; */
+}
+
+.back-button {
+    position: absolute;
+    top: 21%;
+    left: 5%;
+
+    color: white;
+    font-size: 2rem;
+}
+
+/* Hides .back-button text while in mobile */
+header span {
+    display: none;
+}
+
+.logo h1 {
+    margin-top: 1rem;
+
+    font-size: 3rem;
+    line-height: 3.3rem;
+
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    animation: floating-text 1500ms alternate infinite;
+  
+    /* 3D text-shadow effect from MarkDotto.com */
+    text-shadow: 0 1px 0 #ccc,
+      0 2px 0 #c9c9c9,
+      0 3px 0 #bbb,
+      0 4px 0 #b9b9b9,
+      0 5px 0 #aaa,
+      0 6px 1px rgba(0, 0, 0, .1),
+      0 0 5px rgba(0, 0, 0, .1),
+      0 1px 3px rgba(0, 0, 0, .3),
+      0 3px 5px rgba(0, 0, 0, .2),
+      0 5px 10px rgba(0, 0, 0, .25),
+      0 10px 10px rgba(0, 0, 0, .2),
+      0 20px 20px rgba(0, 0, 0, .15);
+  }
+
+/* Hamburger Icon */
+#nav i {
+    position: absolute;
+    top: 24%;
+    right: 5%;
+
+    color: white;
+    font-size: 2rem;
+}
+
+#nav ul{
+    display: none;
+}
+
+/* -------------------------------------------------------------------------------------- DRINKS-MENU */
 
 #drinks-menu {
     /* Spacing */
-    margin-top: 2rem;
+    margin: 2rem 0.5rem;
 
     /* Layout */
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
+    grid-template-columns: 1fr;
+    justify-items: stretch;
     align-content: center;
 
     /* Position w/in parent */
-    grid-column: 2/span 10;
+    /* grid-column: 2/span 10; */
     grid-row: 3/7;
+}
+
+/* Assists with grouping drinks menu elements across different device sizes */
+.sm-container {
+    padding: 0 0.5rem;
 
     /* Container style */
-    background: rgba(190, 190, 190, 0.6);
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 16px;
     box-shadow:
         0 6px 1px rgba(100, 100, 100, .1),
@@ -80,14 +182,7 @@ h2 {
         0 5px 10px rgba(100, 100, 100, .25),
         0 10px 10px rgba(100, 100, 100, .2),
         0 20px 20px rgba(100, 100, 100, .15);
-    ;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
     border: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-#drinks-menu>* {
-    padding: 1rem;
 }
 
 .cold-drinks {
@@ -108,14 +203,27 @@ h2 {
 }
 
 .cocktail-drinks {
-    grid-column: 2/span 3;
+    margin-top: 2rem;
     order: 2;
+    padding: 0;
+}
+
+.cocktail-drinks h3 {
+    margin-bottom: 0.5rem;
+}
+
+.cocktail-drinks td:nth-child(1) {
+    width: 15%;
 }
 
 .cocktail-drinks td:nth-child(2) {
-    width: 100%;
+    width: 70%;
 }
 
+/* --table shows up in landscape; --accordion in mobile */
+.cocktail-drinks--table {
+    display: none;
+}
 
 /*---------------------------------------------------- #drinks-menu > Cocktail Menu - Accordion */
 input {
@@ -124,11 +232,19 @@ input {
     z-index: -1;
 }
 
-.cocktail-accordion {
-    display: none;
-    border-radius: 8px;
+/* --table shows up in landscape; --accordion in mobile */
+.cocktail-drinks--accordion {
     overflow: hidden;
-    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    background: var(--accnt-clr);
+    border-radius: 16px;
+    box-shadow:
+        0 6px 1px rgba(100, 100, 100, .1),
+        0 0 5px rgba(100, 100, 100, .1),
+        0 1px 3px rgba(100, 100, 100, .3),
+        0 3px 5px rgba(100, 100, 100, .2),
+        0 5px 10px rgba(100, 100, 100, .25),
+        0 10px 10px rgba(100, 100, 100, .2),
+        0 20px 20px rgba(100, 100, 100, .15);
 }
 
 .tab {
@@ -141,13 +257,13 @@ input {
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    background: navy;
+    background: var(--prm-clr);
     font-weight: bold;
     cursor: pointer;
 }
 
 .tab-label:hover {
-    background: darken(navy, 10%);
+    background: darken(var(--prm-clr), 10%);
 }
 
 .tab-label::after {
@@ -161,7 +277,7 @@ input {
 .tab-content {
     max-height: 0;
     padding: 0 1em;
-    color: navy;
+    color: #000;
     background: white;
     transition: all .35s;
 }
@@ -171,16 +287,16 @@ input {
     justify-content: flex-end;
     padding: 1em;
     font-size: 0.75em;
-    background: navy;
+    background: var(--prm-clr);
     cursor: pointer;
 }
 
 .tab-close:hover {
-    background: darken(navy, 10%);
+    background: darken(var(--prm-clr), 10%);
 }
 
 input:checked+.tab-label {
-    background: darken(navy, 10%);
+    background: darken(var(--prm-clr), 10%);
 }
 
 input:checked+.tab-label::after {
@@ -192,6 +308,9 @@ input:checked~.tab-content {
     padding: 1em;
 }
 
+input:checked~.tab-label {
+    color: #000;
+}
 
 /* ------------------------------------------------------------------------- #food-menu */
 #food-menu {
@@ -200,12 +319,12 @@ input:checked~.tab-content {
 
     /* Layout */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 
     /* Position w/in parent */
-    grid-column: 3/11;
+    /* grid-column: 3/11; */
     grid-row: 8/10;
 
     /* Container style */
@@ -228,23 +347,15 @@ input:checked~.tab-content {
 
 /* ---------------------------------------------------------------------------------------------------  FOOTER */
 footer {
-    /* Spacing */
-    margin-top: 2rem;
-
     position: relative;
     height: 100%;
     width: 100%;
 
-    /* Layout */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     justify-items: stretch;
     align-items: center;
-
-    /* Position w/in parent */
-    grid-column: 1/13;
-    grid-row: 12/14;
 }
 
 footer * {
@@ -281,7 +392,7 @@ footer>*>* {
 
 footer h3 {
     color: rgb(255, 255, 255);
-    font-size: 2.1rem;
+    font-size: 2rem;
 
     text-shadow:
         0 1px 0 rgb(170, 170, 170),
@@ -332,7 +443,7 @@ footer h3 {
 
 .join-us p {
     margin: 0.3rem 1rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .join-us table {
@@ -374,7 +485,7 @@ footer h3 {
 }
 
 .contact-us i {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     margin: 0 0.5rem;
 }
 
@@ -392,20 +503,70 @@ iframe {
     margin: 0;
 }
 
-@media (orientation: landscape) {
-    footer {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
-        align-items: center;
+/* ---------------------------------------------------------------------------------------------------  ANIMATIONS */
+
+@keyframes floating-text {
+    100% {
+        transform: translateY(-.1em);
+    }
+}
+
+/* Animation from https://getcssscan.com/css-buttons-examples "Button-85" */
+@keyframes glowing-button {
+    0% {
+        background-position: 0 0;
     }
 
-    footer>* {
-        margin: 2rem 2rem 1.5rem;
-        padding: 1rem 0;
+    50% {
+        background-position: 400% 0;
     }
 
-    .footer__background {
-        background-repeat: repeat-x;
-        background-size: contain;
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* Animation from https://css-tricks.com/making-css-animations-feel-natural/ customised to fit */
+@keyframes bouncing-links {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    30% {
+        transform: scale(.9, 1.1) translateY(-1.1rem);
+    }
+
+    50% {
+        transform: scale(1.05, .95) translateY(0);
+    }
+
+    57% {
+        transform: scale(1, 1) translateY(-0.2rem);
+    }
+
+    64% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+@keyframes bg-scrolling {
+    0% {
+        transform: translate3d(0, 0, 0)
+    }
+
+    50% {
+        transform: translate3d(-66%, -66%, 0)
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0)
     }
 }
