@@ -10,253 +10,258 @@
 </head>
 
 <body>
-    <header>
-        <a href="main.html" class="back-button" aria-label="Return to Main Page">
-            <i class="fa-solid fa-arrow-left"></i><span>Return to Main Page</span></a>
-        <div class="logo">
-            <h1>The Hexen Hut</h1>
-        </div>
-        <nav id="nav" aria-label="Navigation links">
-            <i class="fa-solid fa-burger"></i>
-            <ul>
-                <li>
-                    <a href="our-menu.html" active>Our Menu</a>
-                </li>
-                <li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">FAQ</a>
-                </li>
-                <li class="about-us--button">
-                    <a href="#">About Us</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <h2>Food and Drinks</h2>
-    <section id="drinks-menu">
-        <div class="sm-container">
-        <section class="cold-drinks">
-            <h3>Cold Drinks</h3>
-            <table>
-                <tr>
-                    <td>Coca-Cola</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td>Fanta</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td>7UP</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td>Sprite</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td>Budweiser</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td>Brewdog IPA</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td>Desperados</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td>Corona</td>
-                    <td>£X.XX</td>
-                </tr>
-            </table>
-        </section>
-        <section class="hot-drinks">
-            <h3>Hot Drinks</h3>
-            <table>
-                <tr>
-                    <td>Americano</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td>Cappuccino</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td>Latte</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td>Flat White</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td>Green Tea</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td>Black Tea</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td>Herbal Tea</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td>Mountain Tea</td>
-                    <td>£X.XX</td>
-                </tr>
-            </table>
-        </section>
-    </div>
-        <section class="cocktail-drinks">
-            <h3>Cocktails</h3>
-            <!-- SASS accordion from https://codepen.io/raubaca/pen/PZzpVe translated into pure CSS and customized -->
-            <div class="cocktail-drinks--accordion">
-                <div class="tab">
-                    <input type="radio" name="rd" id="rd1" checked aria-checked="true">
-                    <label class="tab-label" for="rd1">Rainbow Road <span>£X.XX</span></label>
-                    <div class="tab-content">
-                        (blue curacao, orange juice, vodka, gin, grenadine, rum)
-                    </div>
-                </div>
-                <div class="tab">
-                    <input type="radio" name="rd" id="rd2">
-                    <label class="tab-label" for="rd2">Rainbow Road <span>£X.XX</span></label>
-                    <div class="tab-content">
-                        (blue curacao, orange juice, vodka, gin, grenadine, rum)
-                    </div>
-                </div>
-                <div class="tab">
-                    <input type="radio" name="rd" id="rd3">
-                    <label class="tab-label" for="rd3">Rainbow Road <span>£X.XX</span></label>
-                    <div class="tab-content">
-                        (blue curacao, orange juice, vodka, gin, grenadine, rum)
-                    </div>
-                </div>
-                <div class="tab">
-                    <input type="radio" name="rd" id="rd4">
-                    <label class="tab-label" for="rd4">Rainbow Road <span>£X.XX</span></label>
-                    <div class="tab-content">
-                        (blue curacao, orange juice, vodka, gin, grenadine, rum)
-                    </div>
-                </div>
-                <div class="tab">
-                    <input type="radio" name="rd" id="rd5">
-                    <label class="tab-label" for="rd5">Rainbow Road <span>£X.XX</span></label>
-                    <div class="tab-content">
-                        (blue curacao, orange juice, vodka, gin, grenadine, rum)
-                    </div>
-                </div>
-                <div class="tab">
-                    <input type="radio" name="rd" id="rd6">
-                    <label class="tab-label" for="rd6">Rainbow Road <span>£X.XX</span></label>
-                    <div class="tab-content">
-                        (blue curacao, orange juice, vodka, gin, grenadine, rum)
-                    </div>
-                </div>
+    <div class="outer-container">
+        <header>
+            <a href="main.html" class="back-button" aria-label="Return to Main Page">
+                <i class="fa-solid fa-arrow-left"></i><span>Return to Main Page</span></a>
+            <div class="logo">
+                <h1>The Hexen Hut</h1>
             </div>
-            <div class="cocktail-drinks--table">
+            <nav class="nav" aria-label="Navigation links">
+                <button class="nav--toggle"><i class="fa-solid fa-burger"></i></button>
+                <ul class="nav--list">
+                    <li class="nav--item">
+                        <a class="nav--link" href="our-menu.html" active>Our Menu</a>
+                    </li>
+                    <li class="nav--item">
+                        <a href="#" class="nav--link">Events</a>
+                    </li>
+                    <li class="nav--item">
+                        <a href="#" class="nav--link">FAQ</a>
+                    </li>
+                    <li class="nav--item cta-button">
+                        <a href="#" class="nav--link">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <h2>Food and Drinks</h2>
+        <section id="drinks-menu">
+            <div class="sm-container">
+                <section class="cold-drinks">
+                    <h3>Cold Drinks</h3>
+                    <table>
+                        <tr>
+                            <td>Coca-Cola</td>
+                            <td>£X.XX</td>
+                        </tr>
+                        <tr>
+                            <td>Fanta</td>
+                            <td>£X.XX</td>
+                        </tr>
+                        <tr>
+                            <td>7UP</td>
+                            <td>£X.XX</td>
+                        </tr>
+                        <tr>
+                            <td>Sprite</td>
+                            <td>£X.XX</td>
+                        </tr>
+                        <tr>
+                            <td>Budweiser</td>
+                            <td>£X.XX</td>
+                        </tr>
+                        <tr>
+                            <td>Brewdog IPA</td>
+                            <td>£X.XX</td>
+                        </tr>
+                        <tr>
+                            <td>Desperados</td>
+                            <td>£X.XX</td>
+                        </tr>
+                        <tr>
+                            <td>Corona</td>
+                            <td>£X.XX</td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="hot-drinks">
+                    <h3>Hot Drinks</h3>
+                    <table>
+                        <tr>
+                            <td>Americano</td>
+                            <td>£X.XX</td>
+                        </tr>
+                        <tr>
+                            <td>Cappuccino</td>
+                            <td>£X.XX</td>
+                        </tr>
+                        <tr>
+                            <td>Latte</td>
+                            <td>£X.XX</td>
+                        </tr>
+                        <tr>
+                            <td>Flat White</td>
+                            <td>£X.XX</td>
+                        </tr>
+                        <tr>
+                            <td>Green Tea</td>
+                            <td>£X.XX</td>
+                        </tr>
+                        <tr>
+                            <td>Black Tea</td>
+                            <td>£X.XX</td>
+                        </tr>
+                        <tr>
+                            <td>Herbal Tea</td>
+                            <td>£X.XX</td>
+                        </tr>
+                        <tr>
+                            <td>Mountain Tea</td>
+                            <td>£X.XX</td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+            <section class="cocktail-drinks">
+                <h3>Cocktails</h3>
+                <!-- SASS accordion from https://codepen.io/raubaca/pen/PZzpVe translated into pure CSS and customized -->
+                <div class="cocktail-drinks--accordion">
+                    <div class="tab">
+                        <input type="radio" name="rd" id="rd1" checked aria-checked="true">
+                        <label class="tab-label" for="rd1">Rainbow Road <span>£X.XX</span></label>
+                        <div class="tab-content">
+                            (blue curacao, orange juice, vodka, gin, grenadine, rum)
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="radio" name="rd" id="rd2">
+                        <label class="tab-label" for="rd2">Rainbow Road <span>£X.XX</span></label>
+                        <div class="tab-content">
+                            (blue curacao, orange juice, vodka, gin, grenadine, rum)
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="radio" name="rd" id="rd3">
+                        <label class="tab-label" for="rd3">Rainbow Road <span>£X.XX</span></label>
+                        <div class="tab-content">
+                            (blue curacao, orange juice, vodka, gin, grenadine, rum)
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="radio" name="rd" id="rd4">
+                        <label class="tab-label" for="rd4">Rainbow Road <span>£X.XX</span></label>
+                        <div class="tab-content">
+                            (blue curacao, orange juice, vodka, gin, grenadine, rum)
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="radio" name="rd" id="rd5">
+                        <label class="tab-label" for="rd5">Rainbow Road <span>£X.XX</span></label>
+                        <div class="tab-content">
+                            (blue curacao, orange juice, vodka, gin, grenadine, rum)
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="radio" name="rd" id="rd6">
+                        <label class="tab-label" for="rd6">Rainbow Road <span>£X.XX</span></label>
+                        <div class="tab-content">
+                            (blue curacao, orange juice, vodka, gin, grenadine, rum)
+                        </div>
+                    </div>
+                </div>
+                <div class="cocktail-drinks--table">
+                    <table>
+                        <tr>
+                            <td>Rainbow Road</td>
+                            <td>(blue curacao, orange juice, vodka, gin, grenadine, rum)</td>
+                            <td>£X.XX</td>
+                        </tr>
+                        <tr>
+                            <td>Golden Chocobo</td>
+                            <td>(ginger ale, Goldschlager, cinnamon schnapps liqueur)</td>
+                            <td>£X.XX</td>
+                        </tr>
+                        <tr>
+                            <td>The T-Virus</td>
+                            <td>(ginger ale, Goldschlager cinnamon schnapps liqueur, American honey wild turkey)</td>
+                            <td>£X.XX</td>
+                        </tr>
+                        <tr>
+                            <td>Pac Man</td>
+                            <td>(basil leaves, orange, pineapple juice, vodka, parmesan cheese)</td>
+                            <td>£X.XX</td>
+                        </tr>
+                        <tr>
+                            <td>Dratini</td>
+                            <td>(blue curacao, gin, Hypnotic, whipped cream)</td>
+                            <td>£X.XX</td>
+                        </tr>
+                        <tr>
+                            <td>Devil's Kiss</td>
+                            <td>(lemonade, bitters, cinnamon, chambord, spiced rum, overproof rum, ginger beer,
+                                grenadine)
+                            </td>
+                            <td>£X.XX</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </section>
+        <section id="food-menu">
+            <section class="food-menu--peckish">
+                <caption>
+                    <h3>Peckish?...</h3>
+                </caption>
                 <table>
                     <tr>
-                        <td>Rainbow Road</td>
-                        <td>(blue curacao, orange juice, vodka, gin, grenadine, rum)</td>
+                        <td>Crisps</td>
                         <td>£X.XX</td>
                     </tr>
                     <tr>
-                        <td>Golden Chocobo</td>
-                        <td>(ginger ale, Goldschlager, cinnamon schnapps liqueur)</td>
+                        <td>Chips</td>
                         <td>£X.XX</td>
                     </tr>
                     <tr>
-                        <td>The T-Virus</td>
-                        <td>(ginger ale, Goldschlager cinnamon schnapps liqueur, American honey wild turkey)</td>
+                        <td>Burger Bites</td>
                         <td>£X.XX</td>
                     </tr>
                     <tr>
-                        <td>Pac Man</td>
-                        <td>(basil leaves, orange, pineapple juice, vodka, parmesan cheese)</td>
+                        <td>Pizza Slices</td>
                         <td>£X.XX</td>
                     </tr>
                     <tr>
-                        <td>Dratini</td>
-                        <td>(blue curacao, gin, Hypnotic, whipped cream)</td>
-                        <td>£X.XX</td>
-                    </tr>
-                    <tr>
-                        <td>Devil's Kiss</td>
-                        <td>(lemonade, bitters, cinnamon, chambord, spiced rum, overproof rum, ginger beer, grenadine)
-                        </td>
+                        <td>Sandwiches</td>
                         <td>£X.XX</td>
                     </tr>
                 </table>
-            </div>
+            </section>
+            <p>- OR -</p>
+            <section class="food-menu--hungry">
+                <caption>
+                    <h3>...Hungry?</h3>
+                </caption>
+                <table>
+                    <tr>
+                        <td>Hamburger</td>
+                        <td>£X.XX</td>
+                    </tr>
+                    <tr>
+                        <td>Cheeseburger</td>
+                        <td>£X.XX</td>
+                    </tr>
+                    <tr>
+                        <td>12" Pizza</td>
+                        <td>£X.XX</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>£X.XX</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>£X.XX</td>
+                    </tr>
+                </table>
+            </section>
         </section>
-    </section>
-    <section id="food-menu">
-        <section class="food-menu-peckish">
-            <caption><h3>Peckish?...</h3></caption>
-            <table>
-                <tr>
-                    <td>Crisps</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td>Chips</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td>Burger Bites</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td>Pizza Slices</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td>Sandwiches</td>
-                    <td>£X.XX</td>
-                </tr>
-            </table>
-        </section>
-        <div>
-            <h3>- OR -</h3>
-        </div>
-        <section class="food-menu-hungry">
-            <caption><h3>...Hungry?</h3></caption>
-            <table>
-                <tr>
-                    <td>Hamburger</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td>Cheeseburger</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td>12" Pizza</td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>£X.XX</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>£X.XX</td>
-                </tr>
-            </table>
-        </section>
-    </section>
+    </div>
     <footer>
         <div class="footer__background" aria-hidden="true">
             &nbsp;
         </div>
         <div class="join-us">
-            <h3>Come Join Us</h3>
+            <h3>Join Us</h3>
             <p>Blackrock Business Park, 1 Block 1, Carysfort Ave, Blackrock, Co. Dublin, Ireland</p>
             <table>
                 <tr>
@@ -293,8 +298,16 @@
             </ul>
         </div>
     </footer>
-    
+
     <!-- Font Awesome v6 Kit -->
     <script src="https://kit.fontawesome.com/f05b6615ad.js" crossorigin="anonymous"></script>
+    <script>
+        const navToggle = document.querySelector('.nav--toggle');
+
+        navToggle.addEventListener('click', () => {
+            document.body.classList.toggle('nav-open');
+        });
+    </script>
 </body>
+
 </html>
