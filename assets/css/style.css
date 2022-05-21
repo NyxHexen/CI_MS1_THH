@@ -1,11 +1,11 @@
-/* filter: blur() is currently creating some weirdness by applying the blur to the text */
+/* backdrop-filter: blur() is currently creating some weirdness by applying the blur to the text */
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 :root {
-    --bg-clr-a: #222;
-    --bg-clr-b: #2a1b44;
+    --bg-clr-a: #2a1b44;
+    --bg-clr-b: #222;
     --prm-clr: #9a6bff;
     --accnt-clr: #9dff00;
 }
@@ -21,7 +21,9 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+.nav--link,
+.back-button span {
     font-family: 'Press Start 2P', sans-serif;
     text-align: center;
     color: white;
@@ -31,10 +33,17 @@ body {
     line-height: 1.5;
     font-family: 'Play', sans-serif;
     font-weight: 400;
-    background-color: var(--bg-clr-b);
 
     display: grid;
     grid-template-columns: 1fr;
+}
+
+.body--ver-a {
+    background-color: var(--bg-clr-a);
+}
+
+.body--ver-b {
+    background-color: var(--bg-clr-b);
 }
 
 .outer-container {
@@ -43,7 +52,7 @@ body {
 
 /* General Styles */
 
-/* outer-container only creates a shadow at the top of the footer, eventually giving the illusion the footer slides out */
+/* outer-container only creates a shadow at the top of the footer, (WIP) giving the illusion the footer slides out */
 .outer-container {
     padding-bottom: 1rem;
     box-shadow:
@@ -67,7 +76,6 @@ h2 {
     margin-top: 2rem;
 
     /* Position w/in parent */
-    /* grid-column: 1/13; */
     grid-row: 2;
 
     text-shadow:
@@ -93,18 +101,16 @@ h3 {
         0 20px 20px rgba(0, 0, 0, .15);
 }
 
-td:first-child {
-    font-weight: bold;
-}
-
 /* ----------------------------------------------------------------- Header & Navbar (carries over all pages EXCEPT main.html) */
 
 header {
     background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
-    max-height: 10vh;
+    max-height: 20vh;
     min-width: 100%;
 
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
     /* always on top  of screen */
     position: sticky;
@@ -113,32 +119,31 @@ header {
 
     /* Position w/in parent */
     grid-row: 1;
-    /* grid-column: 1/13; */
 }
 
 header * {
     z-index: 10;
 }
 
-.back-button {
-    position: absolute;
-    top: 21%;
-    left: 5%;
-
-    color: white;
-    font-size: 2rem;
-}
-
-/* Hides .back-button text while in mobile */
 header span {
     display: none;
 }
 
+.back-button {
+    margin-left: 1rem;
+    position: relative;
+
+    color: white;
+}
+
+/* Hides .back-button text while in mobile */
+
 .logo h1 {
     margin-top: 1rem;
+    padding: 0 0.4rem;
 
-    font-size: 3rem;
-    line-height: 3.3rem;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
 
     color: #fff;
     text-align: center;
@@ -164,64 +169,147 @@ header span {
 
 .nav {
     /* styling */
-    background: rgba(255, 255, 255, 0.612);
-    backdrop-filter: blur(3px) contrast(50%);
     border-radius: 3rem 0 3rem 3rem;
     box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
 
     /* positionining */
-    position: absolute;
-    right: 0;
-    top: 21%;
-    transform: translateX(100%);
-    transition: transform 300ms cubic-bezier(.5, 0, .5, 1)
+    position: relative;
 }
 
 .nav--list {
-    list-style: none;
-
-    height: fit-content;
-    margin: 0;
-    padding: 3em 6em;
-
+    /* layout */
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    /* positionining */
+    position: absolute;
+    right: 3rem;
+
+    /* sizing */
+    max-height: 50vh;
+    max-width: 73vw;
+    padding: 2em 2em;
+
+    /* scale(0) hides the nav list, transition animates the scale */
+    transform: scale(0);
+    transform-origin: top right;
+    transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
+
+    /* styling */
+    background: rgba(255, 255, 255, 0.612);
+    border-radius: 3rem 0 3rem 3rem;
+    box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+
+    /* Stop list items from breaking into multiple lines */
+    white-space: nowrap;
+    list-style: none;
+
+    /* ensuring this is not interactable while closed */
+    z-index: -10;
+}
+
+/* Gradient generated via https://learnui.design/tools/gradient-generator.html */
+.nav--list::before {
+    content: "";
+    background: linear-gradient(45deg,
+            #9dff00,
+            #35ffe1,
+            #9a6bff,
+            #9a6bff,
+            #35ffe1,
+            #9dff00);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button 40s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 3rem 0 3rem 3rem;
+}
+
+.nav--list::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 3rem 0 3rem 3rem;
+    box-shadow:
+        inset 0 -1px 0 #181818,
+        inset 0 -2px 0 #202020,
+        inset 0 -3px 0 #282828;
 }
 
 .nav--item {
-    margin-bottom: 3em;
+    margin: 1rem 1rem;
 }
 
 .nav--link {
     text-decoration: none;
-    color: black;
+    font-size: 1.3rem;
 }
 
 .nav--link:hover,
 .nav--link:active {
     text-decoration: underline;
-    color: var(--prm-clr);
+    text-shadow: 0 0 2px var(--prm-clr);
 }
 
 .nav--toggle {
+    border: 0;
     background: none;
     color: rgb(255, 255, 255);
 
-    position: absolute;
-    transform: translate(-300%, -100%);
+    position: relative;
+    margin-right: 1rem;
 }
 
-.nav--toggle i {
+.nav--toggle,
+.back-button {
     font-size: 2rem;
 }
 
-.nav-open .nav {
-    transform: translateX(0);
+.nav-open .nav--list {
+    transform: scale(1);
+    z-index: unset;
+}
+
+.fa-xmark {
+    /* positioning */
+    position: absolute;
+    left: 0.4rem;
+
+    /* X button hidden when menu is closed */
+    transform: scale(0);
+    transition: transform 300ms linear;
+}
+
+.fa-burger {
+    transition: transform 300ms linear;
+}
+
+.nav-open .fa-xmark {
+    transform: scale(1);
+}
+
+.nav-open .fa-burger {
+    transform: scale(0);
 }
 
 /* -------------------------------------------------------------------------------------- DRINKS-MENU */
 
 #drinks-menu {
+    position: relative;
+
     /* Spacing */
     margin: 2rem 0.5rem;
 
@@ -230,14 +318,23 @@ header span {
     grid-template-columns: 1fr;
     justify-items: stretch;
     align-content: center;
-
-    /* Position w/in parent */
-    /* grid-column: 2/span 10; */
-    grid-row: 3/7;
 }
 
-#drinks-menu td:first-child {
-    width: 100%;
+#drinks-menu ul {
+    list-style: none;
+    font-weight: 700;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#drinks-menu h5 {
+    font-size: 1rem;
+}
+
+#drinks-menu ul span {
+    float: right;
+    font-weight: 400;
 }
 
 /* Assists with grouping drinks menu elements across different device sizes */
@@ -259,30 +356,13 @@ header span {
     border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.cold-drinks {
-    order: 1;
-}
-
-.hot-drinks {
-    order: 3;
-}
-
 .cocktail-drinks {
     margin-top: 2rem;
-    order: 2;
     padding: 0;
 }
 
 .cocktail-drinks h3 {
     margin-bottom: 0.5rem;
-}
-
-.cocktail-drinks td:nth-child(1) {
-    width: 15%;
-}
-
-.cocktail-drinks td:nth-child(2) {
-    width: 70%;
 }
 
 /* --table shows up in landscape; --accordion in mobile */
@@ -411,6 +491,19 @@ header span {
     border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
+#food-menu ul {
+    list-style: none;
+    font-weight: 700;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#food-menu ul span {
+    float: right;
+    font-weight: 400;
+}
+
 #food-menu p {
     margin: 1rem 0;
 
@@ -428,12 +521,6 @@ header span {
         0 10px 10px rgba(0, 0, 0, .2),
         0 20px 20px rgba(0, 0, 0, .15);
 }
-
-#food-menu td:first-child {
-    width: 100%;
-}
-
-
 
 /* ---------------------------------------------------------------------------------------------------  FOOTER */
 footer {
@@ -455,24 +542,19 @@ footer * {
 
 footer>* {
     margin: 1.5rem 1rem;
-
     height: 80%;
 
-    /* From https://css.glass */
-    background: rgba(190, 190, 190, 0.6);
+    color: white;
+    background-color: #222;
     border-radius: 16px;
     box-shadow:
-        0 6px 1px rgba(100, 100, 100, .1),
-        0 0 5px rgba(100, 100, 100, .1),
-        0 1px 3px rgba(100, 100, 100, .3),
-        0 3px 5px rgba(100, 100, 100, .2),
-        0 5px 10px rgba(100, 100, 100, .25),
-        0 10px 10px rgba(100, 100, 100, .2),
-        0 20px 20px rgba(100, 100, 100, .15);
-    ;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+        0 6px 1px rgb(0 0 0 / 10%),
+        0 0 5px rgb(0 0 0 / 10%),
+        0 1px 3px rgb(0 0 0 / 30%),
+        0 3px 5px rgb(0 0 0 / 20%),
+        0 5px 10px rgb(0 0 0 / 25%),
+        0 10px 10px rgb(0 0 0 / 20%),
+        0 20px 20px rgb(0 0 0 / 15%);
 
     justify-content: space-evenly;
 }
@@ -486,9 +568,6 @@ footer h3 {
     font-size: 1.8rem;
 
     text-shadow:
-        0 1px 0 rgb(170, 170, 170),
-        0 2px 0 rgb(190, 190, 190),
-        0 3px 0 rgb(170, 170, 170),
         0 6px 1px rgba(0, 0, 0, .1),
         0 0 5px rgba(0, 0, 0, .1),
         0 1px 3px rgba(0, 0, 0, .3),
@@ -599,6 +678,82 @@ iframe {
 
 /* Landscape Orientation */
 @media (orientation: landscape) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .logo {
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+
+    .back-button {
+        grid-row: 2;
+        white-space: nowrap;
+        font-size: 1.4rem;
+    }
+
+    .back-button span {
+        display: inline-block;
+        margin-left: 1rem;
+        font-size: 1rem;
+        height: 100%;
+    }
+
+    .nav {
+        box-shadow: none;
+        grid-row: 2;
+    }
+
+    .nav--toggle {
+        display: none;
+    }
+
+    .nav--list {
+        position: relative;
+        transform: unset;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        right: 0;
+    }
+
+    .nav--list::before {
+        content: none;
+    }
+
+    .nav--list::after {
+        content: none;
+    }
+
+    .nav--link {
+        font-size: 1rem !important;
+    }
+
+    .nav--item {
+        margin: 0 1rem;
+    }
+
+    #food-menu {
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+
+        /* align 'OR' item on X */
+        align-items: center;
+    }
+
+    .food-menu--peckish h3 {
+        text-align: start;
+    }
+
+    .food-menu--hungry h3 {
+        text-align: end;
+    }
 
     footer {
         grid-template-columns: repeat(3, 1fr);
@@ -613,7 +768,6 @@ iframe {
 
     .footer__background {
         background-repeat: repeat-x;
-        background-size: contain;
     }
 
     .join-us {
@@ -633,28 +787,25 @@ iframe {
     }
 }
 
-@media (min-width: 390px) {}
-
-@media (min-width: 768px) {}
-
-@media (min-width: 900px) {
-
-    .footer__background {
-        background-size: cover;
+@media (min-width: 390px) {
+    .nav--link {
+        font-size: 1.7rem;
     }
 }
 
-/* Shorter phones such as iPhone SE */
-@media (max-height: 625px) {}
+@media (min-width: 600px) {
+    .sm-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: stretch;
 
-/* Specifically for Galaxy Fold */
-@media (max-width: 350px) {
-    .join-us h3 {
-        font-size: 1.5rem;
+        /* tiny margin to fix misalignment */
+        padding-left: 0.8rem;
     }
 
-    .join-us table {
-        font-size: 1rem;
+    /* added padding as text was breaking weird between 614px and 666px; below forces the text to keep 2 lines until next media query */
+    .sm-container h3 {
+        padding: 0 2.5rem;
     }
 }
 
@@ -669,30 +820,22 @@ iframe {
         margin-bottom: 0.5rem;
     }
 
-    td {
-        font-size: 1.3rem;
+    header {
+        padding-top: 1rem;
     }
 
     .sm-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-items: center;
+        justify-items: stretch;
 
         /* tiny margin to fix misalignment */
         padding-left: 0.8rem;
     }
 
-    .hot-drinks {
-        grid-column: 1;
-        order: unset;
-    }
-
-    .cold-drinks {
-        grid-column: 2;
-    }
-
-    .cold-drinks+.hot-drinks {
-        width: 95%;
+    .nav--toggle,
+    .back-button {
+        font-size: 2.5rem;
     }
 
     .cocktail-drinks--accordion {
@@ -712,14 +855,14 @@ iframe {
 
     #food-menu {
         display: grid;
-        grid-template-rows: 3fr 1fr 3fr;
+        grid-template-rows: 2fr 1fr 2fr;
 
         /* align 'OR' item on X */
         align-items: center;
     }
 
     #food-menu h3 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     #food-menu p {
@@ -736,6 +879,7 @@ iframe {
 
     .food-menu--hungry h3 {
         grid-column: 2;
+        order: 2;
         padding-left: 3rem;
     }
 
@@ -763,9 +907,116 @@ iframe {
     }
 }
 
+@media (min-width: 900px) {
+    .logo h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Specifically for Galaxy Fold */
+@media (max-width: 350px) {
+    h3 {
+        font-size: 1rem;
+    }
+
+    .join-us h3 {
+        font-size: 1.5rem;
+    }
+
+    .join-us table {
+        font-size: 1rem;
+    }
+}
+
+/* Desktop Screens */
+@media (min-width: 1100px) {
+    h3 {
+        white-space: nowrap;
+    }
+
+    #drinks-menu {
+        padding: 1.5rem 0.5rem;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 16px;
+        box-shadow: 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%), 0 5px 10px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 20%), 0 20px 20px rgb(0 0 0 / 15%);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+
+        grid-template-columns: 2fr 3fr 2fr;
+        align-items: center;
+    }
+
+    /* move styling from .sm-container to #drinks-menu so it wraps around --table*/
+    .sm-container {
+        all: unset;
+    }
+
+    /* .sm-container is within #drink-menu so .hot-drinks and .cold-drinks can't be moved on the #drinks-menu grid; this fixes that */
+    .sm-container {
+        position: absolute;
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 2fr 4fr 2fr;
+    }
+
+    .sm-container h3 {
+        padding: unset;
+    }
+
+    .cold-drinks {
+        margin: 0 1rem;
+    }
+
+    .hot-drinks {
+        margin: 0 1rem;
+        grid-column: 3;
+    }
+
+    .cocktail-drinks {
+        grid-column: 2;
+        margin: 0;
+
+        margin-left: 1.5rem
+    }
+
+    /* disable accordion, enable table & center within grid parent*/
+    .cocktail-drinks--accordion {
+        display: none;
+    }
+
+    .cocktail-drinks--table {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cocktail-drinks--table li {
+        position: relative;
+    }
+
+    .cocktail-drinks--table span:nth-of-type(1) {
+        float: unset !important;
+        display: block;
+    }
+
+    .cocktail-drinks--table span:nth-of-type(2) {
+        float: unset !important;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #food-menu {
+        margin: 2rem 6.5rem;
+    }
+}
+
 
 /* Shorter landscape screens such as Nest Hub */
-@media (min-width: 1024px) and (max-height: 600px) {}
+@media (min-width: 1024px) and (max-height: 600px) {
+    .nav--list {
+        max-height: 60vh;
+    }
+}
 
 /* ---------------------------------------------------------------------------------------------------  ANIMATIONS */
 
