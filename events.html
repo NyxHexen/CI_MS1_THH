@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <title>Events | The Hexen Hut - Video Games and Esports Bar</title>
+</head>
+
+<body class="events">
+    <header>
+        <a href="main.html" class="back-button" aria-label="Return to Main Page">
+            <i class="fa-solid fa-arrow-left"></i><span>Return to Main Page</span></a>
+        <div class="logo">
+            <h1>The Hexen Hut</h1>
+        </div>
+        <nav class="nav" aria-label="Navigation links">
+            <button class="nav--toggle" aria-expanded="false" aria-controls="main-menu"><i
+                    class="fa-solid fa-burger"></i><i class="fa-solid fa-xmark"></i></button>
+            <ul class="nav--list">
+                <li class="nav--item">
+                    <a class="nav--link" href="our-menu.html" active>Our Menu</a>
+                </li>
+                <li class="nav--item">
+                    <a href="events.html" class="nav--link">Events</a>
+                </li>
+                <li class="nav--item">
+                    <a href="#" class="nav--link">FAQ</a>
+                </li>
+                <li class="nav--item cta-button">
+                    <a href="#" class="nav--link">About Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Events</h2>
+    <section class="carousel" aria-label="carousel" Tabindex="0">
+        <a class="carousel__skip-link" href="#skip-link">Skip the Carousel</a>
+        <div class="slides">
+            <div class="slides-item slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0"><img
+                    src="assets/images/slider-img-1.jfif" alt=""></div>
+            <div class="slides-item slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0"><img
+                    src="assets/images/slider-img-2.jpg" alt=""></div>
+            <div class="slides-item slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0"><img
+                    src="assets/images/slider-img.jpg" alt=""></div>
+            <div class="slides-item slide-4" id="slide-4" aria-label="slide 4 of 5" tabindex="0"><img
+                    src="assets/images/slider-img-4.jpg" alt=""></div>
+            <div class="slides-item slide-5" id="slide-5" aria-label="slide 5 of 5" tabindex="0"><img
+                    src="assets/images/slider-img-5.jpg" alt=""></div>
+        </div>
+        <div class="carousel__nav">
+            <a class="slider-nav" href="#slide-1" aria-label="Go to slide 1"></a>
+            <a class="slider-nav" href="#slide-2" aria-label="Go to slide 2"></a>
+            <a class="slider-nav" href="#slide-3" aria-label="Go to slide 3"></a>
+            <a class="slider-nav" href="#slide-4" aria-label="Go to slide 4"></a>
+            <a class="slider-nav" href="#slide-5" aria-label="Go to slide 5"></a>
+        </div>
+        <div class="carousel__skip-message" id="skip-link" tabindex="0"></div>
+    </section>
+    <section class="signup">
+        <button class="signup-form--toggle" aria-expanded="false" aria-controls="signup-form">Sign Up!</button>
+        <form class="signup-form">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Warlock"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" name="lname" id="lname" placeholder="Holmes"><br>
+            <label for="birthday">Date of Birth</label><br>
+            <input type="date" name="birthday" id="birthday"><br>
+            <label for="email">E-mail Address:</label><br>
+            <input type="email" name="email" id="email" placeholder=""><br>
+            <label for="event">Select an event:</label><br>
+            <select name="event" id="event" placeholder="Pick an event!">
+                <option value="eventdate--one">Team Try-outs! | 16-June-2022</option>
+                <option value="eventdate--one">BIG FAT QUIZBOX | 28-June-2022</option>
+                <option value="eventdate--one">SuperSmash Brothers Ultimate Championship | 14-July-2022</option>
+                <option value="eventdate--one">LCS Finals (Livestream) | 1-Aug-2022</option>
+            </select><br>
+            <button type="submit" class="signup-form--submit">Submit</button>
+            <button type="reset" class="signup-form--reset">Reset Form</button>
+        </form>
+    </section>
+    <section class="events-list--container">
+        <section class="events-list">
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li>Team Try-outs! <span>16 June '22</span></li>
+                <li>BIG FAT QUIZBOX <span>28 June '22</span></li>
+                <li>SSB Ultimate Championship <span>14 July '22</span></li>
+                <li>LCS Finals (Livestream) <span>1 Aug '22</span></li>
+            </ul>
+        </section>
+        <section class="events-list">
+            <h3>Previous Events</h3>
+            <ul>
+                <li>Team Try-outs! <span>13 Mar '22</span></li>
+                <li>Apex Legends Pro League <span>22 Mar '22</span></li>
+                <li>World of QUIZcraft <span>15 Feb '22</span></li>
+                <li>1v1 Tournament <span>7 Jan '22</span></li>
+            </ul>
+        </section>
+    </section>
+    <footer>
+        <div class="footer__background" aria-hidden="true">
+            &nbsp;
+        </div>
+        <div class="join-us">
+            <h3>Join Us</h3>
+            <p>Blackrock Business Park, 1 Block 1, Carysfort Ave, Blackrock, Co. Dublin, Ireland</p>
+            <table>
+                <tr>
+                    <td>Sun - Thurs</td>
+                    <td>09:00</td>
+                    <td>until</td>
+                    <td>00:00</td>
+                </tr>
+                <tr>
+                    <td>Fri & Sat</td>
+                    <td>10:00</td>
+                    <td>until</td>
+                    <td>02:00</td>
+                </tr>
+            </table>
+        </div>
+        <div class="iframe__container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4769.075097108596!2d-6.1823260708050265!3d53.29781863203341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e99733f3617%3A0x7ff7202fe3dea603!2sCode%20Institute!5e0!3m2!1sen!2suk!4v1652720823551!5m2!1sen!2suk"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-us">
+            <h3>Contact Us</h3>
+            <ul aria-label="Social media links and phone number for contact">
+                <span>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li><a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.linked.in/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.github.com/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                </span>
+                <li>Call Us: <a href="tel:+442821234567">0282 123 4567</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Font Awesome v6 Kit -->
+    <script src="https://kit.fontawesome.com/f05b6615ad.js" crossorigin="anonymous"></script>
+    <script>
+        const navToggle = document.querySelector('.nav--toggle');
+        const signupToggle = document.querySelector('.signup-form--toggle');
+
+        navToggle.addEventListener('click', () => {
+            document.body.classList.toggle('nav-open');
+        });
+
+        signupToggle.addEventListener('click', () => {
+            document.body.classList.toggle('form-open');
+        });
+    </script>

@@ -234,10 +234,11 @@ footer {
   position: relative;
   height: 100%;
   width: 100%;
+  grid-row: 12;
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
   justify-items: stretch;
   align-items: center;
 }
@@ -248,24 +249,19 @@ footer * {
 
 footer>* {
   margin: 1.5rem 1rem;
-
   height: 80%;
 
-  /* From https://css.glass */
-  background: rgba(190, 190, 190, 0.6);
+  color: white;
+  background-color: #222;
   border-radius: 16px;
   box-shadow:
-    0 6px 1px rgba(100, 100, 100, .1),
-    0 0 5px rgba(100, 100, 100, .1),
-    0 1px 3px rgba(100, 100, 100, .3),
-    0 3px 5px rgba(100, 100, 100, .2),
-    0 5px 10px rgba(100, 100, 100, .25),
-    0 10px 10px rgba(100, 100, 100, .2),
-    0 20px 20px rgba(100, 100, 100, .15);
-  ;
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+      0 6px 1px rgb(0 0 0 / 10%),
+      0 0 5px rgb(0 0 0 / 10%),
+      0 1px 3px rgb(0 0 0 / 30%),
+      0 3px 5px rgb(0 0 0 / 20%),
+      0 5px 10px rgb(0 0 0 / 25%),
+      0 10px 10px rgb(0 0 0 / 20%),
+      0 20px 20px rgb(0 0 0 / 15%);
 
   justify-content: space-evenly;
 }
@@ -276,19 +272,16 @@ footer>*>* {
 
 footer h3 {
   color: rgb(255, 255, 255);
-  font-size: 2rem;
+  font-size: 1.8rem;
 
   text-shadow:
-    0 1px 0 rgb(170, 170, 170),
-    0 2px 0 rgb(190, 190, 190),
-    0 3px 0 rgb(170, 170, 170),
-    0 6px 1px rgba(0, 0, 0, .1),
-    0 0 5px rgba(0, 0, 0, .1),
-    0 1px 3px rgba(0, 0, 0, .3),
-    0 3px 5px rgba(0, 0, 0, .2),
-    0 5px 10px rgba(0, 0, 0, .25),
-    0 10px 10px rgba(0, 0, 0, .2),
-    0 20px 20px rgba(0, 0, 0, .15);
+      0 6px 1px rgba(0, 0, 0, .1),
+      0 0 5px rgba(0, 0, 0, .1),
+      0 1px 3px rgba(0, 0, 0, .3),
+      0 3px 5px rgba(0, 0, 0, .2),
+      0 5px 10px rgba(0, 0, 0, .25),
+      0 10px 10px rgba(0, 0, 0, .2),
+      0 20px 20px rgba(0, 0, 0, .15);
 }
 
 .footer__background {
@@ -313,7 +306,7 @@ footer h3 {
   background-size: cover;
 }
 
-/* ------------------------------------------------------- FOOTER > JOIN US */
+/* ------------------------------------------------------------------------------------------------- FOOTER > JOIN US */
 
 .join-us {
   display: flex;
@@ -322,7 +315,7 @@ footer h3 {
 }
 
 .join-us h3 {
-  font-size: 2rem;
+  margin-top: 1rem;
 }
 
 .join-us p {
@@ -335,7 +328,7 @@ footer h3 {
   margin: 0.5rem 1rem 1rem;
 }
 
-/* ------------------------------------------------------- FOOTER > CONTACT US */
+/* ------------------------------------------------------------------------------------------------ FOOTER > CONTACT US */
 
 .contact-us {
   display: flex;
@@ -352,28 +345,36 @@ footer h3 {
   font-size: 1.3rem;
 }
 
+.contact-us i {
+  font-size: 2.6rem;
+  margin: 0 0.5rem;
+}
+
 .contact-us span {
   display: block;
   margin-bottom: 1rem;
 }
 
+.contact-us a {
+  color: white;
+  text-decoration: none;
+}
 
 /* a:visited first then a:active, otherwise the color gets set by active and then unset by visited */
 .contact-us a:visited {
   color: unset;
 }
 
-.contact-us a:active {
-  color: #9dff00;
+.contact-us a:hover {
+  color: var(--accnt-clr);
   text-shadow: 0 0 12px black;
 }
 
-.contact-us i {
-  font-size: 2.6rem;
-  margin: 0 0.5rem;
+.contact-us a:active {
+  color: var(--prm-clr)
 }
 
-/* ------------------------------------------------------- FOOTER > GOOGLE MAP */
+/* --------------------------------------------------------------------------------------------------- FOOTER > GOOGLE MAP */
 
 .iframe__container {
   display: flex;

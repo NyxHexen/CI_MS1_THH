@@ -4,10 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 :root {
-    --bg-clr-a: #2a1b44;
-    --bg-clr-b: #222;
-    --prm-clr: #9a6bff;
-    --accnt-clr: #9dff00;
+    --bg-clr: #222;
+    --prm-clr: hsl(259, 100%, 61%);
+    --accnt-clr: hsl(83, 100%, 50%);
 }
 
 *,
@@ -30,27 +29,23 @@ h4,
 }
 
 body {
+    background-color: #222;
     line-height: 1.5;
     font-family: 'Play', sans-serif;
     font-weight: 400;
 
     display: grid;
     grid-template-columns: 1fr;
-}
 
-.body--ver-a {
-    background-color: var(--bg-clr-a);
-}
-
-.body--ver-b {
-    background-color: var(--bg-clr-b);
+    min-width: 100vw;
+    overflow-x: hidden;
 }
 
 .outer-container {
     overflow-x: hidden;
 }
 
-/* General Styles */
+/* ----------------------------------------------------------------- General Styles */
 
 /* outer-container only creates a shadow at the top of the footer, (WIP) giving the illusion the footer slides out */
 .outer-container {
@@ -65,19 +60,10 @@ body {
         0 25px 20px rgb(0 0 0 / 15%);
 }
 
-section {
-    padding: 1rem;
-}
-
 h2 {
     font-size: 2rem;
 
-    /* Spacing */
-    margin-top: 2rem;
-
-    /* Position w/in parent */
-    grid-row: 2;
-
+    margin-bottom: 2rem;
     text-shadow:
         0 6px 1px rgba(0, 0, 0, .1),
         0 0 5px rgba(0, 0, 0, .1),
@@ -101,6 +87,10 @@ h3 {
         0 20px 20px rgba(0, 0, 0, .15);
 }
 
+section {
+    margin: 0 1rem;
+}
+
 /* ----------------------------------------------------------------- Header & Navbar (carries over all pages EXCEPT main.html) */
 
 header {
@@ -108,17 +98,14 @@ header {
     max-height: 20vh;
     min-width: 100%;
 
+    margin-bottom: 2rem;
+
     display: flex;
     align-items: center;
     justify-content: space-around;
 
-    /* always on top  of screen */
-    position: sticky;
-    top: 0;
+    /* on top of everything else */
     z-index: 10;
-
-    /* Position w/in parent */
-    grid-row: 1;
 }
 
 header * {
@@ -136,7 +123,9 @@ header span {
     color: white;
 }
 
-/* Hides .back-button text while in mobile */
+.logo {
+    margin-left: 0.7rem;
+}
 
 .logo h1 {
     margin-top: 1rem;
@@ -166,7 +155,6 @@ header span {
 }
 
 /* Hamburger Menu */
-
 .nav {
     /* styling */
     border-radius: 3rem 0 3rem 3rem;
@@ -305,13 +293,13 @@ header span {
     transform: scale(0);
 }
 
-/* -------------------------------------------------------------------------------------- DRINKS-MENU */
+/* ---------------------------------------------------------------------------------------------- our-menu.html - DRINKS-MENU */
 
 #drinks-menu {
     position: relative;
 
     /* Spacing */
-    margin: 2rem 0.5rem;
+    margin: 0 0.5rem 2rem;
 
     /* Layout */
     display: grid;
@@ -328,6 +316,10 @@ header span {
     flex-direction: column;
 }
 
+/* #drinks-menu h3{
+    margin-top: 1rem;
+} */
+
 #drinks-menu h5 {
     font-size: 1rem;
 }
@@ -339,7 +331,8 @@ header span {
 
 /* Assists with grouping drinks menu elements across different device sizes */
 .sm-container {
-    padding: 0.5rem;
+    padding: 1rem;
+    margin: 0 1rem;
 
     /* Container style */
     background: rgba(255, 255, 255, 0.5);
@@ -370,8 +363,9 @@ header span {
     display: none;
 }
 
-/*---------------------------------------------------- #drinks-menu > Cocktail Menu - Accordion */
+/*----------------------------------------------------------------- our-menu.htlm - #drinks-menu > Cocktail Menu - Accordion */
 /* --table shows up in landscape; --accordion in mobile */
+/* Accordion code from https://codepen.io/raubaca/pen/PZzpVe, modified & customized */
 .cocktail-drinks--accordion {
     overflow: hidden;
     background: var(--accnt-clr);
@@ -396,6 +390,8 @@ header span {
     width: 100%;
     color: white;
     overflow: hidden;
+
+    position: relative;
 }
 
 .cocktail-drinks--accordion .tab-label {
@@ -405,10 +401,13 @@ header span {
     background: var(--prm-clr);
     font-weight: bold;
     cursor: pointer;
+
+    /* improves readability on tablet devices */
+    text-shadow: 3px 3px 3px var(--bg-clr-a);
 }
 
 .cocktail-drinks--accordion .tab-label:hover {
-    background: darken(var(--prm-clr), 10%);
+    filter: brightness(85%);
 }
 
 .cocktail-drinks--accordion .tab-label::after {
@@ -417,6 +416,11 @@ header span {
     height: 1em;
     text-align: center;
     transition: all .35s;
+}
+
+.cocktail-drinks--accordion span {
+    position: absolute;
+    left: 50%;
 }
 
 .cocktail-drinks--accordion .tab-content {
@@ -437,11 +441,11 @@ header span {
 }
 
 .cocktail-drinks--accordion .tab-close:hover {
-    background: darken(var(--prm-clr), 10%);
+    filter: brightness(85%);
 }
 
 .cocktail-drinks--accordion input:checked+.tab-label {
-    background: darken(var(--prm-clr), 10%);
+    background: none;
 }
 
 .cocktail-drinks--accordion input:checked+.tab-label::after {
@@ -458,21 +462,17 @@ header span {
     text-shadow: none;
 }
 
-/* ---------------------------------------------------------------------------------------------------- #food-menu */
+/* ----------------------------------------------------------------------------------------------- our-menu.html - #food-menu */
 #food-menu {
     /* Spacing */
     margin: 2rem 1.5rem;
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
 
     /* Layout */
     display: grid;
     grid-template-columns: 1fr;
     justify-items: stretch;
     align-content: center;
-
-    /* Position w/in parent */
-    /* grid-column: 3/11;
-    grid-row: 8/10; */
 
     /* Container style */
     background: rgba(190, 190, 190, 0.6);
@@ -486,8 +486,6 @@ header span {
         0 10px 10px rgb(0 0 0 / 20%),
         0 20px 20px rgb(0 0 0 / 15%);
 
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
     border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
@@ -522,7 +520,341 @@ header span {
         0 20px 20px rgba(0, 0, 0, .15);
 }
 
-/* ---------------------------------------------------------------------------------------------------  FOOTER */
+/* -------------------------------------------------------------------------------------------------------------- events.html */
+.events h2 {
+    margin-bottom: 0;
+}
+
+/* Carousel code from https://codepen.io/jwjertzoch/pen/JjyGeRy, customized */
+.carousel {
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 90%;
+}
+
+.slides {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slides::-webkit-scrollbar {
+    display: none;
+}
+
+.slides-item {
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 100px;
+    height: fit-content;
+    justify-content: center;
+    margin: auto 1rem;
+    position: relative;
+    scroll-snap-align: start;
+    width: 100%;
+    overflow: hidden;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel__nav {
+    padding: 1.25rem .5rem;
+}
+
+.slider-nav {
+    align-items: center;
+    background-color: #ddd;
+    border-radius: 50%;
+    color: #000;
+    display: inline-flex;
+    height: 1.5rem;
+    justify-content: center;
+    padding: .5rem;
+    position: relative;
+    text-decoration: none;
+    width: 1.5rem;
+}
+
+.slider-nav:hover,
+.slider-nav:active {
+    background-color: #000;
+    color: #fff;
+}
+
+.carousel__skip-link {
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}
+
+.carousel__skip-link:focus {
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    font-size: 30px;
+    height: 680px;
+    justify-content: center;
+    opacity: .8;
+    text-decoration: none;
+    width: 100%;
+    z-index: 1;
+}
+
+/* ------------------------------------------------------ Sign Up Form */
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+.signup-form--toggle {
+    background-color: var(--accnt-clr);
+
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 1.1rem;
+
+    border-radius: 10px;
+    border: 0;
+
+    box-shadow:
+        0 6px 1px rgb(0 0 0 / 10%),
+        0 0 5px rgb(0 0 0 / 10%),
+        0 1px 3px rgb(0 0 0 / 30%),
+        0 3px 5px rgb(0 0 0 / 20%),
+        0 5px 10px rgb(0 0 0 / 25%),
+        0 10px 10px rgb(0 0 0 / 20%),
+        0 20px 20px rgb(0 0 0 / 15%);
+
+    transform: translate(0);
+    transition: transform 300ms linear;
+
+    z-index: 2;
+}
+
+.signup-form {
+    width: 90vw;
+
+    position: absolute;
+
+    padding: 4rem 1rem 1rem;
+
+    color: white;
+
+    transform: scale(0);
+    transform-origin: top center;
+    transition: transform 300ms linear;
+}
+
+.signup-form::before {
+    content: "";
+    
+    position: absolute;
+    top: -3px;
+    left: -3px;
+
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+
+    background: linear-gradient(45deg,
+            #9dff00,
+            #35ffe1,
+            #9a6bff,
+            #9a6bff,
+            #35ffe1,
+            #9dff00);
+    
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+
+    animation: glowing-button 40s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 1rem;
+
+    z-index: -1;
+}
+
+.signup-form::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 1rem;
+    box-shadow:
+        inset 0 -1px 0 #181818,
+        inset 0 -2px 0 #202020,
+        inset 0 -3px 0 #282828;
+}
+
+.signup-form input:hover,
+.signup-form select:hover,
+.signup-form--reset:hover {
+    color: white;
+    background-color: #111;
+    border: none;
+}
+
+.signup-form * {
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    border: 1px var(--prm-clr)
+}
+
+.signup-form button {
+    font-family: 'Play', sans-serif;
+
+    padding: 0.5rem 1rem;
+
+    margin: 1rem;
+    border-radius: 7px;
+    border: 0;
+
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.signup-form--submit {
+    background-color: #7bff00;
+    color: black;
+}
+
+.signup-form--submit:hover {
+    background-color: var(--prm-clr);
+    color: white;
+}
+
+.signup-form--reset {
+    background-color: var(--bg-clr);
+    color: white;
+}
+
+input[type="text"],
+input[type="email"] {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+input[type="date"] {
+    padding: 4px 10px;
+    background-color: #333;
+    color: white;
+}
+
+.signup-form select {
+    width: 80%;
+    padding: 5px 10px;
+
+    font-style: 'Play', sans-serif;
+    background-color: #333;
+    color: white;
+}
+
+.form-open .signup-form {
+    z-index: 2;
+    transform: scale(1);
+}
+
+.form-open .signup-form--toggle {
+    transform: translateX(32%);
+    transition: transform 300ms linear;
+    z-index: 3;
+}
+
+.form-open .signup-form--toggle::before {
+    content: 'Close';
+
+    position: absolute;
+    top: -1px;
+    left: -1px;
+
+    /* below calc() ensures the pseudo-element covers the entire button */
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #222;
+}
+
+/* ---------------------------------------------------- Events */
+
+.events-list--container {
+    margin-bottom: 2rem;
+}
+
+.events-list {
+    list-style: none;
+
+    /* spacing */
+    margin: 1rem;
+    padding: 1rem;
+    
+    /* layout */
+    display: flex;
+    flex-direction: column;
+
+    /* container styling */
+    background-color: #999;
+    border: 1px solid #555;
+    border-radius: 16px;
+    box-shadow:
+        0 6px 1px rgb(0 0 0 / 10%),
+        0 0 5px rgb(0 0 0 / 10%),
+        0 1px 3px rgb(0 0 0 / 30%),
+        0 3px 5px rgb(0 0 0 / 20%),
+        0 5px 10px rgb(0 0 0 / 25%),
+        0 10px 10px rgb(0 0 0 / 20%),
+        0 20px 20px rgb(0 0 0 / 15%);
+}
+
+.events-list h3 {
+    margin-bottom: 0.5rem;
+}
+
+.events-list li {
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 0.5rem;
+}
+
+.events-list li:hover {
+    text-shadow: 1px 1px 5px var(--accnt-clr);
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------  FOOTER */
 footer {
     position: relative;
     height: 100%;
@@ -531,7 +863,7 @@ footer {
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
     justify-items: stretch;
     align-items: center;
 }
@@ -599,12 +931,16 @@ footer h3 {
     background-size: cover;
 }
 
-/* ------------------------------------------------------- FOOTER > JOIN US */
+/* ------------------------------------------------------------------------------------------------- FOOTER > JOIN US */
 
 .join-us {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+}
+
+.join-us h3 {
+    margin-top: 1rem;
 }
 
 .join-us p {
@@ -617,7 +953,7 @@ footer h3 {
     margin: 0.5rem 1rem 1rem;
 }
 
-/* ------------------------------------------------------- FOOTER > CONTACT US */
+/* ------------------------------------------------------------------------------------------------ FOOTER > CONTACT US */
 
 .contact-us {
     display: flex;
@@ -634,11 +970,20 @@ footer h3 {
     font-size: 1.3rem;
 }
 
+.contact-us i {
+    font-size: 2.6rem;
+    margin: 0 0.5rem;
+}
+
 .contact-us span {
     display: block;
     margin-bottom: 1rem;
 }
 
+.contact-us a {
+    color: white;
+    text-decoration: none;
+}
 
 /* a:visited first then a:active, otherwise the color gets set by active and then unset by visited */
 .contact-us a:visited {
@@ -654,12 +999,7 @@ footer h3 {
     color: var(--prm-clr)
 }
 
-.contact-us i {
-    font-size: 2.6rem;
-    margin: 0 0.5rem;
-}
-
-/* ------------------------------------------------------- FOOTER > GOOGLE MAP */
+/* --------------------------------------------------------------------------------------------------- FOOTER > GOOGLE MAP */
 
 .iframe__container {
     display: flex;
@@ -673,7 +1013,7 @@ iframe {
     margin: 0;
 }
 
-/* ------------------------------------------------------ MEDIA QUERIES */
+/* ------------------------------------------------------------------------------------------------------- MEDIA QUERIES */
 
 @media (min-width: 390px) {
     .nav--link {
@@ -728,11 +1068,6 @@ iframe {
 
     .cocktail-drinks--accordion {
         font-size: 1.2em;
-    }
-
-    /* improves readability on tablet devices */
-    .cocktail-drinks--accordion .tab-label {
-        text-shadow: 2px 2px #000;
     }
 
     .cocktail-drinks--accordion span {
@@ -1023,16 +1358,37 @@ iframe {
         font-size: 5rem;
         margin-top: 3rem;
     }
-    h2 {font-size: 3rem;}
-    h3 {font-size: 2rem;}
-    h5 {font-size: 1.75rem !important;}
-    ul {font-size: 1.75rem;}
-    .back-button i {font-size: 3rem;}
-    .back-button span {font-size: 2rem;}
-    .nav--link {font-size: 2rem;}
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.75rem !important;
+    }
+
+    ul {
+        font-size: 1.75rem;
+    }
+
+    .back-button i {
+        font-size: 3rem;
+    }
+
+    .back-button span {
+        font-size: 2rem;
+    }
+
+    .nav--link {
+        font-size: 2rem;
+    }
 }
 
-/* ---------------------------------------------------------------------------------------------------  ANIMATIONS */
+/* -------------------------------------------------------------------------------------------------------------  ANIMATIONS */
 
 @keyframes floating-text {
     100% {
