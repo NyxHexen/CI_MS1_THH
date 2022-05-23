@@ -37,7 +37,6 @@ body {
     display: grid;
     grid-template-columns: 1fr;
 
-    min-width: 100vw;
     overflow-x: hidden;
 }
 
@@ -117,8 +116,12 @@ header span {
 }
 
 .back-button {
+    text-decoration: none;
+
     margin-left: 1rem;
     position: relative;
+    display: flex;
+    align-items: center;
 
     color: white;
 }
@@ -247,6 +250,7 @@ header span {
 }
 
 .nav--link:hover,
+.nav--link:focus,
 .nav--link:active {
     text-decoration: underline;
     text-shadow: 0 0 2px var(--prm-clr);
@@ -315,10 +319,6 @@ header span {
     display: flex;
     flex-direction: column;
 }
-
-/* #drinks-menu h3{
-    margin-top: 1rem;
-} */
 
 #drinks-menu h5 {
     font-size: 1rem;
@@ -685,7 +685,7 @@ img {
     -webkit-filter: blur(5px);
 
     animation: glowing-button 40s linear infinite;
-    transition: opacity 0.3s ease-in-out;
+    transition: all 300ms ease-in-out;
     border-radius: 1rem;
 
     z-index: -1;
@@ -778,8 +778,6 @@ input[type="date"] {
 }
 
 .form-open .signup-form--toggle {
-    transform: translateX(32%);
-    transition: transform 300ms linear;
     z-index: 3;
 }
 
@@ -804,7 +802,9 @@ input[type="date"] {
     border: 1px solid #222;
 }
 
-/* ---------------------------------------------------- Events */
+
+
+/* ---------------------------------------------------- Events List*/
 
 .events-list--container {
     margin-bottom: 2rem;
@@ -814,7 +814,7 @@ input[type="date"] {
     list-style: none;
 
     /* spacing */
-    margin: 1rem;
+    margin: 1.5rem 0;
     padding: 1rem;
     
     /* layout */
@@ -1111,6 +1111,39 @@ iframe {
         grid-row: 1;
     }
 
+    .signup-form {
+        font-size: 1.5rem;
+    }
+
+    /* padding on the button helps center the button text */
+    .signup-form--toggle {
+        padding-right: 1.5rem;
+    }
+
+    .signup button {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"], input[type="email"], input[type=date], select {
+        font-size: 1.5rem;
+    }
+
+    .events-list--container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .events-list {
+        margin: 1.5rem 1rem;
+        font-size: 1.2rem;
+
+        justify-content: space-around;
+    }
+
+    .events-list span {
+        white-space: nowrap;
+    }
+
     footer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -1140,6 +1173,10 @@ iframe {
 @media (max-width: 350px) {
     h3 {
         font-size: 1rem;
+    }
+
+    .events-list span {
+        white-space: nowrap;
     }
 
     .join-us h3 {
@@ -1232,6 +1269,39 @@ iframe {
         text-align: end;
     }
 
+    .signup-form {
+        font-size: 1.5rem;
+    }
+
+    /* padding on the button helps center the button text */
+    .signup-form--toggle {
+        padding-right: 1.5rem;
+    }
+
+    .signup button {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"], input[type="email"], input[type=date], select {
+        font-size: 1.5rem;
+    }
+
+    .events-list--container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .events-list {
+        margin: 1.5rem 1rem;
+        font-size: 1.2rem;
+
+        justify-content: space-around;
+    }
+
+    .events-list span {
+        white-space: nowrap;
+    }
+
     footer {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
@@ -1265,8 +1335,29 @@ iframe {
 }
 
 @media (min-width: 1100px) {
+    .logo h1 {
+        font-size: 4rem;
+        margin-top: 2rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
     h3 {
         white-space: nowrap;
+    }
+
+    .back-button {
+        font-size: 1.9rem;
+    }
+
+    .back-button span {
+        font-size: 1.5rem;
+    }
+
+    .nav--link {
+        font-size: 1.5rem;
     }
 
     #drinks-menu {
@@ -1276,7 +1367,7 @@ iframe {
         box-shadow: 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%), 0 5px 10px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 20%), 0 20px 20px rgb(0 0 0 / 15%);
         border: 1px solid rgba(255, 255, 255, 0.4);
 
-        grid-template-columns: 2fr 3fr 2fr;
+        grid-template-columns: 2fr 4fr 2fr;
         align-items: center;
     }
 
@@ -1311,7 +1402,7 @@ iframe {
         grid-column: 2;
         margin: 0;
 
-        margin-left: 1.5rem
+        margin: 0 1rem;
     }
 
     /* disable accordion, enable table & center within grid parent*/
@@ -1342,6 +1433,25 @@ iframe {
 
     #food-menu {
         margin: 2rem 6.5rem;
+    }
+    
+    .carousel {
+        width: 100%;
+    }
+
+    .slides-item {
+        flex-shrink: 1;
+    }
+
+    .signup-form {
+        bottom: -10px;
+
+        width: 50vw;
+        font-size: 1.2rem;
+        padding-top: 1rem;
+
+        /* bottom right, but the (90%) is more precise than just bottom */
+        transform-origin: 50% 90%;
     }
 }
 
