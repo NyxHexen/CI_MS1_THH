@@ -118,6 +118,7 @@ header span {
 .back-button {
     text-decoration: none;
 
+    margin-top: 0.5rem;
     margin-left: 1rem;
     position: relative;
     display: flex;
@@ -262,6 +263,7 @@ header span {
     color: rgb(255, 255, 255);
 
     position: relative;
+    margin-top: 0.5rem;
     margin-right: 1rem;
 }
 
@@ -665,7 +667,7 @@ img {
 
 .signup-form::before {
     content: "";
-    
+
     position: absolute;
     top: -3px;
     left: -3px;
@@ -680,7 +682,7 @@ img {
             #9a6bff,
             #35ffe1,
             #9dff00);
-    
+
     filter: blur(5px);
     -webkit-filter: blur(5px);
 
@@ -816,7 +818,7 @@ input[type="date"] {
     /* spacing */
     margin: 1.5rem 0;
     padding: 1rem;
-    
+
     /* layout */
     display: flex;
     flex-direction: column;
@@ -853,6 +855,161 @@ input[type="date"] {
     text-shadow: 1px 1px 5px var(--accnt-clr);
 }
 
+/* ------------------------------------------------------------------------------------------------------------------  faq.html */
+/* alt-heading reserved for landscape screens */
+.faq h2 {
+    margin-bottom: 1rem;
+}
+
+.alt-heading {
+    display: none;
+}
+
+.faq>p {
+    margin: 1rem;
+
+    font-size: 1rem;
+    text-align: center;
+    color: var(--prm-clr);
+    text-shadow: 0 2px 2px black;
+}
+
+.faq section {
+    position: relative;
+
+    /* container styling */
+    background-color: #999;
+    border: 1px solid #555;
+    border-radius: 16px;
+    box-shadow:
+        0 6px 1px rgb(0 0 0 / 10%),
+        0 0 5px rgb(0 0 0 / 10%),
+        0 1px 3px rgb(0 0 0 / 30%),
+        0 3px 5px rgb(0 0 0 / 20%),
+        0 5px 10px rgb(0 0 0 / 25%),
+        0 10px 10px rgb(0 0 0 / 20%),
+        0 20px 20px rgb(0 0 0 / 15%);
+}
+
+/* how to win the specificity war for color (add .faq) */
+.faq .faq-list {
+    max-height: 15rem;
+
+    margin-top: 4rem;
+    padding: 2rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #2a1456;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: .8rem;
+    scroll-behavior: smooth;
+}
+
+.faq-list--searchbar {
+    position: absolute;
+    top: -4rem;
+    left: 5vw;
+}
+
+.faq-list input[type=search] {
+    width: 80vw;
+    height: 2.5rem;
+    padding-left: 2.8rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 22px;
+}
+
+.search--submit {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    width: 2rem;
+    height: 2rem;
+
+    font-size: 1rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--bg-clr);
+    color: var(--accnt-clr)
+}
+
+.faq-entry {
+    margin: 0.5rem;
+    padding: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+
+    scroll-snap-align: start;
+
+    background-color: #999;
+    border-radius: 10px;
+    box-shadow:
+        0 6px 1px rgb(0 0 0 / 10%),
+        0 0 5px rgb(0 0 0 / 10%),
+        0 1px 3px rgb(0 0 0 / 30%),
+        0 3px 5px rgb(0 0 0 / 20%),
+        0 5px 10px rgb(0 0 0 / 25%),
+        0 10px 10px rgb(0 0 0 / 20%),
+        0 20px 20px rgb(0 0 0 / 15%);
+}
+
+.faq-entry h3 {
+    font-size: 1.3rem;
+}
+
+.feedback-form {
+    padding: 1rem;
+    display: grid;
+    color: white;
+}
+
+.feedback-form input:hover,
+.feedback-form--reset:hover {
+    color: white;
+    background-color: #111;
+    border: none;
+}
+
+.feedback-form * {
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    border: 1px var(--prm-clr)
+}
+
+.feedback-form button {
+    font-family: 'Play', sans-serif;
+
+    padding: 0.5rem 1rem;
+
+    margin: 1rem;
+    border-radius: 7px;
+    border: 0;
+
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.feedback-form--submit {
+    background-color: var(--accnt-clr);
+    color: black;
+}
+
+.feedback-form--submit:hover {
+    background-color: var(--prm-clr);
+    color: white;
+}
+
+.feedback-form--reset {
+    background-color: var(--bg-clr);
+    color: white;
+}
 
 /* ------------------------------------------------------------------------------------------------------------------  FOOTER */
 footer {
@@ -1124,7 +1281,10 @@ iframe {
         font-size: 1.5rem;
     }
 
-    input[type="text"], input[type="email"], input[type=date], select {
+    input[type="text"],
+    input[type="email"],
+    input[type=date],
+    select {
         font-size: 1.5rem;
     }
 
@@ -1282,7 +1442,10 @@ iframe {
         font-size: 1.5rem;
     }
 
-    input[type="text"], input[type="email"], input[type=date], select {
+    input[type="text"],
+    input[type="email"],
+    input[type=date],
+    select {
         font-size: 1.5rem;
     }
 
@@ -1434,7 +1597,7 @@ iframe {
     #food-menu {
         margin: 2rem 6.5rem;
     }
-    
+
     .carousel {
         width: 100%;
     }
