@@ -29,14 +29,13 @@
                 <li class="nav--item">
                     <a href="faq.html" class="nav--link">FAQ</a>
                 </li>
-                <li class="nav--item cta-button">
+                <li class="nav--item">
                     <a href="#" class="nav--link">About Us</a>
                 </li>
             </ul>
         </nav>
     </header>
     <h2>FAQ</h2>
-    <h2 class="alt-heading">Frequently Asked Questions</h2>
     <p>Is it your first time at the Hut? Or maybe you come in every day, but a question burns your lips and you haven't
         yet dared to ask? <br> Don't panic, you'll find the answer right here.</p>
     <section class="faq-list">
@@ -45,50 +44,66 @@
             <label for="faqsearch"></label>
             <input type="search" name="faqsearch" id="faqsearch" placeholder="Ask us anything!">
         </form>
-        <div class="faq-entry">
-            <h3>What is The Hexen Hut?</h3>
-            <p>Placeholder Text</p>
-        </div>
-        <div class="faq-entry">
-            <h3>How much does it cost?</h3>
-            <p>Placeholder Text</p>
-        </div>
-        <div class="faq-entry">
-            <h3>How long can I use the equipment for?</h3>
-            <p>Placeholder Text</p>
-        </div>
-        <div class="faq-entry">
-            <h3>How long can I use the equipment for?</h3>
-            <p>Placeholder Text</p>
-        </div>
-        <div class="faq-entry">
-            <h3>How long can I use the equipment for?</h3>
-            <p>Placeholder Text</p>
+        <div class="faq-entry--container">
+            <div class="faq-entry">
+                <h3>What is The Hexen Hut?</h3>
+                <p>It's first and foremost a bar, a place for living and meeting people! From the staff, to the
+                    customers and the cocktails, gaming is everywhere here. Televisions broadcast the best esports
+                    streams at all hours, and our computers and consoles are available to play freely or to participate
+                    in tournaments.</p>
+            </div>
+            <div class="faq-entry">
+                <h3>How much does it cost?</h3>
+                <p>You only pay what you drink at the Hut. Entry is free, consoles and computers are open access,
+                    and - except in a few cases - tournaments are free to join. You'll of course need to have a drink
+                    before you start playing.</p>
+            </div>
+            <div class="faq-entry">
+                <h3>How long can I play for?</h3>
+                <p>As long as there are free computers and that you have a drink in your hand, we won't stop you! If all
+                    computers are busy, you must give your spot once your game is over.</p>
+            </div>
+            <div class="faq-entry">
+                <h3>How can I participate in the tournaments?</h3>
+                <p>It's essential to sign up via our Events page to be able to play. You can pre-register using our <a
+                        href="events.html">Events Signup Form</a> On
+                    the day, just introduce yourself to the organiser by giving your username to validate your
+                    registration. Get there on time: pre-registration does not guarantee a place in case of high
+                    attendance! If you have pre-registered by mistake, don't panic - no need to unregister.</p>
+            </div>
+            <div class="faq-entry">
+                <h3>Is it possible to book part of the bar for a birthday, a stag night, etc?</h3>
+                <p>Of course! Conditions are to be defined with the staff so feel free to contact us! Our info is at the bottom of the page. </p>
+            </div>
         </div>
     </section>
     <section class="feedback-form">
-        <form action="javascript:void(0);" method="post"></form>
-        <legend>Feedback Form</legend>
-        <fieldset>
-            <label for="fullname">What's your name?</label><br>
-            <input type="text" name="fullname" id="fullname"><br>
-            <label for="email">What's your email address?</label><br>
-            <input type="text" name="email" id="email">
-        </fieldset>
-        <fieldset>
-            <label for="faq_rd1">Option 1</label>
-            <input type="radio" name="faq-radio" id="faq_rd1">
-            <label for="faq_rd2">Option 2</label>
-            <input type="radio" name="faq-radio" id="faq_rd2">
-            <label for="faq_rd3">Option 3</label>
-            <input type="radio" name="faq-radio" id="faq_rd3">
-            <label for="faq_rd4">Option 4</label>
-            <input type="radio" name="faq-radio" id="faq_rd4">
-        </fieldset>
-        <textarea name="feedback" id="faq-feedback" cols="30" rows="10"
-            placeholder="We want to hear from you!..."></textarea>
-        <button type="submit" class="feedback-form--submit">Submit</button>
-        <button type="reset" class="feedback-form--reset">Reset Form</button>
+        <form action="javascript:void(0);" method="post">
+            <legend>Feedback Form</legend>
+            <fieldset class="feedback-personal">
+                <label for="fullname">What's your name?</label><br>
+                <input type="text" name="fullname" id="fullname" required><br>
+                <label for="email">What's your email address?</label><br>
+                <input type="text" name="email" id="email" required>
+            </fieldset>
+            <fieldset class="feedback-options">
+                <div class="faq-rd">
+                    <label for="faq_rd1">Question</label>
+                    <input type="radio" name="faq-radio" id="faq_rd1">
+                </div>
+                <div class="faq-rd">
+                    <label for="faq_rd2">Suggestion</label>
+                    <input type="radio" name="faq-radio" id="faq_rd2">
+                </div>
+                <div class="faq-rd">
+                    <label for="faq_rd3">Feedback</label>
+                    <input type="radio" name="faq-radio" id="faq_rd3">
+                </div>
+            </fieldset>
+            <textarea name="feedback" id="faq-feedback" cols="30" rows="10"
+                placeholder="We want to hear from you!..." required></textarea>
+            <button type="submit" class="feedback-form--submit">Submit</button>
+            <button type="reset" class="feedback-form--reset">Reset Form</button>
         </form>
     </section>
     <footer>
