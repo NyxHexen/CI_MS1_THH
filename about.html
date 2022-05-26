@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <title>Events | The Hexen Hut - Video Games and Esports Bar</title>
+</head>
+
+<body class="about">
+    <header>
+        <a href="main.html" class="back-button" aria-label="Return to Main Page">
+            <i class="fa-solid fa-arrow-left"></i><span>Return to Main Page</span></a>
+        <div class="logo">
+            <h1>The Hexen Hut</h1>
+        </div>
+        <nav class="nav" aria-label="Navigation links">
+            <button class="nav--toggle" aria-expanded="false" aria-controls="main-menu"><i
+                    class="fa-solid fa-burger"></i><i class="fa-solid fa-xmark"></i></button>
+            <ul class="nav--list">
+                <li class="nav--item">
+                    <a href="our-menu.html" class="nav--link">Our Menu</a>
+                </li>
+                <li class="nav--item">
+                    <a href="events.html" class="nav--link" active>Events</a>
+                </li>
+                <li class="nav--item">
+                    <a href="faq.html" class="nav--link">FAQ</a>
+                </li>
+                <li class="nav--item">
+                    <a href="#" class="nav--link">About Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="what-we-do">
+        <div class="perk">
+            <h3>Esports</h3>
+            <p>Come watch a game or meet your favorite streamer. And make sure you don't miss out on the tournaments
+                against other gaming bars!</p>
+        </div>
+        <div class="perk">
+            <h3>Drinks!</h3>
+            <p>Pints and original cocktails, all prepared with love by your favorite bartenders!</p>
+        </div>
+        <div class="perk">
+            <h3>Themed Nights</h3>
+            <p>Whether you are the king of Just Dance or the mother of dragons, there'll be a night for you in our
+                program!</p>
+        </div>
+        <div class="perk">
+            <h3>Games</h3>
+            <p>How about a Super Smash Brothers or Mario Kart challenge? Come and show your friends who the game master
+                is!</p>
+        </div>
+    </section>
+    <section class="image-container">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </section>
+    <section>
+        <h3>The Results Are In - We Rock!</h3>
+        <div class="customer-comment">
+            <img src="" alt="">
+            <h4>"I'm Commander Shepard, and this is my favorite bar on the Citadel!"</h4>
+            <p><em>by CmndrShprd</em></p>
+        </div>
+        <div class="customer-comment">
+            <img src="" alt="">
+            <h4>"We hope your brief detention in the relaxation vault has been a pleasant one."</h4>
+            <p><em>by TheOfficialGLaDOS</em></p>
+        </div>
+        <div class="customer-comment">
+            <img src="" alt="">
+            <h4>"I like trains..."</h4>
+            <p><em>by TimTheTrainGuy</em></p>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__background" aria-hidden="true">
+            &nbsp;
+        </div>
+        <div class="join-us">
+            <h3>Join Us</h3>
+            <p>Blackrock Business Park, 1 Block 1, Carysfort Ave, Blackrock, Co. Dublin, Ireland</p>
+            <table>
+                <tr>
+                    <td>Sun - Thurs</td>
+                    <td>09:00</td>
+                    <td>until</td>
+                    <td>00:00</td>
+                </tr>
+                <tr>
+                    <td>Fri & Sat</td>
+                    <td>10:00</td>
+                    <td>until</td>
+                    <td>02:00</td>
+                </tr>
+            </table>
+        </div>
+        <div class="iframe__container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4769.075097108596!2d-6.1823260708050265!3d53.29781863203341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e99733f3617%3A0x7ff7202fe3dea603!2sCode%20Institute!5e0!3m2!1sen!2suk!4v1652720823551!5m2!1sen!2suk"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-us">
+            <h3>Contact Us</h3>
+            <ul aria-label="Social media links and phone number for contact">
+                <span>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li><a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.linked.in/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.github.com/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                </span>
+                <li>Call Us: <a href="tel:+442821234567">0282 123 4567</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Font Awesome v6 Kit -->
+    <script src="https://kit.fontawesome.com/f05b6615ad.js" crossorigin="anonymous"></script>
+    <script>
+        const navToggle = document.querySelector('.nav--toggle');
+
+        navToggle.addEventListener('click', () => {
+            document.body.classList.toggle('nav-open');
+        });
+    </script>
