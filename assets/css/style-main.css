@@ -147,6 +147,7 @@ header {
 #nav li {
   list-style: none;
   text-align: center;
+  white-space: nowrap;
 }
 
 #nav a {
@@ -576,7 +577,7 @@ iframe {
   }
 
   #nav a {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 
