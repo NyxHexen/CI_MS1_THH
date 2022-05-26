@@ -91,6 +91,7 @@ a:active,
 h2 {
     font-size: 2rem;
 
+    margin-left: 0.5rem;
     margin-bottom: 2rem;
     text-shadow:
         0 6px 1px rgba(0, 0, 0, .1),
@@ -587,7 +588,7 @@ header span {
     overflow: hidden;
 }
 
-img {
+.slides-item img {
     height: 100%;
     width: 100%;
 }
@@ -1060,9 +1061,10 @@ input[type="date"] {
     height: 1rem;
     width: 1rem;
 
-    padding: 3px;
     margin: 0;
 
+    background-color: red;
+    box-shadow: 0 0 30px red;
     border: 2px solid #222;
     border-radius: 50%;
     background-clip: content-box;
@@ -1091,6 +1093,150 @@ input[type="date"] {
 .feedback-form--reset {
     background-color: var(--bg-clr);
     color: white;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ ABOUT.HTML */
+
+.about section {
+    position: relative;
+    padding: 1.5rem 1.2rem 1rem;
+    margin: 1rem;
+
+    /* container styling */
+    background-color: var(--cont-clr);
+    border: 1px solid #555;
+    border-radius: 16px;
+    box-shadow:
+        0 6px 1px rgb(0 0 0 / 10%),
+        0 0 5px rgb(0 0 0 / 10%),
+        0 1px 3px rgb(0 0 0 / 30%),
+        0 3px 5px rgb(0 0 0 / 20%),
+        0 5px 10px rgb(0 0 0 / 25%),
+        0 10px 10px rgb(0 0 0 / 20%),
+        0 20px 20px rgb(0 0 0 / 15%);
+}
+
+.perk {
+    height: 25%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.perk:nth-child(1),
+.perk:nth-child(3) {
+    justify-items: end;
+}
+
+.perk:nth-child(2),
+.perk:nth-child(4) {
+    justify-items: start;
+}
+
+/* writing-mode rotates the text 90 degrees */
+.perk h3 {
+    width: fit-content;
+
+    /* text styles */
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    letter-spacing: 0.1rem;
+}
+
+.perk p {
+    font-size: 1.2rem;
+}
+
+.perk i {
+    display: none;
+    font-size: 2rem;
+}
+
+.perk:nth-child(1) i,
+.perk:nth-child(3) i {
+    margin: 1rem;
+    order: 2;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.perk:nth-child(1) h3,
+.perk:nth-child(3) h3 {
+    order: 3;
+    grid-column: 4;
+    margin-left: 1rem;
+
+    writing-mode: vertical-rl;
+
+    text-shadow: 0 4px 5px black, 0 2px 30px var(--accnt-clr);
+}
+
+.perk:nth-child(2) h3,
+.perk:nth-child(4) h3 {
+    margin-right: 1rem;
+    transform: rotate(180deg);
+    text-shadow: 0 4px 5px black, 0 2px 30px var(--prm-clr);
+}
+
+.perk:nth-child(1) p,
+.perk:nth-child(3) p {
+    grid-column: 1/4;
+}
+
+.perk:nth-child(2) p,
+.perk:nth-child(4) p {
+    grid-column: 2/5;
+    text-align: right;
+}
+
+.about .comment-board {
+    margin: 1rem 1rem 2rem;
+}
+
+.comment-board h3 {
+    font-size: 1.3rem;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.customer-comment {
+    margin: 1rem 0;
+}
+
+/* contains picture & comment */
+.text-bubble {
+    display: flex;
+    align-items: center;
+    min-height: 6rem;
+
+    padding: 0 .5rem;
+
+    background-color: #fff;
+    border-radius: 50px 25px 25px 50px;
+}
+
+/* object-fit does for img what background-size does for background-image */
+.comment-board img {
+    object-fit: contain;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+
+    z-index: 2;
+}
+
+
+.comment-board h4 {
+    font-family: 'Play', sans-serif;
+    color: #000;
+    text-align: left;
+}
+
+
+.comment-board p {
+    text-align: end;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------  FOOTER */
@@ -1391,7 +1537,7 @@ iframe {
     }
 
     .faq .faq-list {
-        margin-top: 6rem;
+        margin-top: 1rem;
     }
 
     .faq-list input[type=search] {
@@ -1968,7 +2114,7 @@ iframe {
         font-size: 2rem;
     }
 
-    .faq > p {
+    .faq>p {
         font-size: 1.75rem;
     }
 
