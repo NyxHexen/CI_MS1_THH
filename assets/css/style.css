@@ -4,10 +4,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 :root {
+    /* Colors */
     --bg-clr: #222;
     --prm-clr: hsl(259, 100%, 61%);
     --accnt-clr: hsl(83, 100%, 50%);
     --cont-clr: #777;
+    /* Shadows */
+    --prm-shdw: 0 11px 1px rgb(0 0 0 / 10%),
+        0 0 5px rgb(0 0 0 / 10%),
+        0 6px 3px rgb(0 0 0 / 30%),
+        0 8px 5px rgb(0 0 0 / 20%),
+        0 10px 10px rgb(0 0 0 / 25%),
+        0 15px 10px rgb(0 0 0 / 20%),
+        0 25px 20px rgb(0 0 0 / 15%);
 }
 
 /* reset */
@@ -68,16 +77,10 @@ body {
 
 .outer-container {
     padding-bottom: 1rem;
-    box-shadow:
-        0 11px 1px rgb(0 0 0 / 10%),
-        0 0 5px rgb(0 0 0 / 10%),
-        0 6px 3px rgb(0 0 0 / 30%),
-        0 8px 5px rgb(0 0 0 / 20%),
-        0 10px 10px rgb(0 0 0 / 25%),
-        0 15px 10px rgb(0 0 0 / 20%),
-        0 25px 20px rgb(0 0 0 / 15%);
+    box-shadow: var(--prm-shdw);
 }
 
+.active,
 a:hover,
 a:focus,
 a:active,
@@ -93,27 +96,13 @@ h2 {
 
     margin-left: 0.5rem;
     margin-bottom: 2rem;
-    text-shadow:
-        0 6px 1px rgba(0, 0, 0, .1),
-        0 0 5px rgba(0, 0, 0, .1),
-        0 1px 3px rgba(0, 0, 0, .3),
-        0 3px 5px rgba(0, 0, 0, .2),
-        0 5px 10px rgba(0, 0, 0, .25),
-        0 10px 10px rgba(0, 0, 0, .2),
-        0 20px 20px rgba(0, 0, 0, .15);
+    text-shadow: var(--prm-shdw);
 }
 
 h3 {
     font-size: 1.5rem;
 
-    text-shadow:
-        0 6px 1px rgba(0, 0, 0, .1),
-        0 0 5px rgba(0, 0, 0, .1),
-        0 1px 3px rgba(0, 0, 0, .3),
-        0 3px 5px rgba(0, 0, 0, .2),
-        0 5px 10px rgba(0, 0, 0, .25),
-        0 10px 10px rgba(0, 0, 0, .2),
-        0 20px 20px rgba(0, 0, 0, .15);
+    text-shadow: var(--prm-shdw);
 }
 
 section {
@@ -179,14 +168,7 @@ header span {
         0 2px 0 #c9c9c9,
         0 3px 0 #bbb,
         0 4px 0 #b9b9b9,
-        0 5px 0 #aaa,
-        0 6px 1px rgba(0, 0, 0, .1),
-        0 0 5px rgba(0, 0, 0, .1),
-        0 1px 3px rgba(0, 0, 0, .3),
-        0 3px 5px rgba(0, 0, 0, .2),
-        0 5px 10px rgba(0, 0, 0, .25),
-        0 10px 10px rgba(0, 0, 0, .2),
-        0 20px 20px rgba(0, 0, 0, .15);
+        0 5px 0 #aaa, var(--prm-shdw);
 }
 
 /* Hamburger Menu */
@@ -363,14 +345,7 @@ header span {
     /* Container style */
     background: var(--cont-clr);
     border-radius: 16px;
-    box-shadow:
-        0 6px 1px rgb(0 0 0 / 10%),
-        0 0 5px rgb(0 0 0 / 10%),
-        0 1px 3px rgb(0 0 0 / 30%),
-        0 3px 5px rgb(0 0 0 / 20%),
-        0 5px 10px rgb(0 0 0 / 25%),
-        0 10px 10px rgb(0 0 0 / 20%),
-        0 20px 20px rgb(0 0 0 / 15%);
+    box-shadow: var(--prm-shdw);
 
     border: 1px solid rgba(255, 255, 255, 0.4);
 }
@@ -396,14 +371,7 @@ header span {
     overflow: hidden;
     background: var(--accnt-clr);
     border-radius: 16px;
-    box-shadow:
-        0 6px 1px rgb(0 0 0 / 10%),
-        0 0 5px rgb(0 0 0 / 10%),
-        0 1px 3px rgb(0 0 0 / 30%),
-        0 3px 5px rgb(0 0 0 / 20%),
-        0 5px 10px rgb(0 0 0 / 25%),
-        0 10px 10px rgb(0 0 0 / 20%),
-        0 20px 20px rgb(0 0 0 / 15%);
+    box-shadow: var(--prm-shdw);
 }
 
 .cocktail-drinks--accordion input {
@@ -503,14 +471,7 @@ header span {
     /* Container style */
     background: var(--cont-clr);
     border-radius: 16px;
-    box-shadow:
-        0 6px 1px rgb(0 0 0 / 10%),
-        0 0 5px rgb(0 0 0 / 10%),
-        0 1px 3px rgb(0 0 0 / 30%),
-        0 3px 5px rgb(0 0 0 / 20%),
-        0 5px 10px rgb(0 0 0 / 25%),
-        0 10px 10px rgb(0 0 0 / 20%),
-        0 20px 20px rgb(0 0 0 / 15%);
+    box-shadow: var(--prm-shdw);
 
     border: 1px solid rgba(255, 255, 255, 0.4);
 }
@@ -536,14 +497,7 @@ header span {
     text-align: center;
     color: white;
 
-    text-shadow:
-        0 6px 1px rgba(0, 0, 0, .1),
-        0 0 5px rgba(0, 0, 0, .1),
-        0 1px 3px rgba(0, 0, 0, .3),
-        0 3px 5px rgba(0, 0, 0, .2),
-        0 5px 10px rgba(0, 0, 0, .25),
-        0 10px 10px rgba(0, 0, 0, .2),
-        0 20px 20px rgba(0, 0, 0, .15);
+    text-shadow: var(--prm-shdw);
 }
 
 /* -------------------------------------------------------------------------------------------------------------- events.html */
@@ -660,14 +614,7 @@ header span {
     border-radius: 10px;
     border: 0;
 
-    box-shadow:
-        0 6px 1px rgb(0 0 0 / 10%),
-        0 0 5px rgb(0 0 0 / 10%),
-        0 1px 3px rgb(0 0 0 / 30%),
-        0 3px 5px rgb(0 0 0 / 20%),
-        0 5px 10px rgb(0 0 0 / 25%),
-        0 10px 10px rgb(0 0 0 / 20%),
-        0 20px 20px rgb(0 0 0 / 15%);
+    box-shadow: var(--prm-shdw);
 
     transform: translate(0);
     transition: transform 300ms linear;
@@ -727,10 +674,7 @@ header span {
     left: 0;
     top: 0;
     border-radius: 1rem;
-    box-shadow:
-        inset 0 -1px 0 #181818,
-        inset 0 -2px 0 #202020,
-        inset 0 -3px 0 #282828;
+    box-shadow: var(--prm-shdw);
 }
 
 .signup-form input:hover,
@@ -793,7 +737,7 @@ input[type="date"] {
     width: 80%;
     padding: 5px 10px;
 
-    font-style: 'Play', sans-serif;
+    font-family: 'Play', sans-serif;
     background-color: #333;
     color: white;
 }
@@ -851,14 +795,7 @@ input[type="date"] {
     background-color: var(--cont-clr);
     border: 1px solid #555;
     border-radius: 16px;
-    box-shadow:
-        0 6px 1px rgb(0 0 0 / 10%),
-        0 0 5px rgb(0 0 0 / 10%),
-        0 1px 3px rgb(0 0 0 / 30%),
-        0 3px 5px rgb(0 0 0 / 20%),
-        0 5px 10px rgb(0 0 0 / 25%),
-        0 10px 10px rgb(0 0 0 / 20%),
-        0 20px 20px rgb(0 0 0 / 15%);
+    box-shadow: var(--prm-shdw);
 }
 
 .events-list h3 {
@@ -899,14 +836,7 @@ input[type="date"] {
     background-color: var(--cont-clr);
     border: 1px solid #555;
     border-radius: 16px;
-    box-shadow:
-        0 6px 1px rgb(0 0 0 / 10%),
-        0 0 5px rgb(0 0 0 / 10%),
-        0 1px 3px rgb(0 0 0 / 30%),
-        0 3px 5px rgb(0 0 0 / 20%),
-        0 5px 10px rgb(0 0 0 / 25%),
-        0 10px 10px rgb(0 0 0 / 20%),
-        0 20px 20px rgb(0 0 0 / 15%);
+    box-shadow: var(--prm-shdw);
 }
 
 /* how to win the specificity war for color (add .faq) */
@@ -976,14 +906,7 @@ input[type="date"] {
 
     background-color: var(--cont-clr);
     border-radius: 10px;
-    box-shadow:
-        0 6px 1px rgb(0 0 0 / 10%),
-        0 0 5px rgb(0 0 0 / 10%),
-        0 1px 3px rgb(0 0 0 / 30%),
-        0 3px 5px rgb(0 0 0 / 20%),
-        0 5px 10px rgb(0 0 0 / 25%),
-        0 10px 10px rgb(0 0 0 / 20%),
-        0 20px 20px rgb(0 0 0 / 15%);
+    box-shadow: var(--prm-shdw);
 }
 
 .faq-entry h3 {
@@ -1106,14 +1029,7 @@ input[type="date"] {
     background-color: var(--cont-clr);
     border: 1px solid #555;
     border-radius: 16px;
-    box-shadow:
-        0 6px 1px rgb(0 0 0 / 10%),
-        0 0 5px rgb(0 0 0 / 10%),
-        0 1px 3px rgb(0 0 0 / 30%),
-        0 3px 5px rgb(0 0 0 / 20%),
-        0 5px 10px rgb(0 0 0 / 25%),
-        0 10px 10px rgb(0 0 0 / 20%),
-        0 20px 20px rgb(0 0 0 / 15%);
+    box-shadow: var(--prm-shdw);
 }
 
 .what-we-do {
@@ -1272,14 +1188,7 @@ footer>* {
     color: white;
     background-color: #222;
     border-radius: 16px;
-    box-shadow:
-        0 6px 1px rgb(0 0 0 / 10%),
-        0 0 5px rgb(0 0 0 / 10%),
-        0 1px 3px rgb(0 0 0 / 30%),
-        0 3px 5px rgb(0 0 0 / 20%),
-        0 5px 10px rgb(0 0 0 / 25%),
-        0 10px 10px rgb(0 0 0 / 20%),
-        0 20px 20px rgb(0 0 0 / 15%);
+    box-shadow: var(--prm-shdw);
 
     justify-content: space-evenly;
 }
@@ -1292,14 +1201,7 @@ footer h3 {
     color: rgb(255, 255, 255);
     font-size: 1.8rem;
 
-    text-shadow:
-        0 6px 1px rgba(0, 0, 0, .1),
-        0 0 5px rgba(0, 0, 0, .1),
-        0 1px 3px rgba(0, 0, 0, .3),
-        0 3px 5px rgba(0, 0, 0, .2),
-        0 5px 10px rgba(0, 0, 0, .25),
-        0 10px 10px rgba(0, 0, 0, .2),
-        0 20px 20px rgba(0, 0, 0, .15);
+    text-shadow: var(--prm-shdw);
 }
 
 .footer__background {
@@ -2120,7 +2022,7 @@ iframe {
         padding: 1.5rem 0.5rem;
         background: var(--cont-clr);
         border-radius: 16px;
-        box-shadow: 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%), 0 5px 10px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 20%), 0 20px 20px rgb(0 0 0 / 15%);
+        box-shadow: var(--prm-shdw);
         border: 1px solid rgba(255, 255, 255, 0.4);
 
         grid-template-columns: 2fr 4fr 2fr;
