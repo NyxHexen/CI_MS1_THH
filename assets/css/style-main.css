@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
+:root {
+  /* Colors */
+  --bg-clr: #222;
+  --prm-clr: hsl(259, 100%, 61%);
+  --accnt-clr: hsl(83, 100%, 50%);
+  --cont-clr: #777;
+  /* Shadows */
+  --prm-shdw: 0 11px 1px rgb(0 0 0 / 10%),
+      0 0 5px rgb(0 0 0 / 10%),
+      0 6px 3px rgb(0 0 0 / 30%),
+      0 8px 5px rgb(0 0 0 / 20%),
+      0 10px 10px rgb(0 0 0 / 25%),
+      0 15px 10px rgb(0 0 0 / 20%),
+      0 25px 20px rgb(0 0 0 / 15%);
+}
+
 *,
 *::before,
 *::after {
@@ -34,14 +50,7 @@ header {
   display: grid;
   align-content: space-evenly;
 
-  box-shadow:
-    0 11px 1px rgb(0 0 0 / 10%),
-    0 0 5px rgb(0 0 0 / 10%),
-    0 6px 3px rgb(0 0 0 / 30%),
-    0 8px 5px rgb(0 0 0 / 20%),
-    0 10px 10px rgb(0 0 0 / 25%),
-    0 15px 10px rgb(0 0 0 / 20%),
-    0 25px 20px rgb(0 0 0 / 15%);
+  box-shadow: var(--prm-shdw);
 }
 
 .header__background {
@@ -96,14 +105,7 @@ header {
     0 2px 0 #c9c9c9,
     0 3px 0 #bbb,
     0 4px 0 #b9b9b9,
-    0 5px 0 #aaa,
-    0 6px 1px rgba(0, 0, 0, .1),
-    0 0 5px rgba(0, 0, 0, .1),
-    0 1px 3px rgba(0, 0, 0, .3),
-    0 3px 5px rgba(0, 0, 0, .2),
-    0 5px 10px rgba(0, 0, 0, .25),
-    0 10px 10px rgba(0, 0, 0, .2),
-    0 20px 20px rgba(0, 0, 0, .15);
+    0 5px 0 #aaa, var(--prm-shdw);
 }
 
 /* --------------------------------------------------------- HEADER > SLOGAN */
@@ -155,14 +157,7 @@ header {
   text-decoration: none;
   font-size: 1.75rem;
 
-  text-shadow:
-    0 6px 1px rgba(0, 0, 0, .1),
-    0 0 5px rgba(0, 0, 0, .1),
-    0 1px 3px rgba(0, 0, 0, .3),
-    0 3px 5px rgba(0, 0, 0, .2),
-    0 5px 10px rgba(0, 0, 0, .25),
-    0 10px 10px rgba(0, 0, 0, .2),
-    0 20px 20px rgba(0, 0, 0, .15);
+  text-shadow: var(--prm-shdw);
 }
 
 /* Button style from https://getcssscan.com/css-buttons-examples "Button-85", heavily customised */
@@ -255,14 +250,7 @@ footer>* {
   color: white;
   background-color: #222;
   border-radius: 16px;
-  box-shadow:
-      0 6px 1px rgb(0 0 0 / 10%),
-      0 0 5px rgb(0 0 0 / 10%),
-      0 1px 3px rgb(0 0 0 / 30%),
-      0 3px 5px rgb(0 0 0 / 20%),
-      0 5px 10px rgb(0 0 0 / 25%),
-      0 10px 10px rgb(0 0 0 / 20%),
-      0 20px 20px rgb(0 0 0 / 15%);
+  box-shadow: var(--prm-shdw);
 
   justify-content: space-evenly;
 }
@@ -275,14 +263,7 @@ footer h3 {
   color: rgb(255, 255, 255);
   font-size: 1.8rem;
 
-  text-shadow:
-      0 6px 1px rgba(0, 0, 0, .1),
-      0 0 5px rgba(0, 0, 0, .1),
-      0 1px 3px rgba(0, 0, 0, .3),
-      0 3px 5px rgba(0, 0, 0, .2),
-      0 5px 10px rgba(0, 0, 0, .25),
-      0 10px 10px rgba(0, 0, 0, .2),
-      0 20px 20px rgba(0, 0, 0, .15);
+  text-shadow: var(--prm-shdw);
 }
 
 .footer__background {
@@ -629,6 +610,6 @@ iframe {
   }
 
   #nav a {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
