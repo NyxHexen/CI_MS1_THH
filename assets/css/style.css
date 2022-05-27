@@ -75,11 +75,6 @@ body {
     overflow-x: hidden;
 }
 
-.outer-container {
-    padding-bottom: 1rem;
-    box-shadow: var(--prm-shdw);
-}
-
 .active,
 a:hover,
 a:focus,
