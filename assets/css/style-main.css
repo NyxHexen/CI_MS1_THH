@@ -119,12 +119,12 @@ header {
 
 .slogan h2 {
   font-size: 1.4rem;
-  text-shadow: 2px 2px #9a6bff,
+  text-shadow: 2px 2px var(--prm-clr),
     3px 3px #000000;
 }
 
 .slogan span {
-  text-shadow: 2px 2px #9dff00,
+  text-shadow: 2px 2px var(--accnt-clr),
     3px 3px #000000;
 }
 
