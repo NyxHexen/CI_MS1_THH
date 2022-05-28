@@ -2112,11 +2112,80 @@ iframe {
     .faq section {
         margin: 0 12rem 2rem;
     }
+
+    .what-we-do {
+        display: flex;
+    }
+
+    .perk {
+        display: flex;
+        flex-direction: column;
+
+        background: linear-gradient(0deg, var(--bg-clr) 0%, rgba(255, 255, 255, 0)100%) !important;
+        border-radius: 0 !important;
+        padding: 1rem;
+        height: 100%;
+        max-width: 25%;
+    }
+
+    .perk * {
+        order: initial !important;
+        margin: 0 !important;
+        padding: 1rem .5rem;
+        text-align: center !important;
+    }
+
+    .perk i {
+        font-size: 4.5rem;
+    }
+
+    .perk p {
+        line-height: 2rem !important;
+    }
+
+    .comment-board {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20% 40% 40%;
+    }
+
+    .comment-board h3 {
+        grid-column: 1/3;
+    }
+
+    .customer-comment {
+        margin: 1rem;
+    }
+
+    .customer-comment p {
+        color: white;
+    }
+
+    .comment-1 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .comment-2 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .comment-3 {
+        grid-column: 1/3;
+        grid-row: 3;
+        width: 50%;
+        margin: 1rem auto;
+    }
 }
 
 
 /* Shorter landscape screens such as Nest Hub */
 @media (min-width: 1024px) and (max-height: 600px) {
+    .nav--list {
+        max-height: 60vh;
+    }
+
     .feedback-form form {
         display: grid;
         grid-template-columns: 3fr 1fr 3fr;
@@ -2169,10 +2238,6 @@ iframe {
 
     .feedback-form label {
         font-size: 1rem;
-    }
-
-    .nav--list {
-        max-height: 60vh;
     }
 }
 
