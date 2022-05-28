@@ -103,6 +103,11 @@ section {
     margin: 0 1rem;
 }
 
+/* Accessibility */
+.visually-hidden {
+    display: none !important;
+}
+
 
 /* ----------------------------------------------------------------- Header & Navbar (carries over all pages EXCEPT main.html) */
 
@@ -1237,9 +1242,14 @@ footer h3 {
     font-size: 1rem;
 }
 
-.join-us table {
+.join-us ul {
     font-size: 1.1rem;
     margin: 0.5rem 1rem 1rem;
+}
+
+.join-us li {
+    display: flex;
+    flex-direction: column;
 }
 
 /* ------------------------------------------------------------------------------------------------ FOOTER > CONTACT US */
@@ -1393,11 +1403,6 @@ iframe {
         grid-column: 2;
         order: 2;
         padding-left: 3rem;
-    }
-
-    .food-menu--hungry table {
-        grid-column: 1;
-        grid-row: 1;
     }
 
     .signup-form {
@@ -1679,7 +1684,7 @@ iframe {
         font-size: 1.5rem;
     }
 
-    .join-us table {
+    .join-us ul {
         font-size: 1rem;
     }
 }
