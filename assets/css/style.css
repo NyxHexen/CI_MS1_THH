@@ -55,7 +55,6 @@
 h1,
 h2,
 h3,
-h4,
 .nav--link,
 .back-button span {
     font-family: 'Press Start 2P', sans-serif;
@@ -484,7 +483,7 @@ header span {
     font-weight: 400;
 }
 
-#food-menu p {
+.food-menu--or {
     margin: 1rem 0;
 
     font-family: 'Press Start 2P', sans-serif;
@@ -2085,7 +2084,7 @@ iframe {
     }
 
     #food-menu {
-        margin: 2rem 6.5rem;
+        margin: 0 6.5rem 2rem;
     }
 
     .carousel {
