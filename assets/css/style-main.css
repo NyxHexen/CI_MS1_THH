@@ -39,6 +39,11 @@ body {
   background-color: rgba(34, 34, 34, 0.9);
 }
 
+/* Accessibility */
+.visually-hidden {
+  display: none !important;
+}
+
 /* ------------------------------------------------------------------------------------------------------  HEADER */
 
 header {
