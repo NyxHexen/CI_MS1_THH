@@ -1,11 +1,13 @@
 <h1 align="center">The Hexen Hut - A video games bar. </h1>
 
+https://nyxhexen.github.io/CI_MS1_THH/
+
 ## Milestone Project 1
 
 ### *Project goal:*
 - Build a static front-end site to present information to users using technologies learned - HTML and CSS. *Optional: Boostrap and/or other CSS libraries and/or frameworks.*
 
-### *Project Requirements:*
+### *Project Requirements:*git 
 - Custom HTML5 and CSS3 code to create at least 3 pages, or 3 separate page areas.
 - Deploy final version to a hosting platform (GitHub Pages).
 
