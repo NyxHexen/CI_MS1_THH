@@ -69,7 +69,7 @@ body {
     font-weight: 400;
 
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
 
     overflow-x: hidden;
 }
@@ -97,7 +97,6 @@ h3 {
     font-size: 1.5rem;
     text-shadow: var(--prm-shdw);
     padding-bottom: .5rem;
-    white-space: nowrap;
 }
 
 section {
@@ -1329,6 +1328,41 @@ iframe {
 
 /* ------------------------------------------------------------------------------------------------------- MEDIA QUERIES */
 
+@media (min-width: 320px) {
+    .logo {
+        margin-left: .3rem;
+    }
+
+    .logo h1 {
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+    }
+
+    .nav--list {
+        padding: .8rem 1rem 1rem 1.5rem;
+    }
+
+    .events-list h3 {
+        font-size: 1.5rem;
+    }
+
+    .events-list li {
+        font-size: 1.1rem;
+        border-radius: .6rem;
+    }
+
+    .signup-form--toggle {
+        font-size: 1.3rem;
+    }
+
+    .signup-form * {
+        font-size: 1.1em;
+    }
+
+    .signup-form button {
+        margin: 1rem auto;
+    }
+}
 
 @media (min-width: 390px) {
     .nav--link {
@@ -1667,7 +1701,7 @@ iframe {
     h3 {
         font-size: 1.3rem;
     }
-    
+
     .our-menu h2 {
         font-size: 2rem;
     }

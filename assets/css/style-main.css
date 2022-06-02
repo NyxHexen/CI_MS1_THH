@@ -9,12 +9,12 @@
   --cont-clr: #777;
   /* Shadows */
   --prm-shdw: 0 11px 1px rgb(0 0 0 / 10%),
-      0 0 5px rgb(0 0 0 / 10%),
-      0 6px 3px rgb(0 0 0 / 30%),
-      0 8px 5px rgb(0 0 0 / 20%),
-      0 10px 10px rgb(0 0 0 / 25%),
-      0 15px 10px rgb(0 0 0 / 20%),
-      0 25px 20px rgb(0 0 0 / 15%);
+    0 0 5px rgb(0 0 0 / 10%),
+    0 6px 3px rgb(0 0 0 / 30%),
+    0 8px 5px rgb(0 0 0 / 20%),
+    0 10px 10px rgb(0 0 0 / 25%),
+    0 15px 10px rgb(0 0 0 / 20%),
+    0 25px 20px rgb(0 0 0 / 15%);
 }
 
 *,
@@ -99,7 +99,7 @@ header {
 
 .logo h1 {
   color: #fff;
-  line-height: 5rem;
+  line-height: 4rem;
   font-size: 3.5rem;
   text-align: center;
   text-transform: uppercase;
@@ -310,9 +310,10 @@ footer h3 {
   font-size: 1rem;
 }
 
-.join-us table {
+.join-us ul {
   font-size: 1.1rem;
   margin: 0.5rem 1rem 1rem;
+  list-style: none;
 }
 
 /* ------------------------------------------------------------------------------------------------ FOOTER > CONTACT US */
@@ -445,6 +446,25 @@ iframe {
 
 /* ------------------------------------------------------ MEDIA QUERIES */
 
+@media (max-width: 320px) {
+  #nav li {
+    padding: 0.2rem 1rem;
+  }
+
+  .slogan {
+    margin: 0;
+  }
+
+  .slogan h2 {
+    font-size: 1.3rem !important;
+    padding: 0;
+  }
+
+  footer h3 {
+    font-size: 1.5rem;
+    padding-left: .4rem;
+  }
+}
 
 /* Landscape Orientation */
 @media (orientation: landscape) {
@@ -516,7 +536,7 @@ iframe {
 }
 
 /* Specifically for Galaxy Fold */
-@media (max-width: 350px) {
+@media (max-width: 280px) {
   .logo h1 {
     font-size: 3.2rem;
   }
@@ -541,6 +561,7 @@ iframe {
 @media (min-width: 390px) {
   .logo h1 {
     font-size: 4.5rem;
+    line-height: 5rem;
   }
 
   .slogan h2 {
