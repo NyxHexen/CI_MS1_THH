@@ -124,7 +124,7 @@ header {
 
 .slogan h2 {
   font-size: 1.4rem;
-  text-shadow: 2px 2px var(--prm-clr),
+  text-shadow: 2px 2px hsl(259deg 100% 75%),
     3px 3px #000000;
 }
 
@@ -383,17 +383,21 @@ iframe {
 /* ------------------------------------------------------ MEDIA QUERIES */
 
 @media (max-width: 320px) {
+  .logo h1 {
+    font-size: 3rem;
+    line-height: 3.3rem;
+  }
+
   #nav li {
     padding: 0.2rem 1rem;
   }
 
-  .slogan {
-    margin: 0;
+  .nav-button {
+    margin-bottom: 0.5rem;
   }
 
-  .slogan h2 {
-    font-size: 1.3rem !important;
-    padding: 0;
+  .slogan {
+    margin: 0;
   }
 
   footer h3 {
