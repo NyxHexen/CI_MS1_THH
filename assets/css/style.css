@@ -1247,7 +1247,7 @@ footer h3 {
 
 .join-us li {
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 /* ------------------------------------------------------------------------------------------------ FOOTER > CONTACT US */
