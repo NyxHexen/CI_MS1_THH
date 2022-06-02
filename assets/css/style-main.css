@@ -262,7 +262,7 @@ footer>* {
 
 footer h3 {
   color: rgb(255, 255, 255);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 
   text-shadow: var(--prm-shdw);
 }
@@ -318,15 +318,18 @@ footer h3 {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .contact-us ul {
   list-style: none;
-  font-size: 1.3rem;
 }
 
-.contact-us > ul li {
+.contact-us li {
+  font-size: 1.4rem;
+}
+
+.contact-us > ul > li {
   margin-top: .4rem;
 }
 
@@ -429,6 +432,10 @@ iframe {
     align-items: center;
   }
 
+  footer h3 {
+    font-size: 2rem;
+}
+
   footer>* {
     margin: 2rem 2rem 1.5rem;
     padding: 1rem 0;
@@ -452,8 +459,8 @@ iframe {
   }
 
   .contact-us i {
-    font-size: 2.6rem;
-  }
+    font-size: 3.6rem;
+}
 }
 
 /* Shorter phones such as iPhone SE */
