@@ -95,8 +95,9 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-
     text-shadow: var(--prm-shdw);
+    padding-bottom: .5rem;
+    white-space: nowrap;
 }
 
 section {
@@ -334,6 +335,10 @@ header span {
 #drinks-menu ul span {
     float: right;
     font-weight: 400;
+}
+
+.cold-drinks {
+    margin-bottom: 0.5rem;
 }
 
 /* Assists with grouping drinks menu elements across different device sizes */
@@ -801,14 +806,23 @@ input[type="date"] {
     margin-bottom: 0.5rem;
 }
 
+.events-list {
+    color: white;
+}
+
 .events-list li {
     list-style: none;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
     margin-bottom: 0.5rem;
+    padding: 0.2rem .5rem;
+
+    background-color: #222;
+    border-radius: 1rem;
 }
 
 .events-list li:hover {
@@ -916,9 +930,12 @@ input[type="date"] {
 
 .faq-entry p {
     padding: .9rem;
-
     line-height: 1.1;
     font-size: 1.1rem;
+    background-color: #222;
+    color: white;
+    border-radius: .5rem;
+    width: 100%;
 }
 
 .feedback-form {
@@ -1312,6 +1329,7 @@ iframe {
 
 /* ------------------------------------------------------------------------------------------------------- MEDIA QUERIES */
 
+
 @media (min-width: 390px) {
     .nav--link {
         font-size: 1.7rem;
@@ -1324,7 +1342,7 @@ iframe {
         grid-template-columns: 1fr 1fr;
         justify-items: stretch;
 
-        /* tiny margin to fix misalignment */
+        /* tiny padding to fix misalignment */
         padding-left: 0.8rem;
     }
 
@@ -1647,11 +1665,23 @@ iframe {
     }
 
     h3 {
-        font-size: 1rem;
+        font-size: 1.3rem;
+    }
+    
+    .our-menu h2 {
+        font-size: 2rem;
+    }
+
+    .sm-container {
+        padding: 1rem 0.5rem;
     }
 
     .cold-drinks {
         margin-bottom: 1rem;
+    }
+
+    .cocktail-drinks--accordion span {
+        left: 65%;
     }
 
     .events-list span {
