@@ -329,7 +329,7 @@ footer h3 {
   font-size: 1.4rem;
 }
 
-.contact-us > ul > li {
+.contact-us>ul>li {
   margin-top: .4rem;
 }
 
@@ -434,7 +434,7 @@ iframe {
 
   footer h3 {
     font-size: 2rem;
-}
+  }
 
   footer>* {
     margin: 2rem 2rem 1.5rem;
@@ -460,7 +460,7 @@ iframe {
 
   .contact-us i {
     font-size: 3.6rem;
-}
+  }
 }
 
 /* Shorter phones such as iPhone SE */

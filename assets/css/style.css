@@ -759,7 +759,7 @@ input[type="date"] {
 }
 
 .form-open .signup-form--toggle {
-    z-index: 3;
+    z-index: 11;
 }
 
 .form-open .signup-form--toggle::before {
@@ -961,7 +961,7 @@ input[type="date"] {
     font-size: 1.2rem;
 }
 
-.feedback-form legend {
+.feedback-form h3 {
     text-align: center;
     font-size: 1.5rem;
 }
@@ -1544,7 +1544,7 @@ iframe {
         align-items: center;
     }
 
-    .feedback-form legend {
+    .feedback-form h3 {
         font-size: 2rem;
         grid-column: 1/4;
     }
@@ -1893,7 +1893,7 @@ iframe {
         align-items: center;
     }
 
-    .feedback-form legend {
+    .feedback-form h3 {
         font-size: 2rem;
         grid-column: 1/4;
     }
@@ -2278,7 +2278,7 @@ iframe {
         align-items: center;
     }
 
-    .feedback-form legend {
+    .feedback-form h3 {
         font-size: 1.5rem;
         grid-column: 1/4;
     }
@@ -2376,7 +2376,7 @@ iframe {
         margin: 0 20rem 2rem !important;
     }
 
-    .feedback-form legend {
+    .feedback-form h3 {
         font-size: 2.5rem;
     }
 

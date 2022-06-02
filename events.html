@@ -58,9 +58,9 @@
         </div>
         <div class="carousel__skip-message" id="skip-link" tabindex="0"></div>
     </section>
-    <section class="signup">
+    <div class="signup">
         <button class="signup-form--toggle" aria-expanded="false" aria-controls="signup-form">Sign Up!</button>
-        <form class="signup-form">
+        <form id="signup-form" class="signup-form">
             <label for="fname">First Name:</label><br>
             <input type="text" id="fname" name="fname" placeholder="Warlock"><br>
             <label for="lname">Last Name:</label><br>
@@ -70,7 +70,7 @@
             <label for="email">E-mail Address:</label><br>
             <input type="email" name="email" id="email" placeholder=""><br>
             <label for="event">Select an event:</label><br>
-            <select name="event" id="event" placeholder="Pick an event!">
+            <select name="event" id="event">
                 <option value="eventdate--one">Team Try-outs! | 16-June-2022</option>
                 <option value="eventdate--one">BIG FAT QUIZBOX | 28-June-2022</option>
                 <option value="eventdate--one">SuperSmash Brothers Ultimate Championship | 14-July-2022</option>
@@ -79,8 +79,8 @@
             <button type="submit" class="signup-form--submit">Submit</button>
             <button type="reset" class="signup-form--reset">Reset Form</button>
         </form>
-    </section>
-    <section class="events-list--container">
+    </div>
+    <div class="events-list--container">
         <section class="events-list">
             <h3>Upcoming Events</h3>
             <ul>
@@ -99,7 +99,7 @@
                 <li>1v1 Tournament <span>7 Jan '22</span></li>
             </ul>
         </section>
-    </section>
+    </div>
     <footer>
         <div class="footer__background" aria-hidden="true">
             &nbsp;
