@@ -11,10 +11,10 @@
 
 <body class="events">
     <header>
-        <a href="main.html" class="back-button" aria-label="Return to Main Page">
-            <i class="fa-solid fa-arrow-left"></i><span>Back</span></a>
+        <button onclick="history.back()" class="back-button" aria-label="Return to Main Page">
+            <i class="fa-solid fa-arrow-left"></i><span>Back</span></button>
         <div class="logo">
-            <h1>The Hexen Hut</h1>
+            <h1><a href="main.html">The Hexen Hut</a></h1>
         </div>
         <nav id="nav" class="nav" aria-label="Navigation links">
             <button class="nav--toggle" aria-expanded="false" aria-controls="nav">
@@ -51,13 +51,6 @@
                 <img src="assets/images/slider-img-4.jpg" alt=""></div>
             <div class="slides-item slide-5" id="slide-5" aria-label="slide 5 of 5" tabindex="0">
                 <img src="assets/images/slider-img-5.jpg" alt=""></div>
-        </div>
-        <div class="carousel__nav">
-            <a class="slider-nav" href="#slide-1" aria-label="Go to slide 1"></a>
-            <a class="slider-nav" href="#slide-2" aria-label="Go to slide 2"></a>
-            <a class="slider-nav" href="#slide-3" aria-label="Go to slide 3"></a>
-            <a class="slider-nav" href="#slide-4" aria-label="Go to slide 4"></a>
-            <a class="slider-nav" href="#slide-5" aria-label="Go to slide 5"></a>
         </div>
         <div class="carousel__skip-message" id="skip-link" tabindex="0"></div>
     </section>
