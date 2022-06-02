@@ -260,10 +260,6 @@ footer>* {
   justify-content: space-evenly;
 }
 
-footer>*>* {
-  margin: 0.3rem 0;
-}
-
 footer h3 {
   color: rgb(255, 255, 255);
   font-size: 1.8rem;
@@ -322,15 +318,20 @@ footer h3 {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  justify-content: center;
 }
 
 .contact-us ul {
   list-style: none;
+  font-size: 1.3rem;
 }
 
-.contact-us li {
+.contact-us > ul li {
+  margin-top: .4rem;
+}
+
+.contact-us li li {
   display: inline-block;
-  font-size: 1.3rem;
 }
 
 .contact-us i {
