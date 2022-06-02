@@ -135,6 +135,7 @@ header span {
 }
 
 .back-button {
+    width: table;
     text-decoration: none;
 
     margin-top: 0.5rem;
@@ -144,10 +145,16 @@ header span {
     align-items: center;
 
     color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
 }
 
 .logo {
     margin-left: 0.7rem;
+}
+
+.logo a {
+    all: unset;
 }
 
 .logo h1 {
@@ -603,6 +610,7 @@ header span {
     align-items: center;
 
     position: relative;
+    margin-top: 1rem;
 }
 
 .signup-form--toggle {
