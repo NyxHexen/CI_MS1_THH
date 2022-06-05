@@ -325,6 +325,10 @@ header span {
     font-weight: 400;
 }
 
+#drinks-menu fieldset {
+    border: none;
+}
+
 .cold-drinks {
     margin-bottom: 0.5rem;
 }
