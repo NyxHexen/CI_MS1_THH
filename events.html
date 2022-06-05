@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +12,6 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <title>Events | The Hexen Hut - Video Games and Esports Bar</title>
 </head>
-
 <body class="events">
     <header>
         <button onclick="history.back()" class="back-button" aria-label="Go to previous page">
@@ -44,6 +42,7 @@
     </header>
     <h2>Events</h2>
     <section class="carousel" aria-label="A slideshow of pictures from gaming events" Tabindex="0">
+        <!-- Skip link creates a focusable link that allows screen readers to skip the carousel -->
         <a class="carousel__skip-link" href="#skip-link">Skip the Carousel</a>
         <div class="slides">
             <div class="slides-item slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">
@@ -57,6 +56,7 @@
             <div class="slides-item slide-5" id="slide-5" aria-label="slide 5 of 5" tabindex="0">
                 <img src="assets/images/slider-img-5.webp" alt=""></div>
         </div>
+        <!-- Skip link destination-->
         <div class="carousel__skip-message" id="skip-link" tabindex="0"></div>
     </section>
     <div class="signup">
@@ -73,9 +73,9 @@
             <label for="event">Select an event:</label><br>
             <select name="event" id="event">
                 <option value="eventdate--one">Team Try-outs! | 16-June-2022</option>
-                <option value="eventdate--one">BIG FAT QUIZBOX | 28-June-2022</option>
-                <option value="eventdate--one">SuperSmash Brothers Ultimate Championship | 14-July-2022</option>
-                <option value="eventdate--one">LCS Finals (Livestream) | 1-Aug-2022</option>
+                <option value="eventdate--two">BIG FAT QUIZBOX | 28-June-2022</option>
+                <option value="eventdate--three">SuperSmash Brothers Ultimate Championship | 14-July-2022</option>
+                <option value="eventdate--four">LCS Finals (Livestream) | 1-Aug-2022</option>
             </select><br>
             <button type="submit" class="signup-form--submit">Submit</button>
             <button type="reset" class="signup-form--reset">Reset Form</button>
@@ -152,5 +152,4 @@
     <script src="https://kit.fontawesome.com/f05b6615ad.js" crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
 </body>
-
 </html>
