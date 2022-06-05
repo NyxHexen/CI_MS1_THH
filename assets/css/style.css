@@ -1615,16 +1615,8 @@ iframe {
 
 /* Specifically for Galaxy Fold */
 @media (max-width: 350px) {
-    h2 {
-        font-size: 2.5rem;
-    }
-
     h3 {
         font-size: 1.3rem;
-    }
-
-    .our-menu h2 {
-        font-size: 2rem;
     }
 
     .sm-container {
@@ -1672,7 +1664,7 @@ iframe {
     }
 }
 
-/* Desktop Screens */
+/* ---------------------------------------------------- Desktop Screens */
 
 /* Landscape Orientation */
 @media screen and (orientation: landscape) {
@@ -2083,7 +2075,7 @@ iframe {
 
     .signup-form {
         bottom: -10px;
-        width: 50vw;
+        width: 55vw;
         font-size: 1.2rem;
         padding-top: 1rem;
         /* bottom right, but the (90%) is more precise than just bottom */
