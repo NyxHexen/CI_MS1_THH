@@ -51,10 +51,8 @@ header {
   height: 100vh;
   font-family: 'Press Start 2P', sans-serif;
   overflow: hidden;
-
   display: grid;
   align-content: space-evenly;
-
   box-shadow: var(--prm-shdw);
 }
 
@@ -73,7 +71,6 @@ header {
   position: absolute;
   width: 300%;
   height: 300%;
-
   background: url(../images/pattern-hexagrams.png) repeat;
   animation: bg-scrolling 720s alternate infinite;
 }
@@ -91,7 +88,6 @@ header {
 }
 
 /* --------------------------------------------------------- HEADER > LOGO */
-
 .logo {
   z-index: 1;
   margin-left: 0.5em;
@@ -104,7 +100,6 @@ header {
   text-align: center;
   text-transform: uppercase;
   animation: floating-text 1500ms alternate infinite;
-
   /* 3D text-shadow effect from MarkDotto.com */
   text-shadow: 0 1px 0 #ccc,
     0 2px 0 #c9c9c9,
@@ -134,12 +129,10 @@ header {
 }
 
 /* --------------------------------------------------------- HEADER > NAV */
-
 #nav {
   position: relative;
   display: block;
   z-index: 1;
-
   /* Font space misalignment fix */
   margin-left: 0.2em;
 }
@@ -161,17 +154,14 @@ header {
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 1.75rem;
-
   text-shadow: var(--prm-shdw);
 }
 
 /* Button style from https://getcssscan.com/css-buttons-examples "Button-85", heavily customised */
 .nav-button {
   position: relative;
-
   margin-bottom: 1em;
   padding: 0.6em 2em;
-
   border: none;
   outline: none;
   color: rgb(255, 255, 255);
@@ -236,7 +226,6 @@ footer {
   height: 100%;
   width: 100%;
   grid-row: 12;
-
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -251,19 +240,16 @@ footer * {
 footer>* {
   margin: 1.5rem 1rem;
   height: 80%;
-
   color: white;
   background-color: #222;
   border-radius: 16px;
   box-shadow: var(--prm-shdw);
-
   justify-content: space-evenly;
 }
 
 footer h3 {
   color: rgb(255, 255, 255);
   font-size: 1.6rem;
-
   text-shadow: var(--prm-shdw);
 }
 
@@ -276,13 +262,10 @@ footer h3 {
   padding: 0;
   height: 100%;
   width: 100%;
-
   overflow: hidden;
-
   background-color: #fff;
   position: absolute;
   z-index: -1;
-
   /* BG image from https://pixel-gradient-maker.glitch.me/ */
   background-image: url(../images/pixel-gradient-footer.png);
   background-position: center;
@@ -290,7 +273,6 @@ footer h3 {
 }
 
 /* ------------------------------------------------------------------------------------------------- FOOTER > JOIN US */
-
 .join-us {
   display: flex;
   flex-direction: column;
@@ -367,7 +349,6 @@ footer h3 {
 }
 
 /* --------------------------------------------------------------------------------------------------- FOOTER > GOOGLE MAP */
-
 .iframe__container {
   display: flex;
   padding: 0;
@@ -380,8 +361,7 @@ iframe {
   margin: 0;
 }
 
-/* ------------------------------------------------------ MEDIA QUERIES */
-
+/* -------------------------------------------------------------------------------------------------------------- MEDIA QUERIES */
 @media (max-width: 320px) {
   .logo h1 {
     font-size: 3rem;
@@ -585,7 +565,6 @@ iframe {
 }
 
 /* ---------------------------------------------------------------------------------------------------  ANIMATIONS */
-
 @keyframes floating-text {
   100% {
     transform: translateY(-.1em);
