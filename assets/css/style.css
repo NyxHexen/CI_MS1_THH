@@ -27,7 +27,7 @@
     box-sizing: border-box;
 }
 
-/* change default scrollbar appearance where possible (Firefox uses JS to change it) */
+/* ----- change default scrollbar appearance where possible (Firefox uses JS to change it) */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -47,6 +47,11 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #888;
+}
+
+/* ------ Invert Chrome's calendar picker icon color in input[type="date"] as all text fields in the website are dark with white text */
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
 }
 
 /* ----------------------------------------------------------------- General Styles */
