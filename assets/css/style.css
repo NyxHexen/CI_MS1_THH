@@ -1147,7 +1147,7 @@ footer h3 {
     position: absolute;
     z-index: -1;
     /* BG image from https://pixel-gradient-maker.glitch.me/ */
-    background-image: url(../images/pixel-gradient-footer.png);
+    background-image: url(../images/pixel-gradient-footer.webp);
     background-position: center;
     background-size: cover;
 }

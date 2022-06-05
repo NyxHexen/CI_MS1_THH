@@ -71,7 +71,7 @@ header {
   position: absolute;
   width: 300%;
   height: 300%;
-  background: url(../images/pattern-hexagrams.png) repeat;
+  background: url(../images/pattern-hexagrams.webp) repeat;
   animation: bg-scrolling 720s alternate infinite;
 }
 
@@ -267,7 +267,7 @@ footer h3 {
   position: absolute;
   z-index: -1;
   /* BG image from https://pixel-gradient-maker.glitch.me/ */
-  background-image: url(../images/pixel-gradient-footer.png);
+  background-image: url(../images/pixel-gradient-footer.webp);
   background-position: center;
   background-size: cover;
 }
