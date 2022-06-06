@@ -18,7 +18,7 @@ An all-inclusive community-oriented gaming bar in Cardiff, where people can use 
 
 ---
 
-## Table of Content
+## Table of Contents
 ### 1. [Project Goals](#1-project-goals) 
 
 ### 2. [User Experience](#2-user-experience)
@@ -107,13 +107,13 @@ My idea for the design was to create something that resembled video games in the
 ### **Color Scheme**
 Initially, primary and accent were swapped, but after applying some of the styling I decided the green is better suited as primary.
 
-Primary Color: <span style="background-color: #9dff00; color: black">#9dff00</span>
+Primary Color: #9dff00
 
-Accent Color: <span style="background-color: #7738ff; color: white">#7738ff</span>
+Accent Color: #7738ff
 
-Container Color: <span style="background-color: #777; color: white">#7738ff</span>
+Container Color: #7738ff
 
-Background Color: <span style="background-color: #222; color: white">**#222**</span>
+Background Color: #222
 
 ### **Typography**
 The **fallback font** chosen across the website is 'sans-serif' for it's accessibility.
