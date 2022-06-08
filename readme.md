@@ -4,7 +4,7 @@
 <details>
 <summary>Responsive Mockup</summary>
 
-<img src="assets/images/responsive-mockup.png">
+<img src="docs/mockup/responsive-mockup.png">
 </details>
 
 [View the deployed website](https://nyxhexen.github.io/CI_MS1_THH/)
@@ -50,13 +50,10 @@ An all-inclusive community-oriented gaming bar in Cardiff, where people can use 
 
 ---
 
-## Project Goals
+## 1. Project Goals
 [`Back To Top`](#table-of-contents)
 
-1. The goal of the web application is to increase brand awareness in order to promote it and it's events, increase sales, and grow the customer base further. 
-2. Easy to understand sections with no walls of text.
-3. Links & buttons invite the customer to explore further.
-4. The website should elicit a positive response and make the customer excited to visit in person.
+The goal of the application is to increase brand awareness in order to promote it and it's events, increase sales, and grow the bar's customer base. The website should be intuitive and elicit a positive response from the visitors.
 
 ---
 
@@ -100,18 +97,22 @@ The bar's primary demographic is people interested in video games and e-sports.
 
 ## Design
 
-My idea for the design was to create something that resembled video games in the 80's while keeping the styling smooth, with a 3D feel.
+My idea for the design was to create a simple, clean website with an 8-bit feel. Think Square Enix does Minecraft.
 
-### **Color Scheme**
-Initially, primary and accent were swapped, but after applying some of the styling I decided the green is better suited as primary.
+### **Colour Scheme**
+Initially, primary and accent colours were swapped, but after applying some of the styling I decided the green is better suited as primary.
 
-Primary Color: #9dff00
+<img src="docs/design/color-palette-thh.png">
 
-Accent Color: #7738ff
+Primary Colour: #9dff00
 
-Container Color: #7738ff
+Accent Colour: #7738ff
 
-Background Color: #222
+Container Colour: #777
+
+Text Colour: #fff
+
+Background Colour: #222
 
 ### **Typography**
 The **fallback font** chosen across the website is 'sans-serif' for it's accessibility.
@@ -346,8 +347,20 @@ _1. As a new customer I would like to learn what The Hexen Hut is and what it of
 
 | Customer Goal | Action | Expected Outcome | Result 
 |--- |--- |--- |---
-| Find out what The Hexen Hut is. | Navigate to landing page by clicking on the logo from any page. | Customer's question is answered by slogan on landing page. | As expected |
-| Find out what The Hexen Hut offers | Navigate to About Us page via the landing page or navigation menu. | Customer locates perks | As expected.
+| A. Find out what The Hexen Hut is. | Navigate to landing page by clicking on the logo from any page. | Customer's question is answered by slogan on landing page. | As expected |
+| B. Find out what The Hexen Hut offers | Navigate to About Us page via the landing page or navigation menu. | Customer locates perks | As expected.
+
+<details>
+<summary> Supporting Image A</summary>
+
+<img src="docs/testing/user-story-1a.png">
+</details>
+
+<details>
+<summary> Supporting Image B </summary>
+
+<img src="docs/testing/user-story-1b.png">
+</details>
 
 _2. As a new customer I would like to know where the bar is located._
 
@@ -356,17 +369,35 @@ _2. As a new customer I would like to know where the bar is located._
 |Find embedded Google Maps | Scroll to bottom of page, under Join Us section. | Customer is able to use the API or  navigate to the official Maps website with an embedded pin. | As expected.
 |Find bar street address | Scroll to bottom of page, under Join Us section. | Customer is able to locate address | As expected.
 
+<details>
+<summary> Supporting Image</summary>
+
+<img src="docs/testing/user-story-2.png">
+</details>
+
 _3. As a new/returning customer I would like to read about what other people's experience visiting the bar is._
 
 | Customer Goal | Action | Expected Outcome | Result 
 |--- |--- |--- |---
-| Find comments left by previous customers | Navigate to About Us page via the landing page buttons or navigation menu. Then, scroll down the page. | Customer is able to locate and view perks | As expected.
+| Find comments left by previous customers | Navigate to About Us page via the landing page buttons or navigation menu. Then, scroll down the page. | Customer is able to locate and view comments section. | As expected.
+
+<details>
+<summary> Supporting Image</summary>
+
+<img src="docs/testing/user-story-3.png">
+</details>
 
 _4. As a new/returning customer I would like to see what food & drinks the bar offers._
 
 | Customer Goal | Action | Expected Outcome | Result 
 |--- |--- |--- |---
-| Find out what food & drinks the bar offers | Navigate to Our Menu page via landing page buttons or navigation menu. | Customer is able to locate and view perks  | As expected.
+| Find out what food & drinks the bar offers | Navigate to Our Menu page via landing page buttons or navigation menu. | Customer is able to locate and view bar's menu.  | As expected.
+
+<details>
+<summary> Supporting Image</summary>
+
+<img src="docs/testing/user-story-4.png">
+</details>
 
 _5. As a new/returning customer I would like to find out more about the events held at the bar._
 
@@ -374,11 +405,23 @@ _5. As a new/returning customer I would like to find out more about the events h
 |--- |--- |--- |---
 | Find out what events the bar holds| Navigate to Events page, scroll down. | Customer is able to locate and view list of events. | As expected.
 
+<details>
+<summary> Supporting Image</summary>
+
+<img src="docs/testing/user-story-5.png">
+</details>
+
 _6. As a new/returning customer I would like to sign-up for an upcoming event._
 
 | Customer Goal | Action | Expected Outcome | Result 
 |--- |--- |--- |---
 | Sign up for an upcoming event | Navigate to Events page, click on 'Sign Up!' button to expand form | The customer is able to register for an event succesfully. | As expected.
+
+<details>
+<summary> Supporting Image</summary>
+
+<img src="docs/testing/user-story-6.png">
+</details>
 
 _7. As a new/returning customer I am looking to visit their social media accounts to stay updated._
 
@@ -386,11 +429,30 @@ _7. As a new/returning customer I am looking to visit their social media account
 |--- |--- |--- |---
 | Find/Follow the bar's social media | Scroll down to the bottom of any of the pages | Customer is able to open social media links. Each link opens in a new tab. | As expected.
 
+<details>
+<summary> Supporting Image</summary>
+
+<img src="docs/testing/user-story-7.png">
+</details>
+
 _8. As a new/returning customer I am looking to contact the bar with a question/suggestion._
 
 | Customer Goal | Action | Expected Outcome | Result 
 |--- |--- |--- |---
-| Provide feedback to the bar | Navigate to FAQ page, scroll down. | Customer is able to submit message successfully. | As expected.
+| A. Provide feedback to the bar | Navigate to FAQ page, scroll down. | Customer is able to submit message successfully. | As expected.
+| B. Browse frequently asked questions | Navigate to FAQ page. | Customer is able to view frequently asked questions. | 
+
+<details>
+<summary> Supporting Image A</summary>
+
+<img src="docs/testing/user-story-8a.png">
+</details>
+
+<details>
+<summary> Supporting Image B</summary>
+
+<img src="docs/testing/user-story-8b.png">
+</details>
 
 ---
 
@@ -405,9 +467,20 @@ This website was deployed using GitHub Pages.
 3. On the vertical bar below, click Pages.
 4. Select the branch and root folder of the project that you want to deploy.
 5. Press Save and hope for the best.
-6. If you successfully succeeded in following the instructions, you should now have a green message at the top containing a URL to your new, published, site.
+6. If you carefully followed the instructions, you should now have a green message at the top containing a URL to your published site.
 
 ### Fork a Repository
+1. Navigate to the repository containing the project you would like forked.
+2. At the top-right corner of the page, click Fork.
+3. Ta-da!
+
+### Clone a Repository 
+1. Navigate to the repository containing the project you would like cloned.
+2. Above the list of files, click on Code.
+3. Copy the URL.
+4. Create a new working directory, one you will be cloning to.
+5. Type `git clone` followed by the URL you copied earlier.
+6. Press Enter and it should be done.
 
 --- 
 
