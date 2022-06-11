@@ -112,14 +112,14 @@ Text Colour: #fff
 
 Background Colour: #222
 
-#### **Typography**
+#### Typography
 The **fallback font** chosen across the website is 'sans-serif' for it's accessibility.
 
 My **logo and h1-h3 headings** font is Press Start 2P from Google Fonts. I chose this font because it is an 8-bit style, bulky, font which fit into the thematic of the bar.
 
 My **h4+ headings and body** font is Play, also from Google Fonts. The font is more angular which compliments the 8-bit style font.
 
-#### **Images**
+#### Images
 Images on the website have been sourced through Google Images search and, where available, are licensed for non-commercial use.
 
 <details>
@@ -143,7 +143,7 @@ Source: [Unsplash - Stem List](https://unsplash.com/photos/EVgsAbL51Rk)
 
 ---
 
-## **Wireframes**
+### Wireframes
 
 |Mobile Wireframes 
 |-------------------
@@ -173,6 +173,7 @@ Source: [Unsplash - Stem List](https://unsplash.com/photos/EVgsAbL51Rk)
 
 ## 3. Features
 [`Back To Top`](#table-of-contents)
+
 The website consists of 5 fully responsive pages with 12 features across.
 
 Each page has 2-3 layout shifts across the 3 types of devices.
@@ -584,5 +585,5 @@ This website was deployed using GitHub Pages.
 7. [Font Awesome](https://fontawesome.com/) - icons used in project.
 
 ### Acknowledgements
-- Mentor Mo Shami for his advice 
+- Mentor Mo Shami for his advice and support.
 - Code Institute Slack community for their advice and help with testing.
