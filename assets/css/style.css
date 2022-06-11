@@ -70,7 +70,6 @@ body {
     line-height: 1.5;
     font-family: 'Play', sans-serif;
     font-weight: 400;
-    /* Idea for row temp & min-height from StackOverflow: shorturl.at/IMT09 */
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
@@ -465,7 +464,7 @@ header span {
 #food-menu {
     /* Spacing */
     margin: 2rem 1.5rem;
-    padding: 1rem 0.5rem;
+    padding: 1rem;
     /* Layout */
     display: grid;
     grid-template-columns: 1fr;
@@ -1355,7 +1354,6 @@ iframe {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: stretch;
-
         /* tiny padding to fix misalignment */
         padding-left: 0.8rem;
     }
@@ -1385,7 +1383,6 @@ iframe {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: stretch;
-
         /* tiny margin to fix misalignment */
         padding-left: 0.8rem;
     }
@@ -1404,11 +1401,9 @@ iframe {
         font-size: 0.9em;
     }
 
-
     #food-menu {
         display: grid;
         grid-template-rows: 2fr 1fr 2fr;
-
         /* align 'OR' item on X */
         align-items: center;
     }
@@ -1450,7 +1445,7 @@ iframe {
 
     input[type="text"],
     input[type="email"],
-    input[type=date],
+    input[type="date"],
     select {
         font-size: 1.5rem;
     }
@@ -1463,7 +1458,6 @@ iframe {
     .events-list {
         margin: 1.5rem 1rem;
         font-size: 1.2rem;
-
         justify-content: space-around;
     }
 
