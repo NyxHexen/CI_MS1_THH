@@ -19,20 +19,20 @@ An all-inclusive community-oriented gaming bar in Cardiff, where people can use 
 ---
 
 ## Table of Contents
-### 1. [Project Goals](#1-project-goals) 
+### 1. [Project Goals](#1-project-goals-1) 
 
-### 2. [User Experience](#2-user-experience)
+### 2. [User Experience](#2-user-experience-1)
 1. [Target Audience](#target-audience)
 2. [User Stories](#user-stories)
 3. [Scope](#scope)
 4. [Design](#design)
 5. [Wireframes](#wireframes)
 
-### 3. [Features](#3-features)
+### 3. [Features](#3-features-1)
 
-### 4. [Technology](#4-technology)
+### 4. [Technology](#4-technology-1)
 
-### 5. [Testing](#5-testing)
+### 5. [Testing](#5-testing-1)
 1. [HTML Validation](#html-validation)
 2. [CSS Validation](#css-validation)
 3. [Accessibility](#accessibility)
@@ -43,7 +43,7 @@ An all-inclusive community-oriented gaming bar in Cardiff, where people can use 
 
 ### 6. [How-to DIY: GitHub Deploy, Fork, Clone](#6-how-to-diy-github-deploy-fork--clone)
 
-### 7. [Credits](#7-credits)
+### 7. [Credits](#7-credits-1)
 1. [Code](#code)
 2. [Media](#media)
 3. [Acknowledgements](#acknowledgements)
@@ -93,13 +93,11 @@ The bar's primary demographic is people interested in video games and e-sports.
 - A feedback form for customers to message the bar.
 - About page showing bar features and a customer comment section.
 
----
-
-## Design
+### **Design**
 
 My idea for the design was to create a simple, clean website with an 8-bit feel. Think Square Enix does Minecraft.
 
-### **Colour Scheme**
+#### **Colour Scheme**
 Initially, primary and accent colours were swapped, but after applying some of the styling I decided the green is better suited as primary.
 
 <img src="docs/design/color-palette-thh.png">
@@ -114,14 +112,14 @@ Text Colour: #fff
 
 Background Colour: #222
 
-### **Typography**
+#### **Typography**
 The **fallback font** chosen across the website is 'sans-serif' for it's accessibility.
 
 My **logo and h1-h3 headings** font is Press Start 2P from Google Fonts. I chose this font because it is an 8-bit style, bulky, font which fit into the thematic of the bar.
 
 My **h4+ headings and body** font is Play, also from Google Fonts. The font is more angular which compliments the 8-bit style font.
 
-### **Images**
+#### **Images**
 Images on the website have been sourced through Google Images search and, where available, are licensed for non-commercial use.
 
 <details>
@@ -393,8 +391,8 @@ About page has 3 alerts for "Possible heading" due to content length. Alerts per
 - Google Chrome: Functionality and style as expected.
 - Firefox: Functionality as expected.
     - Style difference in scroll bar appearance from the other browsers due to the fact Firefox utilises JavaScript to change the appearance instead.
-- Opera/Opera GX: Functionality as expected.
-- Safari: Functionality as expected. (Thank you, Kera!)
+- Opera/Opera GX: Functionality and style  as expected.
+- Safari: Functionality and style  as expected. (Thank you, Kera!)
 
 ### Devices tested on:
 
@@ -581,5 +579,10 @@ This website was deployed using GitHub Pages.
 2. [Unsplash](https://unsplash.com/) - high resolution images used in carousel.
 3. [Pixel Gradient Maker](https://pixel-gradient-maker.glitch.me/) - footer background gradient image.
 4. [Belong Arenas](https://twitter.com/BelongKingston/status/1521460056620941313/photo/1) - marketing image from Twitter.
+5. [Favicon](https://favicon.io/) - used to generate webpage favicon.
+6. [Google Fonts](https://fonts.google.com/) - fonts used in project.
+7. [Font Awesome](https://fontawesome.com/) - icons used in project.
 
-
+### Acknowledgements
+- Mentor Mo Shami for his advice 
+- Code Institute Slack community for their advice and help with testing.
