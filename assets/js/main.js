@@ -6,6 +6,8 @@ navToggle.addEventListener('click', () => {
 });
 // Form Toggle Button
 const signupToggle = document.querySelector('.signup-form--toggle');
-signupToggle.addEventListener('click', () => {
-    document.body.classList.toggle('form-open');
-});
+if (signupToggle) {
+    signupToggle.addEventListener('click', () => {
+        document.body.classList.toggle('form-open');
+    });
+};
