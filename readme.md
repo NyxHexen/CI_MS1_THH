@@ -64,10 +64,10 @@ The website has been designed as mobile-first, and has 3 general layout shifts f
 
 I wanted to keep the design minimalistic, and content to the point, but add extra functionality where possible to enhance the overal experience.
 
-### **Target Audience**
+### Target Audience
 The bar's primary demographic is people interested in video games and e-sports.
 
-### **User Stories**
+### User Stories
 1. As a new customer I would like to learn what The Hexen Hut is and what it offers.
 2. As a new customer I would like to know where the bar is located.
 3. As a new/returning customer I would like to read about what other people's experience visiting the bar is.
@@ -77,7 +77,7 @@ The bar's primary demographic is people interested in video games and e-sports.
 7. As a new/returning customer I am looking to visit their social media accounts to stay updated.
 8. As a new/returning customer I am looking to contact the bar with a question/suggestion.
 
-### **Scope**
+### Scope
 
 #### The scope of the project at release is defined as below:
 - A full-screen landing page.
@@ -93,24 +93,13 @@ The bar's primary demographic is people interested in video games and e-sports.
 - A feedback form for customers to message the bar.
 - About page showing bar features and a customer comment section.
 
-### **Design**
+### Design
 
 My idea for the design was to create a simple, clean website with an 8-bit feel. Think Square Enix does Minecraft.
 
-#### **Colour Scheme**
-Initially, primary and accent colours were swapped, but after applying some of the styling I decided the green is better suited as primary.
+#### Colour Scheme
 
-<img src="docs/design/color-palette-thh.png">
-
-Primary Colour: #9dff00
-
-Accent Colour: #7738ff
-
-Container Colour: #777
-
-Text Colour: #fff
-
-Background Colour: #222
+<img src="docs/design/color-palette-thh.png" width="300">
 
 #### Typography
 The **fallback font** chosen across the website is 'sans-serif' for it's accessibility.
@@ -120,7 +109,7 @@ My **logo and h1-h3 headings** font is Press Start 2P from Google Fonts. I chose
 My **h4+ headings and body** font is Play, also from Google Fonts. The font is more angular which compliments the 8-bit style font.
 
 #### Images
-Images on the website have been sourced through Google Images search and, where available, are licensed for non-commercial use.
+Images across the website are sourced through Unsplash (fully licensed) and a couple of Google searches. The sources have been listed below.
 
 <details>
 <summary> Carousel Images </summary>
@@ -139,6 +128,19 @@ Source: [Unsplash - Ella Don](https://unsplash.com/photos/K4kfIEhj4GM)
 
 Source: [Unsplash - Stem List](https://unsplash.com/photos/EVgsAbL51Rk)
 <img src="assets/images/slider-img-5.webp">
+</details>
+
+<details>
+<summary> Comment Section </summary>
+
+Source: [Commander Shepard Artwork - Escapist Magazine](https://www.escapistmagazine.com/bioware-appeals-for-calm-regarding-mass-effect-3-multiplayer/)
+<img src="assets/images/customer-profile-commandershepard-masseffect.webp">
+
+Source: [GLaDOS Artwork - Tumblr](https://enealae.tumblr.com/post/19831917186)
+<img src="assets/images/customer-profile-glados-portal-game.webp">
+
+Source: ['I like trains' Artwork - DeviantArt](https://www.deviantart.com/belen02/art/I-like-trains-422588773)
+<img src="assets/images/customer-profile-i-like-trains-deviantart-belen02.webp">
 </details>
 
 ---
