@@ -109,7 +109,7 @@ My **logo and h1-h3 headings** font is Press Start 2P from Google Fonts. I chose
 My **h4+ headings and body** font is Play, also from Google Fonts. The font is more angular which compliments the 8-bit style font.
 
 #### Images
-Images across the website are sourced through Unsplash (fully licensed) and a couple of Google searches. The sources have been listed below.
+Images across the website are sourced through Unsplash and a couple of Google searches. The sources have been listed below.
 
 <details>
 <summary> Carousel Images </summary>
@@ -136,10 +136,10 @@ Source: [Unsplash - Stem List](https://unsplash.com/photos/EVgsAbL51Rk)
 Source: [Commander Shepard Artwork - Escapist Magazine](https://www.escapistmagazine.com/bioware-appeals-for-calm-regarding-mass-effect-3-multiplayer/)
 <img src="assets/images/customer-profile-commandershepard-masseffect.webp">
 
-Source: [GLaDOS Artwork - Tumblr](https://enealae.tumblr.com/post/19831917186)
+Source: [GLaDOS Artwork - Tumblr/enealae](https://enealae.tumblr.com/post/19831917186)
 <img src="assets/images/customer-profile-glados-portal-game.webp">
 
-Source: ['I like trains' Artwork - DeviantArt](https://www.deviantart.com/belen02/art/I-like-trains-422588773)
+Source: ['I like trains' Artwork - DeviantArt/belen02](https://www.deviantart.com/belen02/art/I-like-trains-422588773)
 <img src="assets/images/customer-profile-i-like-trains-deviantart-belen02.webp">
 </details>
 
