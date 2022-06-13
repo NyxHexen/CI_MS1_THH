@@ -527,13 +527,74 @@ Results:
 
 | Feature | Action | Expected Result | Actual Result
 |--- |--- |--- |---
-| Footer - Contact Us Section | Scroll to the bottom of any of the site's pages | Customer is locates Contact Us section and is able to dial by clicking on number | As expected
+| Footer - Contact Us Section | Scroll to the bottom of any of the site's pages | Customer locates Contact Us section and is able to dial by clicking on number | As expected
 
 10. As a returning customer, I want to leave feedback, comment or suggestion to the bar.
 
 | Feature | Action | Expected Result | Actual Result
 |--- |--- |--- |---
+| FAQ - Feedback Form | Navigate to FAQ page, scroll down | Customer is able to find and use the form | As expected
 
+11. As a returning customer, I want to find the bar on social media.
+
+| Feature | Action | Expected Result | Actual Result
+|--- |--- |--- |---
+| Footer - Contact Us Section | Scroll to the bottom of any of the site's pages | Customer locates social media links, they all open in new tabs | As expected
+
+12. As a returning customer, I want to view upcoming events.
+
+| Feature | Action | Expected Result | Actual Result
+|--- |--- |--- |---
+| Events Page - Upcoming Events Section | Navigate to Events page (and scroll down) | Customer locates Upcoming Events section | As expected
+
+13. As a returning customer, I want to view previous/past events.
+
+| Feature | Action | Expected Result | Actual Result
+|--- |--- |--- |---
+| Events Page - Previous Events Section | Navigate to Events page (and scroll down) | Customer locates Previous Events section | As expected
+
+14. As a returning customer, I want to sign up for an event.
+
+| Feature | Action | Expected Result | Actual Result
+|--- |--- |--- |---
+| Events Page - Sign Up Form | Navigate to Events page, click on 'Sign Up!' button to expand form | Customer is able to register for an event | As expected
+
+15. As a returning customer, I want to view photos from/of the bar.
+
+| Feature | Action | Expected Result | Actual Result
+|--- |--- |--- |---
+| Events - Images Carrousel | Navigate to Events page | Customer is able to locate and view pictures | As expected
+
+16. As a returning customer, I want to view frequently asked questions.
+
+| Feature | Action | Expected Result | Actual Result
+|--- |--- |--- |---
+| FAQ - FAQ Scroll Box | Navigate to FAQ page | Customer is able to scroll through and read FAQs | As expected
+
+17. As a site owner, I don't want users to use browser's navigation buttons while using the website.
+
+| Feature | Action | Expected Result | Actual Result
+|--- |--- |--- |---
+| Header - Back Button | Locate and click back button to go to previous page | Customer has no difficulties finding the button; Back button takes the customer exactly 1 page back | As expected
+
+18. As a site owner, I want users to be able to get to know the bar.
+
+| Feature | Action | Expected Result | Actual Result
+|--- |--- |--- |---
+| FAQ - FAQ Scroll Box | Navigate to FAQ page | Customer is able to scroll through and read FAQs | As expected
+| About Us - Perks Section | Navigate to About us page | Customer locates perks section | As expected
+
+19. As a site owner, I want users to be able to contact us.
+
+| Feature | Action | Expected Result | Actual Result
+|--- |--- |--- |---
+| Footer - Contact Us Section | Scroll to the bottom of any of the site's pages | Customer has a range of options to contact the bar | As expected
+
+20. As a site owner, I want users to be able to provide feedback.
+
+| Feature | Action | Expected Result | Actual Result
+|--- |--- |--- |---
+| FAQ - Feedback Form | Navigate to FAQ page, scroll down to find the form | Customers are able to submit a message | As expected
 
 ---
 
