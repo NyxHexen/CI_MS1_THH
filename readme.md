@@ -97,7 +97,7 @@ I wanted to keep the design minimalistic, and content to the point, but add extr
 #### New Customers
 1. As a new customer, I want to know what The Hexen Hut is.
 2. As a new customer, I want to know what to expect at the bar.
-3. As a new customer, I want to know where the bar's address.
+3. As a new customer, I want to know the bar's address.
 4. As a new customer, I want to know what the price range is.
 5. As a new customer, I want to get directions to the bar.
 6. As a new customer, I want to know the operating hours
@@ -466,116 +466,29 @@ Results:
 - Testing on devices passes all tests.
 
 ### Testing User Stories
-_1. As a new customer I would like to learn what The Hexen Hut is and what it offers._
 
-| Customer Goal | Action | Expected Outcome | Result 
+1. As a new customer, I want to know what The Hexen Hut is.
+
+| Feature | Action | Expected Result | Actual Result
 |--- |--- |--- |---
-| A. Find out what The Hexen Hut is. | Navigate to landing page by clicking on the logo from any page. | Customer's question is answered by slogan on landing page. | As expected |
-| B. Find out what The Hexen Hut offers | Navigate to About Us page via the landing page or navigation menu. | Customer locates perks | As expected.
-
+| Slogan | Navigate to landing page by clicking on the logo from any page | Customer's question is answered by slogan on landing page | As expected
+| Perks | Navigate to About us page | Customer locates perks section | As expected
+| FAQ | Navigate to FAQ page | Customer is able to scroll through and read FAQs | As expected
+ 
 <details>
-<summary> Supporting Image A</summary>
-
-<img src="docs/testing/user-story-1a.png">
+<summary> Supporting Images </summary>
+<img src="">
 </details>
 
-<details>
-<summary> Supporting Image B </summary>
+2. As a new customer, I want to know what to expect at the bar.
 
-<img src="docs/testing/user-story-1b.png">
-</details>
-
-_2. As a new customer I would like to know where the bar is located._
-
-| Customer Goal | Action | Expected Outcome | Result 
+| Feature | Action | Expected Result | Actual Result
 |--- |--- |--- |---
-|Find embedded Google Maps | Scroll to bottom of page, under Join Us section. | Customer is able to use the API or  navigate to the official Maps website with an embedded pin. | As expected.
-|Find bar street address | Scroll to bottom of page, under Join Us section. | Customer is able to locate address | As expected.
+| Events Carrousel | Navigate to Events page | Customer is able to locate and view pictures | As expected
+| FAQ | Navigate to FAQ page | Customer is able to scroll through and read FAQs | As expected
+| Perks | Navigate to About us page | Customer locates perks section | As expected
 
-<details>
-<summary> Supporting Image</summary>
-
-<img src="docs/testing/user-story-2.png">
-</details>
-
-_3. As a new/returning customer I would like to read about what other people's experience visiting the bar is._
-
-| Customer Goal | Action | Expected Outcome | Result 
-|--- |--- |--- |---
-| Find comments left by previous customers | Navigate to About Us page via the landing page buttons or navigation menu. Then, scroll down the page. | Customer is able to locate and view comments section. | As expected.
-
-<details>
-<summary> Supporting Image</summary>
-
-<img src="docs/testing/user-story-3.png">
-</details>
-
-_4. As a new/returning customer I would like to see what food & drinks the bar offers._
-
-| Customer Goal | Action | Expected Outcome | Result 
-|--- |--- |--- |---
-| Find out what food & drinks the bar offers | Navigate to Our Menu page via landing page buttons or navigation menu. | Customer is able to locate and view bar's menu.  | As expected.
-
-<details>
-<summary> Supporting Image</summary>
-
-<img src="docs/testing/user-story-4.png">
-</details>
-
-_5. As a new/returning customer I would like to find out more about the events held at the bar._
-
-| Customer Goal | Action | Expected Outcome | Result 
-|--- |--- |--- |---
-| Find out what events the bar holds| Navigate to Events page, scroll down. | Customer is able to locate and view list of events. | As expected.
-
-<details>
-<summary> Supporting Image</summary>
-
-<img src="docs/testing/user-story-5.png">
-</details>
-
-_6. As a new/returning customer I would like to sign-up for an upcoming event._
-
-| Customer Goal | Action | Expected Outcome | Result 
-|--- |--- |--- |---
-| Sign up for an upcoming event | Navigate to Events page, click on 'Sign Up!' button to expand form | The customer is able to register for an event succesfully. | As expected.
-
-<details>
-<summary> Supporting Image</summary>
-
-<img src="docs/testing/user-story-6.png">
-</details>
-
-_7. As a new/returning customer I am looking to visit their social media accounts to stay updated._
-
-| Customer Goal | Action | Expected Outcome | Result 
-|--- |--- |--- |---
-| Find/Follow the bar's social media | Scroll down to the bottom of any of the pages | Customer is able to open social media links. Each link opens in a new tab. | As expected.
-
-<details>
-<summary> Supporting Image</summary>
-
-<img src="docs/testing/user-story-7.png">
-</details>
-
-_8. As a new/returning customer I am looking to contact the bar with a question/suggestion._
-
-| Customer Goal | Action | Expected Outcome | Result 
-|--- |--- |--- |---
-| A. Provide feedback to the bar | Navigate to FAQ page, scroll down. | Customer is able to submit message successfully. | As expected.
-| B. Browse frequently asked questions | Navigate to FAQ page. | Customer is able to view frequently asked questions. | 
-
-<details>
-<summary> Supporting Image A</summary>
-
-<img src="docs/testing/user-story-8a.png">
-</details>
-
-<details>
-<summary> Supporting Image B</summary>
-
-<img src="docs/testing/user-story-8b.png">
-</details>
+3. As a new customer, I want to know the bar's address.
 
 ---
 
