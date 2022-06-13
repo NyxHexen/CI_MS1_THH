@@ -645,6 +645,7 @@ header span {
     transition: all 300ms ease-in-out;
     border-radius: 1rem;
     z-index: -1;
+    box-shadow: var(--prm-shdw);
 }
 
 .signup-form::after {
@@ -657,7 +658,6 @@ header span {
     left: 0;
     top: 0;
     border-radius: 1rem;
-    box-shadow: var(--prm-shdw);
 }
 
 .signup-form input:hover,
