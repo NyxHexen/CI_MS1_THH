@@ -81,18 +81,45 @@ I wanted to keep the design minimalistic, and content to the point, but add extr
 - People interested in video games or esports;
 - People looking for a cocktail bar;
 - People looking for bar that offers food;
-- People who want to be part of a community;
+- People who want to take part in events;
 
+### User Requirements:
+
+- Fully responsive website;
+- Visually appealing and relevent content;
+- Bite-sized information;
+- Fully functioning links and buttons;
+- Accessibility;
+- Easy way to contact the venue;
 
 ### User Stories
-1. As a new customer I would like to learn what The Hexen Hut is and what it offers.
-2. As a new customer I would like to know where the bar is located.
-3. As a new/returning customer I would like to read about what other people's experience visiting the bar is.
-4. As a new/returning customer I would like to see what food & drinks the bar offers.
-5. As a new/returning customer I would like to find out more about the events held at the bar.
-6. As a new/returning customer I would like to sign-up for an upcoming event.
-7. As a new/returning customer I am looking to visit their social media accounts to stay updated.
-8. As a new/returning customer I am looking to contact the bar with a question/suggestion.
+
+#### New Customers
+1. As a new customer, I want to know what The Hexen Hut is.
+2. As a new customer, I want to know what to expect at the bar.
+3. As a new customer, I want to know where the bar's address.
+4. As a new customer, I want to know what the price range is.
+5. As a new customer, I want to get directions to the bar.
+6. As a new customer, I want to know the operating hours
+
+#### Returning Customers
+7. As a returning customer, I want to view comments or reviews left by previous visitors.
+8. As a returning customer, I want to see the menu.
+9. As a returning customer, I want to contact the bar via phone.
+10. As a returning customer, I want to leave feedback, comment or suggestion to the bar.
+11. As a returning customer, I want to find the bar on social media.
+12. As a returning customer, I want to view upcoming events.
+13. As a returning customer, I want to view previous/past events.
+14. As a returning customer, I want to sign up for an event.
+15. As a returning customer, I want to view photos from/of the bar.
+16. As a returning customer, I want to view frequently asked questions.
+
+#### Site Owner
+
+17. As a site owner, I don't want users to use browser's navigation buttons while using the website.
+18. As a site owner, I want users to be able to get to know the bar.
+19. As a site owner, I want users to be able to contact us.
+20. As a site owner, I want users to be able to provide feedback.
 
 ### Scope
 
