@@ -100,7 +100,7 @@ I wanted to keep the design minimalistic, and content to the point, but add extr
 3. As a new customer, I want to know the bar's address.
 4. As a new customer, I want to know what the price range is.
 5. As a new customer, I want to get directions to the bar.
-6. As a new customer, I want to know the operating hours
+6. As a new customer, I want to know the operating hours.
 
 #### Returning Customers
 7. As a returning customer, I want to view comments or reviews left by previous visitors.
@@ -484,11 +484,56 @@ Results:
 
 | Feature | Action | Expected Result | Actual Result
 |--- |--- |--- |---
-| Events Carrousel | Navigate to Events page | Customer is able to locate and view pictures | As expected
-| FAQ | Navigate to FAQ page | Customer is able to scroll through and read FAQs | As expected
-| Perks | Navigate to About us page | Customer locates perks section | As expected
+| Events - Images Carrousel | Navigate to Events page | Customer is able to locate and view pictures | As expected
+| FAQ - FAQ Scroll Box | Navigate to FAQ page | Customer is able to scroll through and read FAQs | As expected
+| About Us - Perks Section | Navigate to About us page | Customer locates perks section | As expected
 
 3. As a new customer, I want to know the bar's address.
+| Feature | Action | Expected Result | Actual Result
+|--- |--- |--- |---
+| Footer - Join Us Section | Scroll to the bottom of any of the site's pages | Locate Join Us section and address | As expected
+
+4. As a new customer, I want to know what the price range is.
+
+| Feature | Action | Expected Result | Actual Result
+|--- |--- |--- |---
+| Our Menu Page | Navigate to Our Menu page | Customer views the menu | As expected
+
+5. As a new customer, I want to get directions to the bar.
+
+| Feature | Action | Expected Result | Actual Result
+|--- |--- |--- |---
+| Footer - Embedded Google Map | Scroll to the bottom of any of the site's pages | Locate embedded Google map, click 'View Larger Map'  | As expected
+
+6. As a new customer, I want to know the operating hours.
+
+| Feature | Action | Expected Result | Actual Result
+|--- |--- |--- |---
+| Footer - Join Us Section | Scroll to the bottom of any of the site's pages | Locate Join Us section and operating hours | As expected
+
+7. As a returning customer, I want to view comments or reviews left by previous visitors.
+
+| Feature | Action | Expected Result | Actual Result
+|--- |--- |--- |---
+| About Us - Comment Section | Navigate to About Us page and scroll down | Customer is able to locate comments section | As expected
+
+8. As a returning customer, I want to see the menu.
+
+| Feature | Action | Expected Result | Actual Result
+|--- |--- |--- |---
+| Our Menu page | Navigate to Our Menu page | Customer views the menu | As expected
+
+9. As a returning customer, I want to contact the bar via phone.
+
+| Feature | Action | Expected Result | Actual Result
+|--- |--- |--- |---
+| Footer - Contact Us Section | Scroll to the bottom of any of the site's pages | Customer is locates Contact Us section and is able to dial by clicking on number | As expected
+
+10. As a returning customer, I want to leave feedback, comment or suggestion to the bar.
+
+| Feature | Action | Expected Result | Actual Result
+|--- |--- |--- |---
+
 
 ---
 
