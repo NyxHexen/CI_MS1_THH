@@ -54,7 +54,7 @@ An all-inclusive community-oriented gaming bar in Cardiff, where people can use 
 [`Back To Top`](#table-of-contents)
 
 ### User Goals:
-- Find a video games/esports bar with a good athmosphere;
+- Find a video games/esports bar with a good atmosphere;
 - View bar's menu & prices;
 - Find the bar's location;
 - Find out what the bar offers;
@@ -74,7 +74,7 @@ An all-inclusive community-oriented gaming bar in Cardiff, where people can use 
 
 The website has been designed as mobile-first, and has 3 general layout shifts for mobile, tablet, and desktop screens.
 
-I wanted to keep the design minimalistic, and content to the point, but add extra functionality where possible to enhance the overal experience.
+I wanted to keep the design minimal and content to the point, but add extra functionality where possible to enhance the overall experience.
 
 ### Target Audience
 
@@ -86,7 +86,7 @@ I wanted to keep the design minimalistic, and content to the point, but add extr
 ### User Requirements:
 
 - Fully responsive website;
-- Visually appealing and relevent content;
+- Visually appealing and relevant content;
 - Bite-sized information;
 - Fully functioning links and buttons;
 - Accessibility;
@@ -141,7 +141,7 @@ I wanted to keep the design minimalistic, and content to the point, but add extr
 
 My idea for the design was to create a simple, clean website with an 8-bit feel. Think Square Enix does Minecraft.
 
-#### Colour Scheme
+#### Color Scheme
 
 <img src="docs/design/color-palette-thh.png" width="300">
 
@@ -237,11 +237,11 @@ The landing page consists of 2 main features:
 2. Footer.
 
 The full screen header consists of 3 sections:
-1. Logo - I wanted to keep things simple, so the logo is made up of an anchor (to allow use as navigation button) within an h1 element. The `h1` allowed the logo to also naturally respond to any view width changes. The logo has an infinite bounce keyframes animation inspired by the behaviour of the game title in some video games. When clicked sends you to the landing page.
+1. Logo - I wanted to keep things simple, so the logo is made up of an anchor (to allow use as navigation button) within an h1 element. The `h1` allowed the logo to also naturally respond to any view width changes. The logo has an infinite bounce keyframe animation inspired by the behavior of the game title in some video games. When clicked sends you to the landing page.
 2. Slogan - A standard `h2`, describing the bar's theme and purpose. It took a bit of time to style it the way it looks now. I wanted it to stand out, which is why I chose the color black for the text, but that created some issue with readability and contrast which I resolved by adding two layers of shadow in different color.
-3. Navigation buttons - This was the first major style that I got to enjoy customising. I changed pretty much all styling of the button to make it fit my design, but kept the structure somewhat close to the original. The structure of each button is `ul > li > div > a` and utilises both pseudo elements of the `li`. 
+3. Navigation buttons - This was the first major style that I got to enjoy customizing. I changed pretty much all styling of the button to make it fit my design, but kept the structure somewhat close to the original. The structure of each button is `ul > li > div > a` and utilizes both pseudo elements of the `li`. 
 
-- Background image - Background image is a pattern png with no background color, rotated 45 degrees, which has keyframes moving it on both X and Y axes. The background image is contained within it's own `div`, within the header, and is applied using CSS `background-image: url()`. It took a bit of fine tuning to figure out the best speed for the animation, as the original speed was a bit nausea inducing combined with the bounce of the logo and buttons.
+- Background image - Background image is a pattern png with no background color, rotated 45 degrees, which has keyframe moving it on both X and Y axes. The background image is contained within it's own `div`, within the header, and is applied using CSS `background-image: url()`. It took a bit of fine tuning to figure out the best speed for the animation, as the original speed was a bit nausea inducing combined with the bounce of the logo and buttons.
 
 The footer remains the same across all pages, including any layout shifts.
 
@@ -280,7 +280,7 @@ Events page is made up of 3 features.
 1. Carousel -  consisting of 5 images intended to promote the events at the bar. To make it so the images can be focused `tabindex="0"` was added to each img container.
     - On desktop, the images are spread across the view width.
     - On mobile and tablet, utilises `flex-shrink: 1` which forces the images to fit to the container width, creating an overflow on the X axis, which we then use to our advantage by adding `overflow-x:scroll`, allowing us to scroll through that overflow.
-2. Sign Up form - consists of a trigger button and a form with multiple inputs, the form's visibility is controlled the same as the mobile nav burger menu. This was fairly challenging as I had no point of reference, so I had to logic my way into making the form behave the way I had envisioned. Possibly my favourite feature on the website. 
+2. Sign Up form - consists of a trigger button and a form with multiple inputs, the form's visibility is controlled the same as the mobile nav burger menu. This was fairly challenging as I had no point of reference, so I had to logic my way into making the form behave the way I had envisioned. Possibly my favorite feature on the website. 
 3. Event lists - two unordered lists, styled identically. The dark background of each item was added to improve contrast/accessibility and make it stand out. The list items have a :hover style to make them look like links.
 
 ### faq.html - FAQ
@@ -290,7 +290,7 @@ FAQ page consists of 2 features.
     1. Search:
         - a search input field, which currently does not have functionality much different to a text input element.
         - a search button, visually nested within the search input field.
-    2. Scroll box with questions and answers - used the same method to create the scroll behaviour as the image carousel on Events page, with customised scroll bar to match the website theme. It was with this feature that I learned of the existence of `scroll-padding`, which helped me control the exact position the scroll snapped to, so the bottom of the previous div is always visible. `tabindex="0"` was also added to each container to make each FAQ entry in the scroll box focusable.
+    2. Scroll box with questions and answers - used the same method to create the scroll behavior as the image carousel on Events page, with customized scroll bar to match the website theme. It was with this feature that I learned of the existence of `scroll-padding`, which helped me control the exact position the scroll snapped to, so the bottom of the previous div is always visible. `tabindex="0"` was also added to each container to make each FAQ entry in the scroll box focusable.
 2. Feedback Form - a standard form with a custom appearance. I reset the radio element appearance using `appearance: none` and then rebuilt them from scratch in order to give them the appearance resembling LED lights of a computer.
 
 ### about.html - About Us
@@ -437,7 +437,7 @@ About page has 3 alerts for "Possible heading" due to content length. Alerts per
 - Microsoft Edge: Functionality and style as expected.
 - Google Chrome: Functionality and style as expected.
 - Firefox: Functionality as expected.
-    - Style difference in scroll bar appearance from the other browsers due to the fact Firefox utilises JavaScript to change the appearance instead.
+    - Style difference in scroll bar appearance from the other browsers due to the fact Firefox utilizes JavaScript to change the appearance instead.
 - Opera/Opera GX: Functionality and style  as expected.
 - Safari: Functionality and style  as expected. (Thank you, Kera!)
 
@@ -604,7 +604,7 @@ Results:
 This website was deployed using GitHub Pages.
 
 ### GitHub Pages Deploy
-1. Navigate to the repository containing the project you would like publushed.
+1. Navigate to the repository containing the project you would like published.
 2. Click on Settings.
 3. On the vertical bar below, click Pages.
 4. Select the branch and root folder of the project that you want to deploy.
@@ -631,7 +631,7 @@ This website was deployed using GitHub Pages.
 [`Back To Top`](#table-of-contents)
 
 ### Code
-1. [StackOverflow](https://stackoverflow.com/) - Invert Chrome's Calendar picker and customise slider.
+1. [StackOverflow](https://stackoverflow.com/) - Invert Chrome's Calendar picker and customize slider.
 2. [MarkDotto.com](https://markdotto.com/playground/3d-text/) - Multi-layered 3D effect text-shadow.
 3. [Guatam Tiwari](https://dev.to/gautamtiwari/how-to-make-a-responsive-hamburger-menu-using-css-only-3pg5) - inspiration and JS for burger menu.
 4. [LearnUI.design](https://learnui.design/tools/gradient-generator.html) - Gradient used in nav buttons on Landing page and Sign Up form on Events.
