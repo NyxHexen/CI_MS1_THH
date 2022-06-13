@@ -53,7 +53,19 @@ An all-inclusive community-oriented gaming bar in Cardiff, where people can use 
 ## 1. Project Goals
 [`Back To Top`](#table-of-contents)
 
-The goal of the application is to increase brand awareness in order to promote it and it's events, increase sales, and grow the bar's customer base. The website should be intuitive and elicit a positive response from the visitors.
+### User Goals:
+- Find a video games/esports bar with a good athmosphere;
+- View bar's menu & prices;
+- Find the bar's location;
+- Find out what the bar offers;
+
+### Site Owner Goals:
+- Increase brand awareness;
+- Increase sales;
+- Promote bar events;
+- Grow customer base;
+- Receive feedback;
+- Provide customers with a way to contact us.
 
 ---
 
@@ -65,7 +77,12 @@ The website has been designed as mobile-first, and has 3 general layout shifts f
 I wanted to keep the design minimalistic, and content to the point, but add extra functionality where possible to enhance the overal experience.
 
 ### Target Audience
-The bar's primary demographic is people interested in video games and e-sports.
+
+- People interested in video games or esports;
+- People looking for a cocktail bar;
+- People looking for bar that offers food;
+- People who want to be part of a community;
+
 
 ### User Stories
 1. As a new customer I would like to learn what The Hexen Hut is and what it offers.
