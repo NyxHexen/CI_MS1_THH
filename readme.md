@@ -41,9 +41,9 @@ An all-inclusive community-oriented gaming bar in Cardiff, where people can use 
 6. [Device testing](#devices-tested-on)
 7. [Testing user stories](#testing-user-stories)
 
-### 6. [How-to DIY: GitHub Deploy, Fork, Clone](#6-how-to-diy-github-deploy-fork--clone)
+### 7. [How-to DIY: GitHub Deploy, Fork, Clone](#7-how-to-diy-github-deploy-fork--clone)
 
-### 7. [Credits](#7-credits-1)
+### 8. [Credits](#8-credits-1)
 1. [Code](#code)
 2. [Media](#media)
 3. [Acknowledgements](#acknowledgements)
@@ -598,7 +598,20 @@ Results:
 
 ---
 
-## 6. How-to DIY: GitHub Deploy, Fork & Clone
+## 8. Bugs and Fixes
+
+| ID | Bug | Fix
+|--- |--- |---
+| 1 | On pages with less content footer ends up positioned mid-page. | Set `min-height` of body to 100vh.
+| 2 | Landing page background animation ends with the background out of view. | Change X and Y values of `translate3d()` property to 66% at the end of the animation.
+| 3 | JavaScript throws a TypeError on pages where the `.signup-form--toggle` button does not exist. | Nest the function which adds the event listener within an if statement which checks if the button exists.
+| 4 | Unable to tab through each FAQ entry in scroll box (faq.html) | Add `tabindex="0"` to each entry.
+| 5 | Logo is not redirecting users to landing page, shows caret pointer | An `all: unset` property causes the natural behavior of an anchor element to disappear. Remove property and style individually. 
+| 6 | Sign-up form `box-shadow` creates shadow on top of gradient instead of under. | Move `box-shadow` property to sign up form's `::before` pseudo element.
+
+---
+
+## 7. How-to DIY: GitHub Deploy, Fork & Clone
 [`Back To Top`](#table-of-contents)
 
 This website was deployed using GitHub Pages.
@@ -627,7 +640,7 @@ This website was deployed using GitHub Pages.
 
 --- 
 
-## 7. Credits
+## 8. Credits
 [`Back To Top`](#table-of-contents)
 
 ### Code
