@@ -1305,7 +1305,9 @@ iframe {
 }
 
 .div404 em {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    text-shadow: 1px 1px 4px black, -1px -1px 4px black;
 }
 
 /* ------------------------------------------------------------------------------------------------------- MEDIA QUERIES */
