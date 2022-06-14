@@ -325,6 +325,7 @@ About Us page consists of 2 features.
 [`Back To Top`](#table-of-contents)
 
 ### HTML Validation 
+
 [W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML of the website. All pages pass with 0 errors and 0 warnings. 
 
 <details>
@@ -364,6 +365,7 @@ About Us page consists of 2 features.
 </details>
 
 ### CSS Validation
+
 [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate the CSS of the website.
 
 CSS passed with 0 errors, and a couple of warnings relating to variables.
@@ -381,6 +383,7 @@ CSS passed with 0 errors, and a couple of warnings relating to variables.
 </details>
 
 ### Accessibility
+
 [WAVE WebAIM Web Accessibility (Chrome Plugin)](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh) was used to check that the code meets accessibility standards. 
 
 Menu, Events and FAQ pages pass with 0 errors and 0 warnings.
@@ -426,6 +429,7 @@ About Us page has 3 alerts for "Possible heading" due to content length. Alerts 
 </details>
 
 ### Performance
+
 [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to measure the website's speed and performance. 
 
 <details>
