@@ -37,9 +37,11 @@ An all-inclusive community-oriented gaming bar in Cardiff, where people can use 
 2. [CSS Validation](#css-validation)
 3. [Accessibility](#accessibility)
 4. [Performance](#performance)
-5. [Browser compatibility](#browser-compatibility)
-6. [Device testing](#devices-tested-on)
-7. [Testing user stories](#testing-user-stories)
+5. [Browser Compatibility](#browser-compatibility)
+6. [Device Testing](#devices-tested-on)
+7. [Testing User Stories](#testing-user-stories)
+
+### 6. [Bug/Fix Log](#6-bugfix-log-1)
 
 ### 7. [How-to DIY: GitHub Deploy, Fork, Clone](#7-how-to-diy-github-deploy-fork--clone)
 
@@ -355,39 +357,27 @@ About Us page consists of 2 features.
 <img src="docs/validation/w3-html-validator-about.png">
 </details>
 
+<details>
+<summary>Custom 404 page (404.html)</summary>
+
+<img src="docs/validation/w3-html-validator-404.png">
+</details>
+
 ### CSS Validation
 [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate the CSS of the website.
 
 CSS passed with 0 errors, and a couple of warnings relating to variables.
 
 <details>
-<summary>Landing Page (index.html)</summary>
+<summary>style-main.css</summary>
 
-<img src="docs/validation/w3-css-validator-index.png">
+<img src="docs/validation/w3-css-validator-style-main.png">
 </details>
 
 <details>
-<summary>Our Menu (our-menu.html)</summary>
+<summary>style.css</summary>
 
-<img src="docs/validation/w3-css-validator-our-menu.png">
-</details>
-
-<details>
-<summary>Events (events.html)</summary>
-
-<img src="docs/validation/w3-css-validator-events.png">
-</details>
-
-<details>
-<summary>FAQ (faq.html)</summary>
-
-<img src="docs/validation/w3-css-validator-faq.png">
-</details>
-
-<details>
-<summary>About Us (about.html)</summary>
-
-<img src="docs/validation/w3-css-validator-about.png">
+<img src="docs/validation/w3-css-validator-style.png">
 </details>
 
 ### Accessibility
@@ -397,7 +387,43 @@ Menu, Events and FAQ pages pass with 0 errors and 0 warnings.
 
 Landing page has 4 alerts for "device dependent event handler" (onclick). As the button consists of a styled div with an anchor child I wanted to make sure the div acts as a button, where the onclick property came in handy.
 
-About page has 3 alerts for "Possible heading" due to content length. Alerts pertain to the use of `<p>` element as text container for the comments section author found under the white bubble.
+About Us page has 3 alerts for "Possible heading" due to content length. Alerts pertain to the use of `<p>` element as text container for the comments section author found under the white bubble.
+
+<details>
+<summary>Landing Page (index.html)</summary>
+
+<img src="docs/validation/wave-accessibility-index.png">
+</details>
+
+<details>
+<summary>Our Menu (our-menu.html)</summary>
+
+<img src="docs/validation/wave-accessibility-our-menu.png">
+</details>
+
+<details>
+<summary>Events (events.html)</summary>
+
+<img src="docs/validation/wave-accessibility-events.png">
+</details>
+
+<details>
+<summary>FAQ (faq.html)</summary>
+
+<img src="docs/validation/wave-accessibility-faq.png">
+</details>
+
+<details>
+<summary>About Us (about.html)</summary>
+
+<img src="docs/validation/wave-accessibility-about.png">
+</details>
+
+<details>
+<summary>Custom 404 (404.html)</summary>
+
+<img src="docs/validation/wave-accessibility-404.png">
+</details>
 
 ### Performance
 [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to measure the website's speed and performance. 
@@ -430,6 +456,12 @@ About page has 3 alerts for "Possible heading" due to content length. Alerts per
 <summary>About Us (about.html)</summary>
 
 <img src="docs/validation/lighthouse-about.png">
+</details>
+
+<details>
+<summary>Custom 404 (404.html)</summary>
+
+<img src="docs/validation/lighthouse-404.png">
 </details>
 
 ### Browser compatibility:
@@ -489,6 +521,7 @@ Results:
 | About Us - Perks Section | Navigate to About us page | Customer locates perks section | As expected
 
 3. As a new customer, I want to know the bar's address.
+
 | Feature | Action | Expected Result | Actual Result
 |--- |--- |--- |---
 | Footer - Join Us Section | Scroll to the bottom of any of the site's pages | Locate Join Us section and address | As expected
@@ -598,7 +631,7 @@ Results:
 
 ---
 
-## 8. Bugs and Fixes
+## 6. Bug/Fix Log
 
 | ID | Bug | Fix
 |--- |--- |---
