@@ -108,7 +108,7 @@ section {
 
 /* Accessibility */
 .visually-hidden {
-    /* clip is depricated, but appears to still do the job, definitelly better than display: none */
+    /* clip is deprecated, but appears to still do the job, definitely better than display: none */
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
     height: 1px;
@@ -117,6 +117,8 @@ section {
     overflow: hidden;
     padding: 0;
     position: absolute;
+    background-color: black;
+    color: white;
 }
 
 /* ----------------------------------------------------------------- Header & Navbar (carries over all pages EXCEPT main.html) */
@@ -401,7 +403,7 @@ header span {
     font-weight: bold;
     cursor: pointer;
     /* improves readability on tablet devices */
-    text-shadow: 3px 3px 3px var(--bg-clr-a);
+    text-shadow: 3px 3px 3px var(--bg-clr);
 }
 
 .cocktail-drinks--accordion .tab-label:hover {
