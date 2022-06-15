@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +10,23 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/images/favicon/site.webmanifest">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Events | The Hexen Hut - Video Games and Esports Bar</title>
 </head>
+
 <body class="events">
     <header>
+        <!-- history.back() method causes the browser to move back one page in the session history -->
         <button onclick="history.back()" class="back-button" aria-label="Go to previous page">
             <i class="fa-solid fa-arrow-left"></i><span>Back</span></button>
         <div class="logo">
             <h1><a href="index.html">The Hexen Hut</a></h1>
         </div>
         <nav id="nav" class="nav" aria-label="Navigation links">
-            <button class="nav--toggle" aria-expanded="false" aria-controls="nav--list" aria-label="Expand navigation links list">
+            <!-- Toggle button uses JavaScript event listeners to control the menu state -->
+            <button class="nav--toggle" aria-expanded="false" aria-controls="nav--list"
+                aria-label="Expand navigation links list">
+                <!-- Toggle button changes between the two icons nested in the button depending on the menu state -->
                 <i class="fa-solid fa-burger" aria-hidden="true"></i>
                 <i class="fa-solid fa-xmark" aria-hidden="true"></i>
                 <span class="visually-hidden">Open Website Navigation</span></button>
@@ -45,21 +51,27 @@
         <!-- Skip link creates a focusable link that allows screen readers to skip the carousel -->
         <a class="carousel__skip-link" href="#skip-link">Skip the Carousel</a>
         <div class="slides">
-            <div class="slides-item slide-1" id="slide-1" tabindex="0" aria-label="Parties in the arena. Play it your way. Book your party with us.">
+            <div class="slides-item slide-1" id="slide-1" tabindex="0"
+                aria-label="Parties in the arena. Play it your way. Book your party with us.">
                 <img src="assets/images/slider-img-1.webp" alt="A person with a headset playing computer games."></div>
             <div class="slides-item slide-2" id="slide-2" tabindex="0">
-                <img src="assets/images/slider-img-2.webp" alt="Room with computer desks, with gaming chairs and computers"></div>
+                <img src="assets/images/slider-img-2.webp"
+                    alt="Room with computer desks, with gaming chairs and computers"></div>
             <div class="slides-item slide-3" id="slide-3" tabindex="0">
-                <img src="assets/images/slider-img-3.webp" alt="Computer desk with mouse, headset, keyboard and tower"></div>
+                <img src="assets/images/slider-img-3.webp" alt="Computer desk with mouse, headset, keyboard and tower">
+            </div>
             <div class="slides-item slide-4" id="slide-4" tabindex="0">
-                <img src="assets/images/slider-img-4.webp" alt="A person with a headset playing computer games in an esports arena"></div>
+                <img src="assets/images/slider-img-4.webp"
+                    alt="A person with a headset playing computer games in an esports arena"></div>
             <div class="slides-item slide-5" id="slide-5" tabindex="0">
-                <img src="assets/images/slider-img-5.webp" alt="A darkly lit room full of seated with projector screen, watching esports"></div>
+                <img src="assets/images/slider-img-5.webp"
+                    alt="A darkly lit room full of seated with projector screen, watching esports"></div>
         </div>
         <!-- Skip link destination-->
         <div class="carousel__skip-message" id="skip-link" tabindex="0"></div>
     </section>
     <div class="signup">
+        <!-- The form is hidden until the toggle button is clicked; functions on the same principle as the nav toggle button in small to medium devices-->
         <button class="signup-form--toggle" aria-expanded="false" aria-controls="signup-form">Sign Up!</button>
         <form id="signup-form" class="signup-form" method="post" action="#">
             <label for="fname">First Name:</label><br>
@@ -101,6 +113,7 @@
             </ul>
         </section>
     </div>
+    <!-- Footer -->
     <footer>
         <div class="footer__background" aria-hidden="true">
             &nbsp;
@@ -120,8 +133,7 @@
         <div class="iframe__container">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4769.075097108596!2d-6.1823260708050265!3d53.29781863203341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e99733f3617%3A0x7ff7202fe3dea603!2sCode%20Institute!5e0!3m2!1sen!2suk!4v1652720823551!5m2!1sen!2suk"
-                style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                 aria-label="A map showing location of bar"></iframe>
         </div>
         <div class="contact-us">
@@ -144,12 +156,14 @@
                         </li>
                     </ul>
                 </li>
+                <!-- Adding "tel:" before the number causes the link to open in dial pad on mobile devices -->
                 <li>Call Us: <a href="tel:+442821234567">0282 123 4567</a></li>
             </ul>
         </div>
     </footer>
     <!-- Font Awesome v6 Kit -->
     <script src="https://kit.fontawesome.com/f05b6615ad.js" crossorigin="anonymous"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>

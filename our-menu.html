@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +10,23 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/images/favicon/site.webmanifest">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Our Menu | The Hexen Hut - Video Games and Esports Bar</title>
 </head>
+
 <body class="our-menu">
     <header>
+        <!-- history.back() method causes the browser to move back one page in the session history -->
         <button onclick="history.back()" class="back-button" aria-label="Go to previous page">
             <i class="fa-solid fa-arrow-left"></i><span>Back</span></button>
         <div class="logo">
             <h1><a href="index.html">The Hexen Hut</a></h1>
         </div>
         <nav id="nav" class="nav" aria-label="Navigation links">
-            <button class="nav--toggle" aria-expanded="false" aria-controls="nav--list" aria-label="Expand navigation links list">
+            <!-- Toggle button uses JavaScript event listeners to control the menu state -->
+            <button class="nav--toggle" aria-expanded="false" aria-controls="nav--list"
+                aria-label="Expand navigation links list">
+                <!-- Toggle button changes between the two icons nested in the button depending on the menu state -->
                 <i class="fa-solid fa-burger" aria-hidden="true"></i>
                 <i class="fa-solid fa-xmark" aria-hidden="true"></i>
                 <span class="visually-hidden">Open Website Navigation</span></button>
@@ -42,6 +48,7 @@
     </header>
     <h2>Food and Drinks</h2>
     <div id="drinks-menu">
+        <!-- sm-container assists with creating the layout on mobile and tablet devices by grouping cold- and hot-drinks -->
         <div class="sm-container">
             <section class="cold-drinks">
                 <h3>Cold Drinks</h3>
@@ -120,53 +127,53 @@
         </div>
         <section class="cocktail-drinks">
             <h3>Cocktails</h3>
-            <!-- SASS accordion from https://codepen.io/raubaca/pen/PZzpVe translated into CSS and customized -->
+            <!-- Cocktail drinks accordion; not available to screen readers as less accessible than the list (--table) -->
             <div class="cocktail-drinks--accordion" aria-hidden="true">
                 <fieldset>
-                <legend class="visually-hidden">List of cocktails</legend>
-                <div class="tab">
-                    <input type="radio" name="rd" id="rd1" checked>
-                    <label class="tab-label" for="rd1">Rainbow Road <span>£7.00</span></label>
-                    <div class="tab-content">
-                        (blue curacao, orange juice, vodka, gin, grenadine, rum)
+                    <legend class="visually-hidden">List of cocktails</legend>
+                    <div class="tab">
+                        <input type="radio" name="rd" id="rd1" checked>
+                        <label class="tab-label" for="rd1">Rainbow Road <span>£7.00</span></label>
+                        <div class="tab-content">
+                            (blue curacao, orange juice, vodka, gin, grenadine, rum)
+                        </div>
                     </div>
-                </div>
-                <div class="tab">
-                    <input type="radio" name="rd" id="rd2">
-                    <label class="tab-label" for="rd2">Golden Chocobo <span>£7.50</span></label>
-                    <div class="tab-content">
-                        (ginger ale, Goldschlager cinnamon schnapps liqueur, American honey wild turkey)
+                    <div class="tab">
+                        <input type="radio" name="rd" id="rd2">
+                        <label class="tab-label" for="rd2">Golden Chocobo <span>£7.50</span></label>
+                        <div class="tab-content">
+                            (ginger ale, Goldschlager cinnamon schnapps liqueur, American honey wild turkey)
+                        </div>
                     </div>
-                </div>
-                <div class="tab">
-                    <input type="radio" name="rd" id="rd3">
-                    <label class="tab-label" for="rd3">The T-Virus <span>£7.50</span></label>
-                    <div class="tab-content">
-                        (lime juice, Sprite, Gordon's, Bombay Sapphire, Midori, grenadine, blue curacao, gin)
+                    <div class="tab">
+                        <input type="radio" name="rd" id="rd3">
+                        <label class="tab-label" for="rd3">The T-Virus <span>£7.50</span></label>
+                        <div class="tab-content">
+                            (lime juice, Sprite, Gordon's, Bombay Sapphire, Midori, grenadine, blue curacao, gin)
+                        </div>
                     </div>
-                </div>
-                <div class="tab">
-                    <input type="radio" name="rd" id="rd4">
-                    <label class="tab-label" for="rd4">Pac Man <span>£7.00</span></label>
-                    <div class="tab-content">
-                        (basil leaves, orange, pineapple juice, vodka, parmesan cheese)
+                    <div class="tab">
+                        <input type="radio" name="rd" id="rd4">
+                        <label class="tab-label" for="rd4">Pac Man <span>£7.00</span></label>
+                        <div class="tab-content">
+                            (basil leaves, orange, pineapple juice, vodka, parmesan cheese)
+                        </div>
                     </div>
-                </div>
-                <div class="tab">
-                    <input type="radio" name="rd" id="rd5">
-                    <label class="tab-label" for="rd5">Dratini <span>£6.90</span></label>
-                    <div class="tab-content">
-                        (blue curacao, gin, Hypnotic, whipped cream)
+                    <div class="tab">
+                        <input type="radio" name="rd" id="rd5">
+                        <label class="tab-label" for="rd5">Dratini <span>£6.90</span></label>
+                        <div class="tab-content">
+                            (blue curacao, gin, Hypnotic, whipped cream)
+                        </div>
                     </div>
-                </div>
-                <div class="tab">
-                    <input type="radio" name="rd" id="rd6">
-                    <label class="tab-label" for="rd6">Devil's Kiss <span>£7.50</span></label>
-                    <div class="tab-content">
-                        (lemonade, bitters, cinnamon, chambord, spiced rum, overproof rum, ginger beer, grenadine)
+                    <div class="tab">
+                        <input type="radio" name="rd" id="rd6">
+                        <label class="tab-label" for="rd6">Devil's Kiss <span>£7.50</span></label>
+                        <div class="tab-content">
+                            (lemonade, bitters, cinnamon, chambord, spiced rum, overproof rum, ginger beer, grenadine)
+                        </div>
                     </div>
-                </div>
-            </fieldset>
+                </fieldset>
             </div>
             <div class="cocktail-drinks--table">
                 <ul>
@@ -232,6 +239,7 @@
                 </li>
             </ul>
         </section>
+        <!-- the 'OR' particle has been omitted from screen readers as it is not an integral part of the content and would likely not make sense if read after the entire list-->
         <div class="food-menu--or" aria-hidden="true">- OR -</div>
         <section class="food-menu--hungry">
             <h3> ...Hungry?</h3>
@@ -278,8 +286,7 @@
         <div class="iframe__container">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4769.075097108596!2d-6.1823260708050265!3d53.29781863203341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e99733f3617%3A0x7ff7202fe3dea603!2sCode%20Institute!5e0!3m2!1sen!2suk!4v1652720823551!5m2!1sen!2suk"
-                style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                 aria-label="A map showing location of bar"></iframe>
         </div>
         <div class="contact-us">
@@ -308,6 +315,7 @@
     </footer>
     <!-- Font Awesome v6 Kit -->
     <script src="https://kit.fontawesome.com/f05b6615ad.js" crossorigin="anonymous"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>

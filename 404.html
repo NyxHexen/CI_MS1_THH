@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +10,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/images/favicon/site.webmanifest">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Uh oh! 404 Page Not Found | The Hexen Hut - Video Games and Esports Bar</title>
 </head>
+
 <body class="error404">
     <header>
+        <!-- history.back() method causes the browser to move back one page in the session history -->
         <button onclick="history.back()" class="back-button" aria-label="Go to previous page">
             <i class="fa-solid fa-arrow-left"></i><span>Back</span>
         </button>
@@ -21,7 +24,10 @@
             <h1><a href="index.html">The Hexen Hut</a></h1>
         </div>
         <nav id="nav" class="nav" aria-label="Navigation links">
-            <button class="nav--toggle" aria-expanded="false" aria-controls="nav--list" aria-label="Expand navigation links list">
+            <!-- Toggle button uses JavaScript event listeners to control the menu state -->
+            <button class="nav--toggle" aria-expanded="false" aria-controls="nav--list"
+                aria-label="Expand navigation links list">
+                <!-- Toggle button changes between the two icons nested in the button depending on the menu state -->
                 <i class="fa-solid fa-burger" aria-hidden="true"></i>
                 <i class="fa-solid fa-xmark" aria-hidden="true"></i>
                 <span class="visually-hidden">Open Website Navigation</span></button>
@@ -41,12 +47,14 @@
             </ul>
         </nav>
     </header>
+    <!-- 404 Notification -->
     <div class="div404">
         <h2>Woops!</h2>
         <p>The page you are looking for does not exist or has been moved!</p>
         <em>Please use the main menu or the button below to go back.</em>
         <a class="button404" href="index.html">Start Over</a>
     </div>
+    <!-- Footer -->
     <footer>
         <div class="footer__background" aria-hidden="true">
             &nbsp;
@@ -89,12 +97,14 @@
                         </li>
                     </ul>
                 </li>
+                <!-- Adding "tel:" before the number causes the link to open in dial pad on mobile devices -->
                 <li>Call Us: <a href="tel:+442821234567">0282 123 4567</a></li>
             </ul>
         </div>
     </footer>
     <!-- Font Awesome v6 Kit -->
     <script src="https://kit.fontawesome.com/f05b6615ad.js" crossorigin="anonymous"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
