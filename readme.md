@@ -394,16 +394,16 @@ Events page is made up of 3 features.
 
 FAQ page consists of 2 features.
 1. Frequently Asked Questions search and scroll - consists of two parts.
-    1. Search:
-        - a search input field, which currently does not have functionality much different to a text input element.
-        - a search button, visually nested within the search input field.
+- Search:
+    - a search input field, which currently does not have functionality much different to a text input element.
+    - a search button, visually nested within the search input field.
 
 <details>
 <summary> Supporting Image </summary>
 <img src="docs/features/feature-signup-form-closed.png">
 </details>
 
-    2. Scroll box with questions and answers - used the same method to create the scroll behavior as the image carousel on Events page, with customized scroll bar to match the website theme. It was with this feature that I learned of the existence of `scroll-padding`, which helped me control the exact position the scroll snapped to, so the bottom of the previous div is always visible. `tabindex="0"` was also added to each container to make each FAQ entry in the scroll box focusable.
+- Scroll box with questions and answers - used the same method to create the scroll behavior as the image carousel on Events page, with customized scroll bar to match the website theme. It was with this feature that I learned of the existence of `scroll-padding`, which helped me control the exact position the scroll snapped to, so the bottom of the previous div is always visible. `tabindex="0"` was also added to each container to make each FAQ entry in the scroll box focusable.
 
 <details>
 <summary> Supporting Image </summary>
