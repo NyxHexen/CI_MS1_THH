@@ -1,11 +1,7 @@
 <h1 align="center">The Hexen Hut - Video Games and Esports Bar (MS1) </h1>
 <img src="assets/images/logo.png">
 
-<details>
-<summary>Responsive Mockup</summary>
-
 <img src="docs/mockup/responsive-mockup.png">
-</details>
 
 [View the deployed website](https://nyxhexen.github.io/CI_MS1_THH/)
 
@@ -222,9 +218,9 @@ Source: ['I like trains' Artwork - DeviantArt/belen02](https://www.deviantart.co
 ## 3. Features
 [`Back To Top`](#table-of-contents)
 
-The website consists of 5 fully responsive pages with 12 features across.
+The website consists of 5 responsive pages with 2 to 3 features per page.
 
-Each page has 2-3 layout shifts across the 3 types of devices.
+Each page has 2 to 3 layout shifts across the 3 types of devices.
 
 ### Features at release
 
@@ -235,24 +231,77 @@ Landing page has it's own separate stylesheet as the page consists of only heade
 I kept the landing page as simple and as clean as possible, so the customer gets a feel for what the website is about. This is the only page where the slogan can be found as it's one of only 3 things the customer sees upon visiting and it describes what the venue is about. A gaming bar.
 
 The landing page consists of 2 main features:
-1. Full screen header.
-2. Footer.
+<details>
+<summary> 1. Full screen header </summary>
+
+<img src="docs/features/feature-full-screen-header.png">
+</details>
+
+<details>
+<summary> 2. Footer </summary>
+
+<img src="docs/features/feature-footer.png">
+</details>
 
 The full screen header consists of 3 sections:
 1. Logo - I wanted to keep things simple, so the logo is made up of an anchor (to allow use as navigation button) within an h1 element. The `h1` allowed the logo to also naturally respond to any view width changes. The logo has an infinite bounce keyframe animation inspired by the behavior of the game title in some video games. When clicked sends you to the landing page.
+
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-logo.png">
+</details>
+
 2. Slogan - A standard `h2`, describing the bar's theme and purpose. It took a bit of time to style it the way it looks now. I wanted it to stand out, which is why I chose the color black for the text, but that created some issue with readability and contrast which I resolved by adding two layers of shadow in different color.
+
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-slogan.png">
+</details>
+
 3. Navigation buttons - This was the first major style that I got to enjoy customizing. I changed pretty much all styling of the button to make it fit my design, but kept the structure somewhat close to the original. The structure of each button is `ul > li > div > a` and utilizes both pseudo elements of the `li`. 
 
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-nav-buttons.png">
+</details>
+
 - Background image - Background image is a pattern png with no background color, rotated 45 degrees, which has keyframe moving it on both X and Y axes. The background image is contained within it's own `div`, within the header, and is applied using CSS `background-image: url()`. It took a bit of fine tuning to figure out the best speed for the animation, as the original speed was a bit nausea inducing combined with the bounce of the logo and buttons.
+
+<details>
+<summary> Supporting Image </summary>
+<img src="assets/images/pattern-hexagrams.webp">
+</details>
 
 The footer remains the same across all pages, including any layout shifts.
 
 It consists of 4 sections:
 1. 'Join Us' section which lists the physical location and operating hours of the venue.
+
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-join-us.png">
+</details>
+
 2. A Google Maps iframe with a pin and the venue name.
+
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-map.png">
+</details>
+
 3. 'Contact Us' section which holds the venue's social links and phone number. All links open in a new window and activating the phone number redirects to the mobile phone's dial pad.
 
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-contact-us.png">
+</details>
+
 - Background image which has been applied using CSS, the same way as the header background.
+
+<details>
+<summary> Supporting Image </summary>
+<img src="assets/images/pixel-gradient-footer.webp">
+</details>
 
 ### Header - All pages (excl index.html)
 
@@ -260,11 +309,36 @@ The header of the remaining pages (our-menu, events, faq, and about) is differen
 
 This header is made up of 3 features:
 1. Logo - uses the same design as on Landing page. On click redirects to Landing page.
+
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-logo2.png">
+</details>
+
 2. Back button - Initially this was just an anchor which when activated took you to the landing page. After getting some feedback from other students and doing some research I decided to transform it into a button and add an onclick event (`onclick="history.back()`) which gave it the functionality of a browser back button.
-    - Structured as `button > i + span`. The span allowed me to hide the text on smaller screens.
+- Structured as `button > i + span`. The span allowed me to hide the text on smaller screens.
+
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-back-button.png">
+</details>
+
 3. Navigation links:
-    - On large screens, the navigation links are organized horizontally with the active element highlighted.
-    - On mobile and tablets, the navigation links list is hidden and replaced by a burger button which controls the state of the nav list. The expand/collapse function was done with JavaScript event listener which adds a new class to the body when the button is pressed.
+
+- On large screens, the navigation links are organized horizontally with the active element highlighted.
+
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-nav-buttons2.png">
+</details>
+
+- On mobile and tablets, the navigation links list is hidden and replaced by a burger button which controls the state of the nav list. The expand/collapse function was done with JavaScript event listener which adds a new class to the body when the button is pressed.
+
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-hamburger-menu-closed.png">
+<img src="docs/features/feature-hamburger-menu-open.png">
+</details>
 
 ### our-menu.html - Our Menu
 
@@ -274,16 +348,47 @@ Our Menu page is made up of 2 features.
     2. Cocktail drinks - has two versions, only one of which is visible depending on the device screen size. 
         - Version A is an accordion, available only on mobile and tablets, made using radio inputs and their :checked state which shows or hides the ingredients of the selected item. This helped make the cocktail menu a lot smaller, eliminating the need to scroll through a long list, and generally easier to digest on smaller devices. As this is a less accessible than an unordered list I decided to hide it from screen readers using `aria-hidden="true"`.
         - Version B is an unordered list made to look like a table. The structure of this version is `ul > li > h4 + 2*span`. 
+
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-drinks-menu-accordion.png">
+<img src="docs/features/feature-drinks-menu-table.png">
+</details>
+
 2. Food menu, consists of 2 sections - snacks ("Peckish?...") and meals ("...Hungry?").
+
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-food-menu.png">
+</details>
 
 ### events.html - Events
 
 Events page is made up of 3 features.
 1. Carousel -  consisting of 5 images intended to promote the events at the bar. To make it so the images can be focused `tabindex="0"` was added to each img container.
     - On desktop, the images are spread across the view width.
-    - On mobile and tablet, utilizes `flex-shrink: 1` which forces the images to fit to the container width, creating an overflow on the X axis, which we then use to our advantage by adding `overflow-x:scroll`, allowing us to scroll through that overflow.
+    - On mobile and tablet, utilizes `flex-shrink: 1` which forces the images to fit to the container width, creating an overflow on the X axis, which we then use to our advantage by adding `overflow-x: scroll`, allowing us to scroll through that overflow.
+    
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-carousel.png">
+<img src="docs/features/feature-carousel2.png">
+</details>
+
 2. Sign Up form - consists of a trigger button and a form with multiple inputs, the form's visibility is controlled the same as the mobile nav burger menu. This was fairly challenging as I had no point of reference, so I had to logic my way into making the form behave the way I had envisioned. Possibly my favorite feature on the website. 
+
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-signup-form-closed.png">
+<img src="docs/features/feature-signup-form-open.png">
+</details>
+
 3. Event lists - two unordered lists, styled identically. The dark background of each item was added to improve contrast/accessibility and make it stand out. The list items have a :hover style to make them look like links.
+
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-events-list.png">
+</details>
 
 ### faq.html - FAQ
 
@@ -292,14 +397,42 @@ FAQ page consists of 2 features.
     1. Search:
         - a search input field, which currently does not have functionality much different to a text input element.
         - a search button, visually nested within the search input field.
+
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-signup-form-closed.png">
+</details>
+
     2. Scroll box with questions and answers - used the same method to create the scroll behavior as the image carousel on Events page, with customized scroll bar to match the website theme. It was with this feature that I learned of the existence of `scroll-padding`, which helped me control the exact position the scroll snapped to, so the bottom of the previous div is always visible. `tabindex="0"` was also added to each container to make each FAQ entry in the scroll box focusable.
+
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-scroll-box.png">
+</details>
+
 2. Feedback Form - a standard form with a custom appearance. I reset the radio element appearance using `appearance: none` and then rebuilt them from scratch in order to give them the appearance resembling LED lights of a computer.
+
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-feedback-form.png">
+</details>
 
 ### about.html - About Us
 
-About Us page consists of 2 features.
+About Us page consists of 2 features:
 1. Bar Perks - a section outlining the perks of visiting the bar. This feature has 3 layout shifts for each device. This was also the point at which I researched direct text manipulation a bit deeper and found `writing-mode` (more widely used in Eastern countries such as Japan, where text is written top-to-bottom, left-to-right), which helped me with fitting everything on smaller devices. The dark gradient was added to make the section stand out and improve text visibility.
+
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-perks.png">
+</details>
+
 2. Comment Section - this section shows comments left by previous customers of the bar. Each comment consists of a heading, containing the comment, and a paragraph element housing the comment author.
+
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-comment-section.png">
+</details>
 
 ---
 
@@ -694,6 +827,7 @@ This website was deployed using GitHub Pages.
 1. [Meltdown](https://www.meltdown.bar) bar - London, UK - text content used in About Us & Events pages.
 2. [Unsplash](https://unsplash.com/) - high resolution images used in carousel.
 3. [Pixel Gradient Maker](https://pixel-gradient-maker.glitch.me/) - footer background gradient image.
+4. [Toptal](https://www.toptal.com/designers/subtlepatterns/tag/hexagon/) - index.html header background.
 4. [Belong Arenas](https://twitter.com/BelongKingston/status/1521460056620941313/photo/1) - marketing image from Twitter.
 5. [Favicon](https://favicon.io/) - used to generate webpage favicon.
 6. [Google Fonts](https://fonts.google.com/) - fonts used in project.
