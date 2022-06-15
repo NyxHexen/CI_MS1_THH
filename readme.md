@@ -263,7 +263,7 @@ This header is made up of 3 features:
 2. Back button - Initially this was just an anchor which when activated took you to the landing page. After getting some feedback from other students and doing some research I decided to transform it into a button and add an onclick event (`onclick="history.back()`) which gave it the functionality of a browser back button.
     - Structured as `button > i + span`. The span allowed me to hide the text on smaller screens.
 3. Navigation links:
-    - On large screens, the navigation links are organised horizontally with the active element highlighted.
+    - On large screens, the navigation links are organized horizontally with the active element highlighted.
     - On mobile and tablets, the navigation links list is hidden and replaced by a burger button which controls the state of the nav list. The expand/collapse function was done with JavaScript event listener which adds a new class to the body when the button is pressed.
 
 ### our-menu.html - Our Menu
@@ -281,7 +281,7 @@ Our Menu page is made up of 2 features.
 Events page is made up of 3 features.
 1. Carousel -  consisting of 5 images intended to promote the events at the bar. To make it so the images can be focused `tabindex="0"` was added to each img container.
     - On desktop, the images are spread across the view width.
-    - On mobile and tablet, utilises `flex-shrink: 1` which forces the images to fit to the container width, creating an overflow on the X axis, which we then use to our advantage by adding `overflow-x:scroll`, allowing us to scroll through that overflow.
+    - On mobile and tablet, utilizes `flex-shrink: 1` which forces the images to fit to the container width, creating an overflow on the X axis, which we then use to our advantage by adding `overflow-x:scroll`, allowing us to scroll through that overflow.
 2. Sign Up form - consists of a trigger button and a form with multiple inputs, the form's visibility is controlled the same as the mobile nav burger menu. This was fairly challenging as I had no point of reference, so I had to logic my way into making the form behave the way I had envisioned. Possibly my favorite feature on the website. 
 3. Event lists - two unordered lists, styled identically. The dark background of each item was added to improve contrast/accessibility and make it stand out. The list items have a :hover style to make them look like links.
 
