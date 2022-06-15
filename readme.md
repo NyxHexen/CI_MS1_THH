@@ -253,6 +253,8 @@ The full screen header consists of 3 sections:
 
 2. Slogan - A standard `h2`, describing the bar's theme and purpose. It took a bit of time to style it the way it looks now. I wanted it to stand out, which is why I chose the color black for the text, but that created some issue with readability and contrast which I resolved by adding two layers of shadow in different color.
 
+_User Story Covered: 1_
+
 <details>
 <summary> Supporting Image </summary>
 <img src="docs/features/feature-slogan.png">
@@ -282,6 +284,8 @@ It consists of 4 sections:
 <img src="docs/features/feature-join-us.png">
 </details>
 
+_User Story Covered: 3_
+
 2. A Google Maps iframe with a pin and the venue name.
 
 <details>
@@ -289,12 +293,16 @@ It consists of 4 sections:
 <img src="docs/features/feature-map.png">
 </details>
 
+_User Story Covered: 5_
+
 3. 'Contact Us' section which holds the venue's social links and phone number. All links open in a new window and activating the phone number redirects to the mobile phone's dial pad.
 
 <details>
 <summary> Supporting Image </summary>
 <img src="docs/features/feature-contact-us.png">
 </details>
+
+_User Story Covered: 6, 9, 11, 19_
 
 - Background image which has been applied using CSS, the same way as the header background.
 
@@ -317,6 +325,8 @@ This header is made up of 3 features:
 
 2. Back button - Initially this was just an anchor which when activated took you to the landing page. After getting some feedback from other students and doing some research I decided to transform it into a button and add an onclick event (`onclick="history.back()`) which gave it the functionality of a browser back button.
 - Structured as `button > i + span`. The span allowed me to hide the text on smaller screens.
+
+_User Story Covered: 17_
 
 <details>
 <summary> Supporting Image </summary>
@@ -355,12 +365,16 @@ Our Menu page is made up of 2 features.
 <img src="docs/features/feature-drinks-menu-table.png">
 </details>
 
+_User Story Covered: 4, 8_
+
 2. Food menu, consists of 2 sections - snacks ("Peckish?...") and meals ("...Hungry?").
 
 <details>
 <summary> Supporting Image </summary>
 <img src="docs/features/feature-food-menu.png">
 </details>
+
+_User Story Covered: 4, 8_
 
 ### events.html - Events
 
@@ -375,6 +389,8 @@ Events page is made up of 3 features.
 <img src="docs/features/feature-carousel2.png">
 </details>
 
+_User Story Covered: 2, 15_
+
 2. Sign Up form - consists of a trigger button and a form with multiple inputs, the form's visibility is controlled the same as the mobile nav burger menu. This was fairly challenging as I had no point of reference, so I had to logic my way into making the form behave the way I had envisioned. Possibly my favorite feature on the website. 
 
 <details>
@@ -383,12 +399,16 @@ Events page is made up of 3 features.
 <img src="docs/features/feature-signup-form-open.png">
 </details>
 
+_User Story Covered: 14_
+
 3. Event lists - two unordered lists, styled identically. The dark background of each item was added to improve contrast/accessibility and make it stand out. The list items have a :hover style to make them look like links.
 
 <details>
 <summary> Supporting Image </summary>
 <img src="docs/features/feature-events-list.png">
 </details>
+
+_User Story Covered: 12, 13_
 
 ### faq.html - FAQ
 
@@ -410,12 +430,16 @@ FAQ page consists of 2 features.
 <img src="docs/features/feature-scroll-box.png">
 </details>
 
+_User Story Covered: 1, 2, 16, 18_
+
 2. Feedback Form - a standard form with a custom appearance. I reset the radio element appearance using `appearance: none` and then rebuilt them from scratch in order to give them the appearance resembling LED lights of a computer.
 
 <details>
 <summary> Supporting Image </summary>
 <img src="docs/features/feature-feedback-form.png">
 </details>
+
+_User Story Covered: 10, 20_
 
 ### about.html - About Us
 
@@ -427,12 +451,16 @@ About Us page consists of 2 features:
 <img src="docs/features/feature-perks.png">
 </details>
 
+_User Story Covered: 1, 2, 18_
+
 2. Comment Section - this section shows comments left by previous customers of the bar. Each comment consists of a heading, containing the comment, and a paragraph element housing the comment author.
 
 <details>
 <summary> Supporting Image </summary>
 <img src="docs/features/feature-comment-section.png">
 </details>
+
+_User Story Covered: 7_
 
 ---
 
@@ -473,7 +501,7 @@ About Us page consists of 2 features:
 <img src="docs/validation/w3-html-validator-our-menu.png">
 </details>
 
-<details>
+<details> 
 <summary>Events (events.html)</summary>
 
 <img src="docs/validation/w3-html-validator-events.png">
@@ -653,7 +681,7 @@ Results:
 
 | Feature | Action | Expected Result | Actual Result
 |--- |--- |--- |---
-| Events - Images Carrousel | Navigate to Events page | Customer is able to locate and view pictures | As expected
+| Events - Images carousel | Navigate to Events page | Customer is able to locate and view pictures | As expected
 | FAQ - FAQ Scroll Box | Navigate to FAQ page | Customer is able to scroll through and read FAQs | As expected
 | About Us - Perks Section | Navigate to About us page | Customer locates perks section | As expected
 
@@ -733,7 +761,7 @@ Results:
 
 | Feature | Action | Expected Result | Actual Result
 |--- |--- |--- |---
-| Events - Images Carrousel | Navigate to Events page | Customer is able to locate and view pictures | As expected
+| Events - Images carousel | Navigate to Events page | Customer is able to locate and view pictures | As expected
 
 16. As a returning customer, I want to view frequently asked questions.
 
