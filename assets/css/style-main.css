@@ -389,7 +389,7 @@ iframe {
 /* Landscape Orientation */
 @media (orientation: landscape) {
   header {
-    grid-template-columns: 2fr 2fr 1fr 1fr 4fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr 1fr 2fr 2fr;
     grid-template-rows: 1fr 2fr 2fr 1fr;
     align-items: center;
   }
@@ -506,14 +506,14 @@ iframe {
   .slogan h2 {
     font-size: 2rem;
   }
-
-  #nav a {
-    font-size: 3rem;
-  }
 }
 
 /* For tablets - organises footer in 2 rows and 2 columns */
 @media (min-width: 768px) and (orientation: portrait) {
+  #nav a {
+    font-size: 3rem;
+  }
+
   footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -541,10 +541,6 @@ iframe {
 
   .footer__background {
     background-size: cover;
-  }
-
-  #nav a {
-    font-size: 1.7rem;
   }
 }
 
