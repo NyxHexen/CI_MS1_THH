@@ -420,7 +420,7 @@ FAQ page consists of 2 features.
 
 <details>
 <summary> Supporting Image </summary>
-<img src="docs/features/feature-signup-form-closed.png">
+<img src="docs/features/feature-search-bar.png">
 </details>
 
 - Scroll box with questions and answers - used the same method to create the scroll behavior as the image carousel on Events page, with customized scroll bar to match the website theme. It was with this feature that I learned of the existence of `scroll-padding`, which helped me control the exact position the scroll snapped to, so the bottom of the previous div is always visible. `tabindex="0"` was also added to each container to make each FAQ entry in the scroll box focusable.
