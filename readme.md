@@ -391,7 +391,7 @@ Events page is made up of 3 features.
 
 _User Story Covered: 2, 15_
 
-2. Sign Up form - consists of a trigger button and a form with multiple inputs, the form's visibility is controlled the same as the mobile nav burger menu. This was fairly challenging as I had no point of reference, so I had to logic my way into making the form behave the way I had envisioned. Possibly my favorite feature on the website. 
+2. Sign Up form - consists of a trigger button and a form with multiple inputs, the form's visibility is controlled the same as the mobile nav burger menu. This was fairly challenging as I had no point of reference, so I had to logic my way into making the form behave the way I had envisioned. 
 
 <details>
 <summary> Supporting Image </summary>
@@ -941,6 +941,7 @@ Results:
 | 4 | Unable to tab through each FAQ entry in scroll box (faq.html) | Add `tabindex="0"` to each entry.
 | 5 | Logo is not redirecting users to landing page, shows caret pointer | An `all: unset` property causes the natural behavior of an anchor element to disappear. Remove property and style individually. 
 | 6 | Sign-up form `box-shadow` creates shadow on top of gradient instead of under. | Move `box-shadow` property to sign up form's `::before` pseudo element.
+| 7 | Sign-up and Feedback forms action attribute causes a '405 Not Allowed' error. | Change action to `javascript: void(0);`.
 
 ---
 

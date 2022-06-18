@@ -94,8 +94,8 @@
     </section>
     <!-- Feedback Form -->
     <section class="feedback-form">
-        <!-- The form action initially was a '#', however on GitHub Pages it threw a '405 Not Allowed' error, so I left it empty -->
-        <form action="" method="post">
+            <!-- Using javascript:void(0) returns undefined and the browser stays on the same page -->
+        <form action="javascript:void(0);" method="post">
             <h3>Feedback Form</h3>
             <!-- Text Input -->
             <fieldset class="feedback-personal">
@@ -106,11 +106,11 @@
                 <input type="text" name="email" id="email" required>
             </fieldset>
             <!-- Radio buttons -->
-            <fieldset class="feedback-options" required>
+            <fieldset class="feedback-options">
                 <legend class="visually-hidden">Feedback Options</legend>
                 <div class="faq-rd">
                     <label for="faq_rd1">Question</label>
-                    <input type="radio" name="faq-radio" id="faq_rd1">
+                    <input type="radio" name="faq-radio" id="faq_rd1" required>
                 </div>
                 <div class="faq-rd">
                     <label for="faq_rd2">Suggestion</label>
@@ -124,7 +124,7 @@
             <!-- Message Box -->
             <label for="faq-feedback" class="visually-hidden">Let us know how we did:</label>
             <textarea name="feedback" id="faq-feedback" cols="30" rows="10" placeholder="We want to hear from you!..."
-                required required></textarea>
+                required></textarea>
             <button type="submit" class="feedback-form--submit">Submit</button>
             <button type="reset" class="feedback-form--reset">Reset Form</button>
         </form>
