@@ -10,7 +10,7 @@
 ## Introduction
 
 ### __*The Bar*__
-An all-inclusive community-oriented gaming bar in Cardiff, where people can use onsite equipment to play video games for free while enjoying drinks & food. Events are hosted regularly where customers are invited to participate in competitive video games events, along regular events such as hosting meet-ups, brand parties, product launches, etc.
+An all-inclusive community-oriented gaming bar, where people can use onsite equipment to play video games for free while enjoying drinks & food. Events are hosted regularly where customers are invited to participate in competitive video games events, along regular events such as hosting meet-ups, brand parties, product launches, etc.
 
 ---
 
@@ -146,7 +146,7 @@ My idea for the design was to create a simple, clean website with an 8-bit feel.
 #### Typography
 The **fallback font** chosen across the website is 'sans-serif' for it's accessibility.
 
-My **logo and h1-h3 headings** font is Press Start 2P from Google Fonts. I chose this font because it is an 8-bit style, bulky, font which fit into the thematic of the bar.
+My **logo and h1-h3 headings** font is Press Start 2P from Google Fonts. I chose this font because it is an 8-bit style, bulky, font which fit into the theme of the bar.
 
 My **h4+ headings and body** font is Play, also from Google Fonts. The font is more angular which compliments the 8-bit style font.
 
@@ -244,7 +244,7 @@ The landing page consists of 2 main features:
 </details>
 
 The full screen header consists of 3 sections:
-1. Logo - I wanted to keep things simple, so the logo is made up of an anchor (to allow use as navigation button) within an h1 element. The `h1` allowed the logo to also naturally respond to any view width changes. The logo has an infinite bounce keyframe animation inspired by the behavior of the game title in some video games. When clicked sends you to the landing page.
+1. Logo - I wanted to keep things simple, so the logo is made up of an anchor (to allow use as navigation button) within an h1 element. The `h1` allowed the logo to also naturally respond to any view width changes. The logo has an infinite bounce keyframe animation inspired by the behavior of the game title in some video games. 
 
 <details>
 <summary> Supporting Image </summary>
@@ -562,7 +562,7 @@ CSS passed with 0 errors, and a couple of warnings relating to variables.
 
 Menu, Events and FAQ pages pass with 0 errors and 0 warnings.
 
-Landing page has 4 alerts for "device dependent event handler" (onclick). As the button consists of a styled div with an anchor child I wanted to make sure the div acts as a button, where the onclick property came in handy.
+Landing page has 4 alerts for "device dependent event handler" (onclick). As the button consists of a styled `li` with an anchor descendant I wanted to make sure the styled element acts as a button, which is where the onclick property came in handy.
 
 About Us page has 3 alerts for "Possible heading" due to content length. Alerts pertain to the use of `<p>` element as text container for the comments section author found under the white bubble.
 
