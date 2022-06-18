@@ -988,7 +988,7 @@ This website was deployed using GitHub Pages.
 8. [CSS Tricks](https://css-tricks.com/making-css-animations-feel-natural/) - logo bounce animation.
 
 ### Media
-1. [Meltdown](https://www.meltdown.bar) bar - London, UK - text content used in About Us & Events pages.
+1. [Meltdown](https://www.meltdown.bar) bar - London, UK - text content used in About Us & FAQ pages, and inspiration for Perks.
 2. [Unsplash](https://unsplash.com/) - high resolution images used in carousel.
 3. [Pixel Gradient Maker](https://pixel-gradient-maker.glitch.me/) - footer background gradient image.
 4. [Toptal](https://www.toptal.com/designers/subtlepatterns/tag/hexagon/) - index.html header background.
