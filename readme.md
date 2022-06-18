@@ -882,7 +882,11 @@ Results:
 
 <details>
 <summary> Supporting Images </summary>
+
+- Header - Back Button
 <img src="docs/testing/user-story-17a.png">
+
+- Custom 404 Error Page
 <img src="docs/testing/user-story-17b.png">
 </details>
 
