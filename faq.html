@@ -106,7 +106,7 @@
                 <input type="text" name="email" id="email" required>
             </fieldset>
             <!-- Radio buttons -->
-            <fieldset class="feedback-options">
+            <fieldset class="feedback-options" required>
                 <legend class="visually-hidden">Feedback Options</legend>
                 <div class="faq-rd">
                     <label for="faq_rd1">Question</label>
@@ -124,7 +124,7 @@
             <!-- Message Box -->
             <label for="faq-feedback" class="visually-hidden">Let us know how we did:</label>
             <textarea name="feedback" id="faq-feedback" cols="30" rows="10" placeholder="We want to hear from you!..."
-                required></textarea>
+                required required></textarea>
             <button type="submit" class="feedback-form--submit">Submit</button>
             <button type="reset" class="feedback-form--reset">Reset Form</button>
         </form>
