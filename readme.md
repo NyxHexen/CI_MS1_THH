@@ -284,7 +284,7 @@ It consists of 4 sections:
 <img src="docs/features/feature-join-us.png">
 </details>
 
-_User Story Covered: 3_
+_User Story Covered: 3, 6_
 
 2. A Google Maps iframe with a pin and the venue name.
 
@@ -302,7 +302,7 @@ _User Story Covered: 5_
 <img src="docs/features/feature-contact-us.png">
 </details>
 
-_User Story Covered: 6, 9, 11, 19_
+_User Story Covered: 9, 11, 19_
 
 - Background image which has been applied using CSS, the same way as the header background.
 
@@ -674,16 +674,37 @@ Results:
  
 <details>
 <summary> Supporting Images </summary>
-<img src="">
+
+- Slogan
+<img src="docs/testing/user-story-1a.png">
+
+- Perks
+<img src="docs/testing/user-story-1b-2c-18b.png">
+
+- FAQ
+<img src="docs/testing/user-story-1c.png">
 </details>
 
 2. As a new customer, I want to know what to expect at the bar.
 
 | Feature | Action | Expected Result | Actual Result
 |--- |--- |--- |---
-| Events - Images carousel | Navigate to Events page | Customer is able to locate and view pictures | As expected
+| Events - Images Carousel | Navigate to Events page | Customer is able to locate and view pictures | As expected
 | FAQ - FAQ Scroll Box | Navigate to FAQ page | Customer is able to scroll through and read FAQs | As expected
 | About Us - Perks Section | Navigate to About us page | Customer locates perks section | As expected
+
+<details>
+<summary> Supporting Images </summary>
+
+- Events - Images Carousel
+<img src="docs/testing/user-story-2a-15.png">
+
+- FAQ - FAQ Scroll Box
+<img src="docs/testing/user-story-2b-16-18a.png">
+
+- About Us - Perks Section
+<img src="docs/testing/user-story-1b-2c-18b.png">
+</details>
 
 3. As a new customer, I want to know the bar's address.
 
@@ -691,11 +712,21 @@ Results:
 |--- |--- |--- |---
 | Footer - Join Us Section | Scroll to the bottom of any of the site's pages | Locate Join Us section and address | As expected
 
+<details>
+<summary> Supporting Images </summary>
+<img src="docs/testing/user-story-3-6.png">
+</details>
+
 4. As a new customer, I want to know what the price range is.
 
 | Feature | Action | Expected Result | Actual Result
 |--- |--- |--- |---
 | Our Menu Page | Navigate to Our Menu page | Customer views the menu | As expected
+
+<details>
+<summary> Supporting Images </summary>
+<img src="docs/testing/user-story-4-8.png">
+</details>
 
 5. As a new customer, I want to get directions to the bar.
 
@@ -703,11 +734,21 @@ Results:
 |--- |--- |--- |---
 | Footer - Embedded Google Map | Scroll to the bottom of any of the site's pages | Locate embedded Google map, click 'View Larger Map'  | As expected
 
+<details>
+<summary> Supporting Images </summary>
+<img src="docs/testing/user-story-5.png">
+</details>
+
 6. As a new customer, I want to know the operating hours.
 
 | Feature | Action | Expected Result | Actual Result
 |--- |--- |--- |---
 | Footer - Join Us Section | Scroll to the bottom of any of the site's pages | Locate Join Us section and operating hours | As expected
+
+<details>
+<summary> Supporting Images </summary>
+<img src="docs/testing/user-story-3-6.png">
+</details>
 
 7. As a returning customer, I want to view comments or reviews left by previous visitors.
 
@@ -715,11 +756,21 @@ Results:
 |--- |--- |--- |---
 | About Us - Comment Section | Navigate to About Us page and scroll down | Customer is able to locate comments section | As expected
 
+<details>
+<summary> Supporting Images </summary>
+<img src="docs/testing/user-story-7.png">
+</details>
+
 8. As a returning customer, I want to see the menu.
 
 | Feature | Action | Expected Result | Actual Result
 |--- |--- |--- |---
 | Our Menu page | Navigate to Our Menu page | Customer views the menu | As expected
+
+<details>
+<summary> Supporting Images </summary>
+<img src="docs/testing/user-story-4-8.png">
+</details>
 
 9. As a returning customer, I want to contact the bar via phone.
 
@@ -727,11 +778,21 @@ Results:
 |--- |--- |--- |---
 | Footer - Contact Us Section | Scroll to the bottom of any of the site's pages | Customer locates Contact Us section and is able to dial by clicking on number | As expected
 
+<details>
+<summary> Supporting Images </summary>
+<img src="docs/testing/user-story-9-11-19.png">
+</details>
+
 10. As a returning customer, I want to leave feedback, comment or suggestion to the bar.
 
 | Feature | Action | Expected Result | Actual Result
 |--- |--- |--- |---
 | FAQ - Feedback Form | Navigate to FAQ page, scroll down | Customer is able to find and use the form | As expected
+
+<details>
+<summary> Supporting Images </summary>
+<img src="docs/testing/user-story-10-20.png">
+</details>
 
 11. As a returning customer, I want to find the bar on social media.
 
@@ -739,11 +800,21 @@ Results:
 |--- |--- |--- |---
 | Footer - Contact Us Section | Scroll to the bottom of any of the site's pages | Customer locates social media links, they all open in new tabs | As expected
 
+<details>
+<summary> Supporting Images </summary>
+<img src="docs/testing/user-story-9-11-19.png">
+</details>
+
 12. As a returning customer, I want to view upcoming events.
 
 | Feature | Action | Expected Result | Actual Result
 |--- |--- |--- |---
 | Events Page - Upcoming Events Section | Navigate to Events page (and scroll down) | Customer locates Upcoming Events section | As expected
+
+<details>
+<summary> Supporting Images </summary>
+<img src="docs/testing/user-story-12.png">
+</details>
 
 13. As a returning customer, I want to view previous/past events.
 
@@ -751,11 +822,21 @@ Results:
 |--- |--- |--- |---
 | Events Page - Previous Events Section | Navigate to Events page (and scroll down) | Customer locates Previous Events section | As expected
 
+<details>
+<summary> Supporting Images </summary>
+<img src="docs/testing/user-story-13.png">
+</details>
+
 14. As a returning customer, I want to sign up for an event.
 
 | Feature | Action | Expected Result | Actual Result
 |--- |--- |--- |---
 | Events Page - Sign Up Form | Navigate to Events page, click on 'Sign Up!' button to expand form | Customer is able to register for an event | As expected
+
+<details>
+<summary> Supporting Images </summary>
+<img src="docs/testing/user-story-14.png">
+</details>
 
 15. As a returning customer, I want to view photos from/of the bar.
 
@@ -763,17 +844,32 @@ Results:
 |--- |--- |--- |---
 | Events - Images carousel | Navigate to Events page | Customer is able to locate and view pictures | As expected
 
+<details>
+<summary> Supporting Images </summary>
+<img src="docs/testing/user-story-7.png">
+</details>
+
 16. As a returning customer, I want to view frequently asked questions.
 
 | Feature | Action | Expected Result | Actual Result
 |--- |--- |--- |---
 | FAQ - FAQ Scroll Box | Navigate to FAQ page | Customer is able to scroll through and read FAQs | As expected
 
+<details>
+<summary> Supporting Images </summary>
+<img src="docs/testing/user-story-2b-16-18a.png">
+</details>
+
 17. As a site owner, I don't want users to use browser's navigation buttons while using the website.
 
 | Feature | Action | Expected Result | Actual Result
 |--- |--- |--- |---
 | Header - Back Button | Locate and click back button to go to previous page | Customer has no difficulties finding the button; Back button takes the customer exactly 1 page back | As expected
+
+<details>
+<summary> Supporting Images </summary>
+<img src="docs/testing/user-story-17.png">
+</details>
 
 18. As a site owner, I want users to be able to get to know the bar.
 
@@ -782,17 +878,33 @@ Results:
 | FAQ - FAQ Scroll Box | Navigate to FAQ page | Customer is able to scroll through and read FAQs | As expected
 | About Us - Perks Section | Navigate to About us page | Customer locates perks section | As expected
 
+<details>
+<summary> Supporting Images </summary>
+<img src="docs/testing/user-story-2a-15.png">
+<img src="docs/testing/user-story-2b-16-18a.png">
+</details>
+
 19. As a site owner, I want users to be able to contact us.
 
 | Feature | Action | Expected Result | Actual Result
 |--- |--- |--- |---
 | Footer - Contact Us Section | Scroll to the bottom of any of the site's pages | Customer has a range of options to contact the bar | As expected
 
+<details>
+<summary> Supporting Images </summary>
+<img src="docs/testing/user-story-9-11-19.png">
+</details>
+
 20. As a site owner, I want users to be able to provide feedback.
 
 | Feature | Action | Expected Result | Actual Result
 |--- |--- |--- |---
 | FAQ - Feedback Form | Navigate to FAQ page, scroll down to find the form | Customers are able to submit a message | As expected
+
+<details>
+<summary> Supporting Images </summary>
+<img src="docs/testing/user-story-10-20.png">
+</details>
 
 ---
 
