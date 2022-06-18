@@ -758,7 +758,7 @@ Results:
 
 <details>
 <summary> Supporting Images </summary>
-<img src="docs/testing/user-story-7.png">
+<img src="docs/testing/User-story-7.png">
 </details>
 
 8. As a returning customer, I want to see the menu.
@@ -846,7 +846,7 @@ Results:
 
 <details>
 <summary> Supporting Images </summary>
-<img src="docs/testing/user-story-7.png">
+<img src="docs/testing/user-story-2a-15.png">
 </details>
 
 16. As a returning customer, I want to view frequently asked questions.
