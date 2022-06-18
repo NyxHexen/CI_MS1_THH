@@ -1,4 +1,3 @@
-/* backdrop-filter: blur() is currently creating some weirdness by applying the blur to the text */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
@@ -108,7 +107,7 @@ section {
 
 /* Accessibility */
 .visually-hidden {
-    /* clip is deprecated, but appears to still do the job, definitely better than display: none */
+    /* clip is deprecated, but still works and better than display: none; */
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
     height: 1px;
@@ -824,7 +823,6 @@ input[type="date"] {
     box-shadow: var(--prm-shdw);
 }
 
-/* how to win the specificity war for color (add .faq) */
 .faq .faq-list {
     max-height: 60vh;
     margin-bottom: 2rem;
@@ -952,7 +950,6 @@ input[type="date"] {
 }
 
 .feedback-form input[type=radio] {
-    /* appearance isnt widely supported, but we're okay with standard version of radio showing on a couple of browsers */
     appearance: none;
     -webkit-appearance: none;
     height: 1rem;
@@ -1368,7 +1365,7 @@ iframe {
         /* tiny padding to fix misalignment */
         padding-left: 0.8rem;
     }
-
+    
     /* added padding as text was breaking weird between 614px and 666px; below forces the text to keep 2 lines until next media query */
     .sm-container h3 {
         padding: 0 2.5rem;
