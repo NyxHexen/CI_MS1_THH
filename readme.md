@@ -462,6 +462,14 @@ _User Story Covered: 1, 2, 18_
 
 _User Story Covered: 7_
 
+### 404.html
+
+Custom 404 Page Not Found error page gives helpful instructions to the customer should they find themselves on a broken link/missing page.
+
+The button on the page takes the user to the landing page (index.html), or they can use the back button and/or navigation links to get back.
+
+_User Story Covered: 17_
+
 ---
 
 ## 4. Technology
@@ -865,10 +873,12 @@ Results:
 | Feature | Action | Expected Result | Actual Result
 |--- |--- |--- |---
 | Header - Back Button | Locate and click back button to go to previous page | Customer has no difficulties finding the button; Back button takes the customer exactly 1 page back | As expected
+| Custom 404 Error Page | Navigate back to the website by using the Back Button, Navigation Links, Logo, or the button within the notification window on the page | Customer is able to navigate back to the website | As expected
 
 <details>
 <summary> Supporting Images </summary>
-<img src="docs/testing/user-story-17.png">
+<img src="docs/testing/user-story-17a.png">
+<img src="docs/testing/user-story-17b.png">
 </details>
 
 18. As a site owner, I want users to be able to get to know the bar.
