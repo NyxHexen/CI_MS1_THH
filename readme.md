@@ -468,6 +468,11 @@ Custom 404 Page Not Found error page gives helpful instructions to the customer 
 
 The button on the page takes the user to the landing page (index.html), or they can use the back button and/or navigation links to get back.
 
+<details>
+<summary> Supporting Image </summary>
+<img src="docs/features/feature-custom404.png">
+</details>
+
 _User Story Covered: 17_
 
 ---
