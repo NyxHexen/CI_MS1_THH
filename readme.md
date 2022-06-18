@@ -880,7 +880,11 @@ Results:
 
 <details>
 <summary> Supporting Images </summary>
+
+- FAQ - FAQ Scroll Box
 <img src="docs/testing/user-story-2a-15.png">
+
+- About Us - Perks Section
 <img src="docs/testing/user-story-2b-16-18a.png">
 </details>
 
